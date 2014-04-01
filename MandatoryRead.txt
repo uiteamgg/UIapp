@@ -16,6 +16,8 @@ General Instruction File
 
 7. If you face problem pushing the code to this repository from your machine, you need to generate the SSH keys and add the SSH key to this account on github. Please in the title, mention ur name for the key.
 
+8. "Do mention ur name in the commit."
+
 8. Consider this File as the area for comunication and feel free to "APPEND" this only for any message.
 
 9. Request the members to skim through this file once they take a latest pull.
