@@ -1,0 +1,27 @@
+General Instruction File
+
+1. The access rights to this Repository is limited to the Github user- uiteamgg
+   having password- vrforuigg6
+
+2.  Github account- username-uiteamgg 				password- vrforuigg6
+	Gmail account- id- 		uiteamgg6@gmail.com 	password- uiteamforfirm
+
+3. If we want to fork or push into this repository with ur own github account all you can do is just create "pull requests" to the existing version of code. To accept it as a lasting change in the repo the pull request needs to be accepted again via the above mentioned account.
+
+4. All the work, issues, notification will be sent to the gmail account related to the corresponding github account only.
+
+5. Members are requested to please check the github account and gmail account regularly for notifications.
+
+6. Please expect all the communication for the entire LOP to take place through ur own gmail accounts precisely chats.
+
+7. If you face problem pushing the code to this repository from your machine, you need to generate the SSH keys and add the SSH key to this account on github. Please in the title, mention ur name for the key.
+
+8. Consider this File as the area for comunication and feel free to "APPEND" this only for any message.
+
+9. Request the members to skim through this file once they take a latest pull.
+	
+We need to follow some practices so that the communication for this repository/LOP is flawless. Any suggestions can be made to mend the above rules for good.
+
+The above information is written on the findings based on work experience and feel free to suggest a better technique if you find one. 
+
+(Note: This is a test file, but do not ignore the above instructions)
