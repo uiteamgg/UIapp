@@ -17,10 +17,11 @@ angular
         templateUrl: 'views/hotelTable.html',
         controller: 'HotelCtrl'
       })
-      .when('/abc',{
-        templateUrl: 'views/abc.html',
-        controller: 'abcCtrl'
+      .when('/ContactTable', {
+        templateUrl: 'views/ContactTable.html',
+        controller: 'ContactCtrl'
       })
+      
       .otherwise({
         redirectTo: '/'
       });

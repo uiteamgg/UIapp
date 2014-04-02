@@ -1,0 +1,40 @@
+<div class="header">
+  <ul class="nav nav-pills pull-right">
+    <li><a ng-href="#">Home</a></li>
+   	<li><a ng-href="/#/HotelTable">Hotel</a></li>
+   	<li class="active"><a href="">Contact</a></li>
+  </ul>
+  <h3 class="text-muted">Contact Data</h3>
+</div>
+
+<div>
+	<table border="1" class="hotelTable" cellspacing="2px" cellpadding="2px">
+		<thead>
+			<tr class="contactHeader">
+				<th colspan="3">Personal Contacts</th>
+				<th colspan="3">Professional Contacts</th>
+			</tr>
+			<tr>
+			<th>Contact Id</th>
+			<th>Contact Name</th>
+			<th>Address</th>
+			<th>Contact Id</th>
+			<th>Contact Name</th>
+			<th>Address</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="data in personalContactData">
+				<td>{{data.contactId}}</td>
+				<td>{{data.contactName}}</td>
+				<td>{{data.address}}</td>
+				<td>{{professionalContactData[$index].contactId}}</td>
+				<td>{{professionalContactData[$index].contactName}}</td>
+				<td>{{professionalContactData[$index].address}}</td>
+			</tr>
+			
+		</tbody>
+	</table>
+</div>
+
+

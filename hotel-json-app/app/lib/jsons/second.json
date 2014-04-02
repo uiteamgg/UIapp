@@ -1,134 +1,62 @@
-/*{
-
-    "contentItem": [
-
-
-        {
-
-            "contentID" : "1", 
-                            "contentVideo" : "file.mov",
-                            "contentThumbnail" : "url.jpg",
-                            "contentRating" : "5",
-            "contentTitle" : "Guitar Lessons",
-            "username" : "Username", "realname" : "Real name",
-            "contentTags" : [
-                { "tag" : "Guitar"},
-                { "tag" : "Intermediate"},
-                { "tag" : "Chords"}
-            ],      
-            "contentAbout" : "Learn how to play guitar!",
-            "contentTime" : [
-                { "" : "", "" : "", "" : "", "" : ""},
-                { "" : "", "" : "", "" : "", "" : ""}
-            ],          
-            "series" :[
-                { "seriesVideo" : "file.mov", "seriesThumbnail" : "url.jpg", "seriesTime" : "time", "seriesNumber" : "1", "seriesTitle" : "How to Play Guitar" },
-                { "videoFile" : "file.mov", "seriesThumbnail" : "url.jpg", "seriesTime" : "time", "seriesNumber" : "2", "seriesTitle" : "How to Play Guitar" }
-            ]
-        },
-
-
-        {
-
-            "contentID" : "2", 
-                            "contentVideo" : "file.mov",
-                            "contentThumbnail" : "url.jpg",
-                            "contentRating" : "5",
-            "contentTitle" : "Guitar Lessons",
-            "username" : "Username", "realname" : "Real name",
-            "contentTags" : [
-                { "tag" : "Guitar"},
-                { "tag" : "Intermediate"},
-                { "tag" : "Chords"}
-            ],      
-            "contentAbout" : "Learn how to play guitar!",
-            "contentTime" : [
-                { "" : "", "" : "", "" : "", "" : ""},
-                { "" : "", "" : "", "" : "", "" : ""}
-            ],          
-            "series" :[
-                { "seriesVideo" : "file.mov", "seriesThumbnail" : "url.jpg", "seriesTime" : "time", "seriesNumber" : "1", "seriesTitle" : "How to Play Guitar" },
-                { "videoFile" : "file.mov", "seriesThumbnail" : "url.jpg", "seriesTime" : "time", "seriesNumber" : "2", "seriesTitle" : "How to Play Guitar" }
-            ]
-        }
-
-    ]
-
-}*/
-
-
-/*
 {
-	"Regions":[
-		"Asia",
-		"EMEA",
-		"LatAm",
-		"North America",
-		"Western Europe"
-	],
-	"Cities":[
-		{"Asia":["Banglore","Delhi","Jaipur","Mumbai","Pune","Shanghai","Chengdu","Manila","Kuala Lampur","Dalian","Tokyo","Nagasaki","Seoul"]},
-		{"EMEA":["Warsaw","Bucharest","Wroclaw","Johannesburg","Sharjah","Bratislava"]},
-		{"LatAm":["Sao Palo","Mexico City","San Jose","Rio de Janeiro","Panama City","Buenos Aires"]},
-		{"North America":["Tampa","St. Louis"]},
-		{"Western Europe":["London","Dublin","Glasgow"]}
-	],
-	"Level1":[
-		{"val1":"10","val2":"10","val3":"10","val4":"30","val5":"30","val6":"10"}
-	],
-	"Level2":[
-		{"name":"risk profile","val1":"30","val2":"40","val3":"30"},
-		{"name":"quality","val1":"25","val2":"25","val3":"25","val4":"25"},
-		{"name":"environment","val1":"25","val2":"25","val3":"25","val4":"25"},
-		{"name":"cost","val1":"80","val2":"10","val3":"10"},
-		{"name":"talent","val1":"60","val2":"20","val3":"20"},
-		{"name":"maturity","val1":"50","val2":"50"}
-	],
-	"Process":[
-		"Data",
-		"Voice",
-		"Knowledge",
-		"IT"
-	]
+	"contacts":
+
+			{
+				"personalContacts":[
+					{
+						"contactId":"1",
+						"contactName":"A",
+						"address":"21,sec-23,gurgaon"
+					},
+					{
+						"contactId":"2",
+						"contactName":"B",
+						"address":"14,sec-22,gurgaon"
+					},
+					{
+						"contactId":"3",
+						"contactName":"C",
+						"address":"10,sec-14,gurgaon"
+					},
+					{
+						"contactId":"4",
+						"contactName":"D",
+						"address":"21,sec-17,gurgaon"
+					},
+					{
+						"contactId":"5",
+						"contactName":"E",
+						"address":"24,sec-22,gurgaon"
+					}
+				],
+	
+				"professionalContacts":[
+					{
+						"contactId":"101",
+						"contactName":"Amit",
+						"address":"C-12,sec-50,noida"
+					},
+					{
+						"contactId":"102",
+						"contactName":"Priya",
+						"address":"C-10,sec-62,noida"
+					},
+					{
+						"contactId":"103",
+						"contactName":"Anil",
+						"address":"D-21,sec-43,noida"
+					},
+					{
+						"contactId":"104",
+						"contactName":"Roopali",
+						"address":"A-10,sec-10,noida"
+					},
+					{
+						"contactId":"105",
+						"contactName":"Misha",
+						"address":"B-12,sec-20,noida"
+					}
+				]
+			}
+	
 }
-*/
-
-/*{
-	"hotelName":[
-		"Hotel1",
-		"Hotel2",
-		"Hotel3",
-		"Hotel4",
-		"Hotel5"
-	],
-	"hotelId":[
-		"1",
-		"2",
-		"3",
-		"4",
-		"5",
-	],
-	"address":[
-		"house-num:1441,sector-23,gurgaon",
-		"house-num:1223,sector-22,gurgaon",
-		"house-num:1503,sector-17,gurgaon",
-		"house-num:1421,sector-14,gurgaon",
-		"house-num:2808,sector-21,gurgaon"
-	],
-	"cityId":[
-		"1",
-		"2",
-		"3",
-		"4",
-		"5"
-	],
-	"cityName":[
-		"Bareilly",
-		"",
-		"",
-		"",
-		""
-	],
-}*/
-
-
