@@ -1,0 +1,64 @@
+{
+	"hotels":[
+
+		{
+			"hotelName":"Hotel1",
+			"hotelId":"1",
+			"address":"1441,sector-23",
+			"cityId":"1",
+			"cityName":"Bareilly",
+			"countryId":"1",
+			"countryName":"India",
+			"latitude":"47degree North",
+			"longitude":"82degree East"
+		},
+		{
+			"hotelName":"Hotel2",
+			"hotelId":"2",
+			"address":"1223,sector-22",
+			"cityId":"2",
+			"cityName":"Lucknow",
+			"countryId":"2",
+			"countryName":"India",
+			"latitude":"47degree North",
+			"longitude":"82degree East"
+		},
+		{
+			"hotelName":"Hotel3",
+			"hotelId":"3",
+			"address":"1503,sector-17",
+			"cityId":"3",
+			"cityName":"Rampur",
+			"countryId":"3",
+			"countryName":"India",
+			"latitude":"47degree North",
+			"longitude":"82degree East"
+		},
+		{
+			"hotelName":"Hotel4",
+			"hotelId":"4",
+			"address":"1421,sector-14",
+			"cityId":"4",
+			"cityName":"Bhopal",
+			"countryId":"4",
+			"countryName":"India",
+			"latitude":"47degree North",
+			"longitude":"82degree East"
+		},
+		{
+			"hotelName":"Hotel5",
+			"hotelId":"5",
+			"address":"2808,sector-25",
+			"cityId":"5",
+			"cityName":"Chandigarh",
+			"countryId":"5",
+			"countryName":"India",
+			"latitude":"47degree North",
+			"longitude":"82degree East"
+		}
+
+	]
+}
+
+
+

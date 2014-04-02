@@ -1,0 +1,68 @@
+<div class="header">
+  <ul class="nav nav-pills pull-right">
+    <li class="active"><a ng-href="#">Home</a></li>
+   
+  </ul>
+  <h3 class="text-muted">Hotel Data</h3>
+</div>
+
+<div>
+	<table border="1" class="hotelTable" cellspacing="2px" cellpadding="2px">
+		<thead>
+			<tr>
+				<th>Hotel Name</th>
+				<th>Id</th>
+				<th>Address</th>
+				<th>City Id</th>
+				<th>City Name</th>
+				<th>Country Id</th>
+				<th>Country Name</th>
+				<th>Latitude</th>
+				<th>Longitude</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="data in tableData">
+				<td>{{data.hotelName}}</td>
+				<td>{{data.hotelId}}</td>
+				<td>{{data.address}}</td>
+				<td>{{data.cityId}}</td>
+				<td>{{data.cityName}}</td>
+				<td>{{data.countryId}}</td>
+				<td>{{data.countryName}}</td>
+				<td>{{data.latitude}}</td>
+				<td>{{data.longitude}}</td>
+			</tr>
+			
+		</tbody>
+	</table>
+</div>
+
+
+<!--<div class="tableContainer">
+	
+	<table class="tableView oppPresentTable" id="testTable" summary="Code page support in different versions of MS Windows." rules="groups">
+		<thead border="0">
+			<tr>
+				<th class="process"></th>
+				<th ng-bind-html="process[0]"></th>
+				<th ng-bind-html="process[1]"></th>
+				<th ng-bind-html="process[2]"></th>
+				<th ng-bind-html="process[3]"></th>
+				<th ng-bind-html="process[4]"></th>
+				
+			</tr>
+		</thead>
+		<tbody border="0">
+			<tr ng-repeat="data in calculatedItems" ng-class="{backgroundColor: $index % 2 != 0}">
+				<td class="process processText yearData">{{tableTitles[$index]}}</td>
+				<td class="yearData">{{data[0] | number}}</td>
+				<td class="yearData">{{data[1] | number}}</td>
+				<td class="yearData">{{data[2] | number}}</td>
+				<td class="yearData">{{data[3] | number}}</td>
+				<td class="yearData">{{data[4] | number}}</td>		
+			</tr>
+		</tbody>
+	</table>
+	<br>
+</div>-->
