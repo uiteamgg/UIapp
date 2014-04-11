@@ -1,0 +1,26 @@
+.body{
+	background-color:#eee;
+	width:100%;
+	height:100%;
+}
+
+.container{
+	background-color:#fff;
+	width:70%;
+	border: 1px solid red;
+	max-width: 900px;
+}
+
+.sideboard{
+	border:1px solid green;
+	width:30%;
+	max-width: 100px;
+	display:inline;
+}
+
+.centerdiv{
+	border:1px solid green;
+	width:70%;
+	display:inline;
+	max-width: 210;
+}

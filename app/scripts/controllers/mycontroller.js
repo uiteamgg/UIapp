@@ -9,10 +9,14 @@ angular.module('yoAngularProjectApp')
       'Karma'
     ];
     $scope.foo="Hello World";
+    
+    function implementTabs(){
+    }
    
   })
 
  .controller('HotelCtrl', function ($scope,Myservice) {
+
     console.log("Inside hotel controller");
     
       Myservice.success(function(data) { 
