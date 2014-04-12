@@ -1,6 +1,7 @@
 'use strict';
 
 angular.module('yoAngularProjectApp')
+  
   .controller('MycontrollerCtrl', function ($scope,Myservice) {
     console.log("Inside controller");
     $scope.awesomeThings = [
@@ -10,9 +11,10 @@ angular.module('yoAngularProjectApp')
     ];
     $scope.foo="Hello World";
     
-    function implementTabs(){
-    }
-   
+    $(function() {
+            $( "#tabs" ).tabs();
+    });
+       
   })
 
  .controller('HotelCtrl', function ($scope,Myservice) {
