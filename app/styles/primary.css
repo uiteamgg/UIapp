@@ -15,14 +15,14 @@ body{
 	width:30%;
 	float: :left;
 	display: inline-block;
-	height:100px;
+	height:400px;
 }
 
 .centerdiv{
 	position: relative;
 	/*border:1px solid green;*/
 	width:68%;
-	height:100px;
+	height:400px;
 	float: :right;
 	/*display:inline;*/
 	display: inline-block;
@@ -54,4 +54,8 @@ a:visited{
 
 .readstories li{
 	list-style: none;
+}
+
+#addstory{
+	width: 93%;
 }
