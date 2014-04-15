@@ -22,7 +22,8 @@ angular.module('yoAngularProjectApp')
         stories.push(newstory);
         
         console.log("stories--"+ stories);
-        
+        $(".readstories").append("<li><button type='button' class='storybutton'>"+newstory+"</button><span class='desc'> -> </span></li>");
+         
     });
        
   })

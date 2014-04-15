@@ -43,3 +43,11 @@ body{
 a:visited{
 	text-decoration: none;
 }
+
+.desc{
+	text-align	: right;
+}
+
+.storybutton{
+	width:150px;
+}
