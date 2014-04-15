@@ -4,6 +4,7 @@ angular.module('yoAngularProjectApp')
   
   .controller('MycontrollerCtrl', function ($scope,Myservice) {
     console.log("Inside controller");
+    var stories=[];
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
@@ -14,6 +15,14 @@ angular.module('yoAngularProjectApp')
     $(function() {
             $( "#tabs" ).tabs();
             $(  "#sidetabs" ).tabs();
+    });
+
+    $("#add").click(function(){
+        var newstory=$("#addstory").val();
+        stories.push(newstory);
+        
+        console.log("stories--"+ stories);
+        
     });
        
   })
