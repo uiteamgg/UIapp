@@ -6,23 +6,24 @@ body{
 
 .container{
 	background-color:#fff;
-	width:70%;
-	max-width: 900px;
+	width:90%;
+	max-width: 1200px;
 }
 
 .sideboard{
 	position: relative;
-	/*border:1px solid green;*/
 	width:30%;
 	float: :left;
+	display: inline-block;
 }
 
 .centerdiv{
 	position: relative;
 	/*border:1px solid green;*/
-	width:60%;
+	width:68%;
 	float: :right;
 	/*display:inline;*/
+	display: inline-block;
 }
 
 .footer{

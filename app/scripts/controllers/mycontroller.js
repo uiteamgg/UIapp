@@ -13,6 +13,7 @@ angular.module('yoAngularProjectApp')
     
     $(function() {
             $( "#tabs" ).tabs();
+            $(  "#sidetabs" ).tabs();
     });
        
   })
