@@ -49,11 +49,12 @@ a:visited{
 }
 
 .storybutton{
-	width:150px;
+	width:215px;
 }
 
 .readstories li{
 	list-style: none;
+	margin-top: 1%;
 }
 
 #addstory{
