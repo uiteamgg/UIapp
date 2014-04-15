@@ -51,3 +51,7 @@ a:visited{
 .storybutton{
 	width:150px;
 }
+
+.readstories li{
+	list-style: none;
+}

@@ -17,6 +17,8 @@ angular.module('yoAngularProjectApp')
             $(  "#sidetabs" ).tabs();
     });
 
+    $("#addstory").focus(function(){this.value="";});
+
     $("#add").click(function(){
         var newstory=$("#addstory").val();
         stories.push(newstory);
