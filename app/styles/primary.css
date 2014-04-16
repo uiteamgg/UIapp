@@ -6,8 +6,8 @@ body{
 
 .container{
 	background-color:#fff;
-	width:90%;
-	max-width: 1200px;
+	/*max-width:97%;*/
+	max-width: 1300px;
 }
 
 .sideboard{
@@ -20,12 +20,10 @@ body{
 
 .centerdiv{
 	position: relative;
-	/*border:1px solid green;*/
-	width:68%;
 	height:400px;
 	float: :right;
-	/*display:inline;*/
 	display: inline-block;
+	border: 1px solid red;
 }
 
 .footer{
@@ -38,25 +36,4 @@ body{
 	line-height: 20px;
 	padding-left: 3%;
 	color:white;
-}
-
-a:visited{
-	text-decoration: none;
-}
-
-.desc{
-	text-align	: right;
-}
-
-.storybutton{
-	width:215px;
-}
-
-.readstories li{
-	list-style: none;
-	margin-top: 1%;
-}
-
-#addstory{
-	width: 93%;
 }
