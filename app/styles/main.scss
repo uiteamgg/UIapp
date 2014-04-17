@@ -50,13 +50,54 @@ body {
 .hotelTable{
     width: 1000px;
     height: 200px;
-    margin-left: -146px;
+    margin-left: 55px;
 }
 
 
 .hotelTable thead th{
     background:#E4E2DF;
 }
+
+
+.sprintTable{
+    width: 1000px;
+    height: 200px;
+    margin-left: -95px;
+}
+
+
+.sprintTable thead th{
+    background:#E4E2DF;
+}
+
+.storycolumn{
+    background:#f5f4f3;
+}
+
+.inProcess{
+    color:blue;
+}
+
+.done{
+    color:brown;
+}
+
+.poAcceptedrejected{
+    color:purple;
+}
+
+.clientAcceptedrejected{
+    color:green;
+}
+
+.needDisucssion{
+    color:grey;
+}
+
+.redflag{
+    color:brown;
+}
+
 
 .contactHeader{
     text-align:center;
@@ -108,3 +149,15 @@ body {
         border-bottom: 0;
     }
 }
+
+
+.bin{
+
+   /* border:1px solid yellow;
+    height:30px;*/
+
+}
+
+
+
+

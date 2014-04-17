@@ -1,0 +1,61 @@
+<!--<div class="header">
+  <ul class="nav nav-pills pull-right">
+    <li><a ng-href="#">Home</a></li>
+    <li class="active"><a href="#/SprintDetail">Sprint Detail</a></li>
+    <li><a ng-href="#/HotelTable">Hotel</a></li>
+    <li><a href="#/ContactTable">Contact</a></li>
+  </ul>
+  <h3 class="text-muted">UI project</h3>
+</div>-->
+
+<div>
+	<h2>Sprint details</h2>
+</div>
+
+<div>
+	<table border="1" class="sprintTable" cellspacing="2px" cellpadding="2px">
+		<thead>
+			<tr>
+				<th>SPRINT</th>
+				<th>inProcess</th>
+				<th>Done</th>
+				<th>PO Accepted / Rejected</th>
+				<th>Client Accepted / Rejected</th>
+				<th>Need Discussion</th>
+				<th>Red Flag</th>
+				
+			</tr>
+		</thead>
+		<tbody>
+			<td class="storycolumn">
+				<ul>
+					<li ng-repeat="story in stories" class="item" id="item{{$index}}" draggable>{{story}}</li>
+					<!--<li class="item" id="item1" draggable>
+						Story1
+					</li>
+					<li class="item" id="item2" draggable>Story2</li>
+					<li class="item" id="item3" draggable>Story3</li>
+					<li class="item" id="item4" draggable>Story4</li>
+					<li class="item" id="item5" draggable>Story5</li>
+					<li class="item" id="item6" draggable>Story6</li>
+					<li class="item" id="item7" draggable>Story7</li>
+					<li class="item" id="item8" draggable>Story8</li>
+					<li class="item" id="item9" draggable>Story9</li>
+					<li class="item" id="item10" draggable>Story10</li>-->
+					
+				</ul>
+			</td>
+			<td class="inProcess" droppable drop="handleDrop()" id="1" data-column="1">
+				<!--<div class="bin" droppable drop="handleDrop()">
+				</div>-->
+			</td>
+			<td class="done" droppable drop="handleDrop()" data-column="2"></td>
+			<td class="poAcceptedrejected" droppable drop="handleDrop()" data-column="3"></td>
+			<td class="clientAcceptedrejected" droppable drop="handleDrop()" data-column="4"></td>
+			<td class="needDisucssion" droppable drop="handleDrop()" data-column="5"></td>
+			<td class="redflag" droppable drop="handleDrop()" data-column="6"></td>
+			
+		</tbody>
+	</table>
+</div>
+

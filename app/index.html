@@ -23,16 +23,8 @@
   </head>
   <body ng-app="yoAngularProjectApp"  style="">
 
-    <!-- <div class="header">
->>>>>>> 8aa4810935d18678c8cefcf6a450ecc5b309d234
-        <ul class="nav nav-pills pull-right">
-            <li class="active"><a ng-href="#">DashBoard</a></li>
-            <li><a ng-href="#/HotelTable">Sprint</a></li>
-            <li><a href="#">Charts</a></li>
-			<li class="active"><a ng-href="#/Overview">Overview</a></li>
-        </ul>
-        <h3 class="text-muted">UI project</h3>
-    </div> -->
+
+ 
 
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container-fluid">
@@ -54,13 +46,14 @@
       </form> -->
       <ul class="nav navbar-nav navbar-right">
         <li class="active"><a ng-href="#">DashBoard</a></li>
-        <li><a ng-href="/HotelTable">Sprint</a></li>
+        <li><a ng-href="#/SprintDetail">Sprint</a></li>
         <li><a href="#">Charts</a></li>
         <li class="active"><a ng-href="#/Overview">Overview</a></li> <!-- link to Menka's module -->
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
     <div class="container" ng-view="" ></div>
     
     <script>
@@ -88,8 +81,6 @@
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/jquery-ui/ui/jquery-ui.js"></script>
-    <script src="bower_components/highcharts/highcharts.js"></script>
-    <script src="bower_components/highcharts/exporting.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

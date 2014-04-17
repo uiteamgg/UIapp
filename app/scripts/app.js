@@ -54,6 +54,10 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MycontrollerCtrl'
       })
+      .when('/SprintDetail', {
+        templateUrl: 'views/sprintDetail.html',
+        controller: 'SprintCtrl'
+      })
       .when('/HotelTable', {
         templateUrl: 'views/hotelTable.html',
         controller: 'HotelCtrl'
