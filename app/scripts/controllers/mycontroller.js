@@ -133,19 +133,6 @@ angular.module('yoAngularProjectApp')
     
   })
 
- .controller('HotelCtrl', function ($scope,Myservice) {
-
-    console.log("Inside hotel controller");
-    
-      Myservice.success(function(data) { 
-        console.log(JSON.stringify(data));
-    });
-  })
-
-.controller('ContactCtrl', function ($scope,Getdata) {
-    console.log("Inside contact controller");
-
-    })
   
   .controller('OverviewController', function ($scope) {
     console.log("Inside overview controller");
