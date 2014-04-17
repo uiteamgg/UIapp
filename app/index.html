@@ -47,8 +47,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li class="active"><a ng-href="#">DashBoard</a></li>
         <li><a ng-href="#/SprintDetail">Sprint</a></li>
-        <li><a href="#">Charts</a></li>
-        <li class="active"><a ng-href="#/Overview">Overview</a></li> <!-- link to Menka's module -->
+        <li><a ng-href="#/Overview">Overview</a></li> 
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -56,6 +55,14 @@
 
     <div class="container" ng-view="" ></div>
     
+    <footer>
+    <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+      <div class="container-fluid">
+        <p>We can use this Space for Status messages and Application Masthead. However the better ideas are always welcome.</p>
+      </div>
+    </nav>
+    </footer>
+
     <script>
        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
