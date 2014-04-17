@@ -14,6 +14,7 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css({.tmp,app}) styles/main.css -->
+
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/primary.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
@@ -21,11 +22,12 @@
     <!-- endbuild -->
   </head>
   <body ng-app="yoAngularProjectApp"  style="">
-    <div class="header">
+    <div class="header" >
         <ul class="nav nav-pills pull-right">
             <li class="active"><a ng-href="#">DashBoard</a></li>
-            <li><a ng-href="/HotelTable">Sprint</a></li>
+            <li><a ng-href="#/HotelTable">Sprint</a></li>
             <li><a href="#">Charts</a></li>
+			<li class="active"><a ng-href="#/Overview">Overview</a></li>
         </ul>
         <h3 class="text-muted">UI project</h3>
     </div>

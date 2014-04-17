@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		 
+		<style>
+		.list-group
+		{
+		width:30%;
+		
+		}
+		.panel
+		{
+		width:40%; 
+		
+		}
+		.panel-heading
+		{
+		
+		color:blue;
+		}
+	
+        #main {
+            width: 510px;
+            min-height: 200px;
+            position: relative;
+        }
+         
+        #items {
+            left: 222px;
+        }
+ 
+        #dropbox {
+            left: 424px;
+        }
+         
+        #items, #dropbox {
+            position: absolute;
+            width: 200px;
+            min-height: 260px;
+            border: 2px solid black;
+        }
+ 
+        div.item {
+            float: left;
+            min-width: 160px;
+            min-height: 30px;
+            border: 2px solid rgb(5,161,245);
+            margin: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+ 
+		</style>
+		<!--<script src="js/modernizr.custom.js"></script>-->
+	</head>
+	<body>
+				<div class="panel panel-default">
+  <!-- Default panel contents -->
+					<div class="panel-heading">Backlog</div>
+						<div class="panel-body">
+					
+						
+
+  <!-- List group -->	<div id="main" ng-controller="OverviewController">
+						 <div ng-repeat="item in items">
+                <!-- usage of the Draggable directive -->
+						<div dd-draggable="true" class="item" itemid="{{item.id}}">{{item.id}}. {{item.name}}</div>
+						</div>
+						<ul class="list-group">
+						<!--<li class="list-group-item"><a href="#">{{item.name}}</a></li>-->
+						
+						</ul>
+						
+						</div>
+						
+						</div>
+					
+ 
+			
+       
+        <!-- usage of the DropTarget directive -->
+        <div  dd-drop-target="true"  style="border:2px solid blue;width:200px;height:200px;display:inline-block;overflow:auto">
+            <div style="border-bottom: 2px solid black">
+                <b>sprint1</b>
+            </div>
+			
+            <div ng-repeat="item in dropped">
+                <div class="item">{{item.id}}. {{item.name}}</div>
+            </div>
+		</div>
+		<div  dd-drop-target="true" style="border:2px solid blue;width:200px;height:200px;display:inline-block;overflow:auto">
+             <div style="border-bottom: 2px solid black;">
+                <b>sprint2</b> 
+			</div>
+			
+            <div ng-repeat="item in dropped">
+                <div class="item">{{item.id}}. {{item.name}}</div>
+            </div>
+		</div>
+
+   </div>
+
+	
+		
+	</body>
+	  
+	<script src="scripts/app.js"></script>
+</html>
