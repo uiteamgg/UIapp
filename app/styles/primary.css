@@ -9,6 +9,7 @@ body{
 	/*max-width:97%;*/
 	max-width: 100%;
 	min-width: 400px;
+	margin-top:2%;
 }
 
 .sideboard{
@@ -35,6 +36,11 @@ body{
 .chart2{
 	display: inline-block;
 	width:300px;
+}
+
+.sprintDiv{
+	margin-bottom: 3%;
+	height:246px;
 }
 
 footer{
