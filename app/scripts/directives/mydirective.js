@@ -191,8 +191,24 @@ angular.module('yoAngularProjectApp')
                               }
                             });
 
-                         
+
                        // alert("Choose accepted or rejected for client------");
+                    }
+                    if($("#" + item.id).closest('.inProcess').length==1)
+                    {
+                        $("#" + item.id).css('background','rgb(0, 178, 255)');   
+                    }
+                    if($("#" + item.id).closest('.done').length==1)
+                    {
+                        $("#" + item.id).css('background','rgb(226, 249, 23)');
+                    }
+                    if($("#" + item.id).closest('.needDisucssion').length==1)
+                    {
+                        $("#" + item.id).css('background','rgb(66, 190, 72)');
+                    }
+                    if($("#" + item.id).closest('.redflag').length==1)
+                    {
+                        $("#" + item.id).css('background','#d9534f');
                     }
 
 					// call the drop passed drop function
