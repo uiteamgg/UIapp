@@ -801,7 +801,7 @@ width: 26px;
 
 
 }
-<<<<<<< Updated upstream
+
 
 #item{
 	display:none;
@@ -815,11 +815,11 @@ width: 26px;
 	display:none;
 }
 #item5{
-	display:none;
+	display:none;}
 
 
 
-=======
+
 .panel-default > .panel-heading
 {
 	color:#555555;
@@ -884,5 +884,5 @@ width: 26px;
 			
 
 	margin-left:358px;
->>>>>>> Stashed changes
+
 }
