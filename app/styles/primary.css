@@ -27,7 +27,18 @@ body{
 	float: :right;
 	display: inline-block;
 	text-align: center;
-	padding-left: 25%;
+	border:1px solid #ddd;
+	position: absolute;
+	top:20%;left:30%;
+	background: #ddd;
+	height:auto;
+}
+
+.centerdiv p{
+	text-align: left;
+	font-size: 16px;
+	font-weight: bold;
+	padding-left: 3%;
 }
 
 .chart1{
