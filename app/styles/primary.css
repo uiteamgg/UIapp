@@ -33,6 +33,7 @@ body{
 	top:20%;left:30%;
 	background: #ddd;
 	height:auto;
+	border-radius: 8px;
 }
 
 .centerdiv p{
@@ -112,9 +113,9 @@ body{
     color: black;
     display: block;
    height: 8em;
-padding: 1em;
-text-decoration: none;
-width: 9em;
+	padding: 1em;
+	text-decoration: none;
+	width: 9em;
     -moz-box-shadow: 5px 5px 5px #776C6C;
     -webkit-box-shadow: 5px 5px 5px #776C6C;
     box-shadow: 5px 5px 5px #776C6C;
@@ -181,10 +182,10 @@ width: 9em;
     background-color:rgb(0, 178, 255);
     color: black;
     display: block;
-   height: 8em;
-padding: 1em;
-text-decoration: none;
-width: 9em;
+    height: 8em;
+	padding: 1em;
+	text-decoration: none;
+	width: 9em;
     -moz-box-shadow: 5px 5px 5px #776C6C;
     -webkit-box-shadow: 5px 5px 5px #776C6C;
     box-shadow: 5px 5px 5px #776C6C;
