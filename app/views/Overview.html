@@ -3,54 +3,7 @@
 <html lang="en">
 	<head>
 		 
-		<style>
 		
-		.panel-default > .panel-heading
-		{
-		background-color:blue;
-		
-		
-		}
-		.test
-		{
-		width:35%;
-		margin-top:50px;
-		overflow:scroll;
-		height:80%;
-		}
-		.list-group
-		{
-		width:30%;
-		}
-		
-		.test2
-		{
-			width:50%;
-			position:absolute;
-			margin-top:-314px;
-			margin-left:539px;
-			
-
-		}
-	
-      	.sprintTable1
-      	{
-			width: 671px;
-			height: 246px;
-			
-		}
-       
-		.list-group-item
- 		{
- 			width:100px;
- 		}
- 		#main {
-			width: 1312px;
-			height: 500px;
-			border: 2px solid blue;
-			margin-top: 10px;
-			}
-	</style>
 	<script>
 	console.log("running script");
 		$("#showLeft").click(function () {
@@ -64,7 +17,7 @@
     // Set the duration (default: 400 milliseconds)
     var duration = 700;
  
-    $('.test1').toggle(effect, options, duration);
+    $('.backlogbottom').toggle(effect, options, duration);
 });
 
 
@@ -74,11 +27,13 @@
 	<body>
 		<div id="main" ng-controller="OverviewController">
 
-			<div class="panel panel-default test">
+			<div class="panel panel-default backlog">
  
-  				<div class="panel-heading">Backlog <button id="showLeft" style="margin-left:230px">Show/Hide  Menu</button></div>
-  				<div class="test1" ng-repeat="item in items">
-  				<ul class="list-group">
+  				<div class="panel-heading">Backlog <button type="button" id="showLeft" class="btn btn-default btn-lg">
+  				<span class="glyphicon glyphicon-align-justify"></span></button>
+  				</div>
+  				<div class="backlogbottom" ng-repeat="item in items">
+  				<ul class="list-group storycell">
     			<li class="list-group-item" "item" id="item{{$index}}" draggable "> {{item}}</li>
   				</ul>
 				</div>
@@ -86,13 +41,13 @@
 					
 			
 
-			<div class="panel panel-default test2">
+			<div class="table-responsive dropdiv">
   
   		 	<!-- Table -->
-  			<table border="1 " class="sprintTable1" cellspacing="2px" cellpadding="2px" margin="2px">
+  			<table border="1 " class="table dropTable" cellspacing="2px" cellpadding="2px" margin="2px">
 			<thead>
 			<tr>
-				<th>SPRINT1</th>
+				<th>Sprint1</th>
 				<th>Sprint2</th>
 				<th>Sprint3</th>
 				
@@ -101,9 +56,9 @@
 			</thead>
 			<tbody>
 			<tr>
-			<td  droppable drop="handleDrop()" id="1" data-column="1"></td>
-			<td   droppable drop="handleDrop()" data-column="2"></td>
-			<td  droppable drop="handleDrop()" data-column="3"></td></tr>
+			<td   class="storycell"  droppable drop="handleDrop()" id="1" data-column="1"></td>
+			<td   class="storycell" droppable drop="handleDrop()" data-column="2"></td>
+			<td   class="storycell" droppable drop="handleDrop()" data-column="3"></td></tr>
 			
 			
 			</tbody>
