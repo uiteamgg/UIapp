@@ -11,9 +11,7 @@ angular.module('yoAngularProjectApp')
                 ['SP1', 45.0],
                 ['SP2', 26.8],
                 ['SP3', 12.8]   ,
-                ['SP4', 8.5],
-                ['SP5', 6.2],
-                ['SP6', 0.7]
+                ['SP4', 8.5]
                 
                 ];
     $('.chart1').highcharts({
