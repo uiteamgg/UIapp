@@ -676,7 +676,7 @@ width: 26px;
 #item3{
 	display:none;
 }
-<<<<<<< Updated upstream
+
  
 .active{
 	font-weight: bold}
@@ -685,6 +685,7 @@ width: 26px;
 	color:#555555;
 		
 }
+
 .backlog
 {
 	width:40%;
@@ -692,6 +693,7 @@ width: 26px;
 	overflow:auto;
 	height:80%;
 }
+
 .list-group
 {
 	width:30%;
@@ -723,8 +725,12 @@ width: 26px;
 
  
 .active{
-	font-weight: bold}
+	font-weight: bold;
+    }
+    .panel-default > .panel-heading
+
 .panel-default > .panel-heading
+
 {
 	color:#555555;
 		
@@ -790,6 +796,8 @@ width: 26px;
 
 	margin-left:358px;
 
+
+
 }
 
 #item{
@@ -805,5 +813,7 @@ width: 26px;
 }
 #item5{
 	display:none;
+
+
 
 }
