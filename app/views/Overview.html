@@ -4,105 +4,112 @@
 	<head>
 		 
 		<style>
+		
+		.panel-default > .panel-heading
+		{
+		background-color:blue;
+		
+		
+		}
+		.test
+		{
+		width:35%;
+		margin-top:50px;
+		overflow:scroll;
+		height:80%;
+		}
 		.list-group
 		{
 		width:30%;
-		
 		}
-		.panel
-		{
-		width:40%; 
 		
-		}
-		.panel-heading
+		.test2
 		{
-		
-		color:blue;
+			width:50%;
+			position:absolute;
+			margin-top:-314px;
+			margin-left:539px;
+			
+
 		}
 	
-        #main {
-            width: 510px;
-            min-height: 200px;
-            position: relative;
-        }
-         
-        #items {
-            left: 222px;
-        }
+      	.sprintTable1
+      	{
+			width: 671px;
+			height: 246px;
+			
+		}
+       
+		.list-group-item
+ 		{
+ 			width:100px;
+ 		}
+ 		#main {
+			width: 1312px;
+			height: 500px;
+			border: 2px solid blue;
+			margin-top: 10px;
+			}
+	</style>
+	<script>
+	console.log("running script");
+		$("#showLeft").click(function () {
+ 	console.log("running script");
+    // Set the effect type
+    var effect = 'slide';
  
-        #dropbox {
-            left: 424px;
-        }
-         
-        #items, #dropbox {
-            position: absolute;
-            width: 200px;
-            min-height: 260px;
-            border: 2px solid black;
-        }
+    // Set the options for the effect type chosen
+    var options = { direction: 'left' };
  
-        div.item {
-            float: left;
-            min-width: 160px;
-            min-height: 30px;
-            border: 2px solid rgb(5,161,245);
-            margin: 10px;
-            cursor: pointer;
-            font-weight: bold;
-        }
+    // Set the duration (default: 400 milliseconds)
+    var duration = 700;
  
-		</style>
+    $('.test1').toggle(effect, options, duration);
+});
+
+
+	</script>
 		<!--<script src="js/modernizr.custom.js"></script>-->
 	</head>
 	<body>
-				<div class="panel panel-default">
-  <!-- Default panel contents -->
-					<div class="panel-heading">Backlog</div>
-						<div class="panel-body">
-					
-						
+		<div id="main" ng-controller="OverviewController">
 
-  <!-- List group -->	<div id="main" ng-controller="OverviewController">
-						 <div ng-repeat="item in items">
-                <!-- usage of the Draggable directive -->
-						<div dd-draggable="true" class="item" itemid="{{item.id}}">{{item.id}}. {{item.name}}</div>
-						</div>
-						<ul class="list-group">
-						<!--<li class="list-group-item"><a href="#">{{item.name}}</a></li>-->
-						
-						</ul>
-						
-						</div>
-						
-						</div>
-					
+			<div class="panel panel-default test">
  
-			
-       
-        <!-- usage of the DropTarget directive -->
-        <div  dd-drop-target="true"  style="border:2px solid blue;width:200px;height:200px;display:inline-block;overflow:auto">
-            <div style="border-bottom: 2px solid black">
-                <b>sprint1</b>
-            </div>
-			
-            <div ng-repeat="item in dropped">
-                <div class="item">{{item.id}}. {{item.name}}</div>
-            </div>
-		</div>
-		<div  dd-drop-target="true" style="border:2px solid blue;width:200px;height:200px;display:inline-block;overflow:auto">
-             <div style="border-bottom: 2px solid black;">
-                <b>sprint2</b> 
+  				<div class="panel-heading">Backlog <button id="showLeft" style="margin-left:230px">Show/Hide  Menu</button></div>
+  				<div class="test1" ng-repeat="item in items">
+  				<ul class="list-group">
+    			<li class="list-group-item" "item" id="item{{$index}}" draggable "> {{item}}</li>
+  				</ul>
+				</div>
 			</div>
+					
 			
-            <div ng-repeat="item in dropped">
-                <div class="item">{{item.id}}. {{item.name}}</div>
-            </div>
+
+			<div class="panel panel-default test2">
+  
+  		 	<!-- Table -->
+  			<table border="1 " class="sprintTable1" cellspacing="2px" cellpadding="2px" margin="2px">
+			<thead>
+			<tr>
+				<th>SPRINT1</th>
+				<th>Sprint2</th>
+				<th>Sprint3</th>
+				
+				
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+			<td  droppable drop="handleDrop()" id="1" data-column="1"></td>
+			<td   droppable drop="handleDrop()" data-column="2"></td>
+			<td  droppable drop="handleDrop()" data-column="3"></td></tr>
+			
+			
+			</tbody>
+			</table>
+			</div>
 		</div>
-
-   </div>
-
-	
-		
 	</body>
 	  
 	<script src="scripts/app.js"></script>

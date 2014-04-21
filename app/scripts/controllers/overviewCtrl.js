@@ -2,36 +2,20 @@ angular.module('yoAngularProjectApp')
 
  .controller('OverviewController', function ($scope) {
     console.log("Inside overview controller");
+
     $('.nav').find('li').removeClass("active");
     $('#overview').closest('li').addClass("active");
-    $scope.dropped = [];
+   
+    
+
  
     // array of items for dragging
-    $scope.items = [
-        {id: 1, name: "Story1"}, 
-        {id: 2, name: "Story2" },
-        {id: 3, name: "Story3" },
-        {id: 4, name: "Story4" }
-    ];
+    $scope.items = ["story1","story2","story3","story4","story5","story6","story7","story8","story9","story10"];
+    
  
-    $scope.moveToBox = function(id) {
- 
-        for (var index = 0; index < $scope.items.length; index++) {
- 
-            var item = $scope.items[index];
-                 
-            if (item.id == id) {
-                // add to dropped array
-                $scope.dropped.push(item);
-				
-                // remove from items array
-                $scope.items.splice(index, 1);
-				
-            }
-        }
- 
-        $scope.$apply();
-    };
+    $scope.handleDrop = function() {
+        console.log('Item has been dropped');
+    }
  
    
 
