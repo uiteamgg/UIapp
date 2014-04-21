@@ -3,8 +3,10 @@ angular.module('yoAngularProjectApp')
  .controller('pieChartController', function ($scope,Myservice) {
 
     console.log("Inside pie chart controller");
-
-     var myPieChart= function (values) {
+        $('.nav').closest('ul li').removeClass("active");
+        $('#dashboard').closest('li').addClass("active");
+    
+    var myPieChart= function (values) {
     console.log("inisde piecharts");
 
     var arr=[

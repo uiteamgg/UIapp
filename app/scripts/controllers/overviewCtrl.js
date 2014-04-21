@@ -2,6 +2,8 @@ angular.module('yoAngularProjectApp')
 
  .controller('OverviewController', function ($scope) {
     console.log("Inside overview controller");
+    $('.nav').find('li').removeClass("active");
+    $('#overview').closest('li').addClass("active");
     $scope.dropped = [];
  
     // array of items for dragging

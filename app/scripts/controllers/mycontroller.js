@@ -10,7 +10,6 @@ angular.module('yoAngularProjectApp')
       'AngularJS',
       'Karma'
     ];
-
    
   });
 
