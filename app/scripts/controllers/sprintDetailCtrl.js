@@ -7,10 +7,42 @@ angular.module('yoAngularProjectApp')
 
     console.log("Inside sprint detail controller");
 
-    $scope.stories=["story1","story2","story3","story4","story5","story6","story7","story8","story9","story10"];
+    var len;
+    var i=0;
 
-    $scope.confirmAcceptance=function(){
-    	console.log("Inside confirm function");
+    $scope.stories=["story1","story2","story3","story4","story5","story6"];/*,"story6","story7","story8","story9","story10"];*/
+    
+    len=$scope.stories.length;
+
+    for(var j=1;j<len;j++)
+    {
+    	//console.log("Hi");
+    	console.log($("#item"+j));
+    	$("#item"+j).css('display','none');
+    }
+
+    $scope.addStory=function(){
+    	i=i+1;
+    	console.log("Incremented value of i is:" +i);
+    	console.log("Inside add story function");
+    	
+    	console.log($scope.stories.length);
+    	
+    	console.log($('#item0'));
+    	if(i<6)
+    	$("#item"+i).css('display','block');
+    	/*if(i>=5)
+    	{
+    		i=0;
+    	}8/
+    	/*for(var j=1;j<len;j++)
+    	{
+    		//console.log("Hi");
+    		console.log($("#item"+j));
+    		$("#item"+j).css('display','none');
+    	}*/
+    	
+
     }
 
     $scope.handleDrop = function() {

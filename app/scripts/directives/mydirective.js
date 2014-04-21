@@ -127,28 +127,13 @@ angular.module('yoAngularProjectApp')
                     var itemid=item.id;
 
 					console.log("After item--------");
-                  /*  console.log("item dropped is:");
-                    console.log($('.item'));
-                    console.log("Length is:");
-                    console.log($('#item0').closest('.inProcess').length);
-                    if($('#item0').closest('.inProcess').length==1)
-                    {
-                        alert("Choose accepted or rejected------");
-                    }  */
-
-					//console.log($('#item0').parent().parent().id);
-					//console.log("Class added is:");
-					//console.log($(li).class);
-
-					 // console.log("index is:");
-					 // console.log(e.dataTransfer.index());
-
+                 
 					this.appendChild(item);
 
                     
                     console.log("item id before checking is:")
                     console.log(item.id);
-                    console.log($("#" + item.id));
+                    console.log($("#" + item.id +" a"));
                     console.log("Length is:");
                     console.log($("#" + item.id).closest('.poAcceptedrejected').length);
                     if($("#" + item.id).closest('.poAcceptedrejected').length==1)
@@ -160,11 +145,11 @@ angular.module('yoAngularProjectApp')
                               buttons: {
                                 Accept: function() {
                                   $( this ).dialog( "close" );
-                                  $("#" + item.id).css('background','rgb(73, 224, 21)');
+                                  $("#" + item.id +" a").css('background','rgb(73, 224, 21)');
                                 },
                                 Reject: function() {
                                   $( this ).dialog( "close" );
-                                  $("#" + item.id).css('background','rgb(217, 35, 35)');
+                                  $("#" + item.id +" a").css('background','rgb(217, 35, 35)');
                                 }
                               }
                             });
@@ -182,11 +167,11 @@ angular.module('yoAngularProjectApp')
                               buttons: {
                                 Accept: function() {
                                   $( this ).dialog( "close" );
-                                  $("#" + item.id).css('background','rgb(255, 200, 100)');
+                                  $("#" + item.id +" a").css('background','rgb(255, 200, 100)');
                                 },
                                 Reject: function() {
                                   $( this ).dialog( "close" );
-                                  $("#" + item.id).css('background','rgb(217, 35, 35)');
+                                  $("#" + item.id +" a").css('background','rgb(217, 35, 35)');
                                 }
                               }
                             });
@@ -196,19 +181,19 @@ angular.module('yoAngularProjectApp')
                     }
                     if($("#" + item.id).closest('.inProcess').length==1)
                     {
-                        $("#" + item.id).css('background','rgb(0, 178, 255)');   
+                        $("#" + item.id +" a").css('background','rgb(0, 178, 255)');   
                     }
                     if($("#" + item.id).closest('.done').length==1)
                     {
-                        $("#" + item.id).css('background','rgb(226, 249, 23)');
+                        $("#" + item.id +" a").css('background','rgb(226, 249, 23)');
                     }
                     if($("#" + item.id).closest('.needDisucssion').length==1)
                     {
-                        $("#" + item.id).css('background','rgb(66, 190, 72)');
+                        $("#" + item.id +" a").css('background','rgb(66, 190, 72)');
                     }
                     if($("#" + item.id).closest('.redflag').length==1)
                     {
-                        $("#" + item.id).css('background','#d9534f');
+                        $("#" + item.id +" a").css('background','#d9534f');
                     }
 
 					// call the drop passed drop function

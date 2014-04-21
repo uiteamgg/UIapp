@@ -53,105 +53,534 @@ body{
 .sprintDiv{
 	margin-bottom: 3%;
 	height:510px;
-	overflow-y:scroll;
+	overflow-y:auto;
+}
+#sprintlist li{
+	list-style-type: none;
+	margin: 3px 3px 3px 0;
+	margin-left: -10%;
 }
 
+#sprintlist li p {
+    font-family:'Reenie Beanie', serif;
+    font-size: 165%;
+}
+
+#sprintlist li:nth-child(even) a {
+    -moz-transform: rotate(4deg);
+    -webkit-transform: rotate(4deg);
+    -o-transform: rotate(4deg);
+    position: relative;
+    top: 5px;    
+}
+ 
+#sprintlist li:nth-child(3n) a {
+    -moz-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    position: relative;
+    top: -5px;    
+}
+ 
+
+#sprintlist li:nth-child(5n) a {
+    -moz-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    position: relative;
+    top: -10px;    
+}
+
+/*
+#sprintlist li a:hover, #sprintlist li a:focus {
+    background-color: #6CF;
+    -moz-box-shadow: 10px 10px 7px rgba(0,0,0,.7); 
+      -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7); 
+      box-shadow: 10px 10px 7px rgba(0,0,0,.7); 
+    -webkit-transform: scale(1.25); 
+    -moz-transform: scale(1.25); 
+    -o-transform: scale(1.25); 
+    position: relative; 
+    z-index: 5; 
+}
+
+*/
+
+#sprintlist li a {
+    background-color: #fcffa3;
+    color: black;
+    display: block;
+   height: 8em;
+padding: 1em;
+text-decoration: none;
+width: 9em;
+    -moz-box-shadow: 5px 5px 5px #776C6C;
+    -webkit-box-shadow: 5px 5px 5px #776C6C;
+    box-shadow: 5px 5px 5px #776C6C;
+    -moz-transform: rotate(6deg);
+    -webkit-transform: rotate(6deg);
+    -o-transform: rotate(6deg);   
+    -moz-transition: -moz-transform .15s linear; 
+      -o-transition: -o-transform .15s linear; 
+      -webkit-transition: -webkit-transform .15s linear;   
+}
+/*
 #sprintlist li{
 	margin: 3px 3px 3px 0;
 	margin-left: -1%;
 	padding: 23px;
-	/* float: left; */
+	
 	width: 100px;
 	height: 67px;
-	/* font-size: 4em; */
+	
 	text-align: center;
 	list-style-type: none;
+}*/
+
+.inProcess li{
+	list-style-type: none;
+	margin: 3px 3px 3px 0;
+	margin-left: 10%;
 }
 
+.inProcess li p {
+    font-family:'Reenie Beanie', serif;
+    font-size: 165%;
+}
+
+
+.inProcess li:nth-child(even) a {
+    -moz-transform: rotate(4deg);
+    -webkit-transform: rotate(4deg);
+    -o-transform: rotate(4deg);
+    position: relative;
+    top: 5px;    
+}
+ 
+.inProcess li:nth-child(3n) a {
+    -moz-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    position: relative;
+    top: -5px;    
+}
+ 
+
+.inProcess li:nth-child(5n) a {
+    -moz-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    position: relative;
+    top: -10px;    
+}
+
+
+
+.inProcess li a {
+    background-color:rgb(0, 178, 255);
+    color: black;
+    display: block;
+   height: 8em;
+padding: 1em;
+text-decoration: none;
+width: 9em;
+    -moz-box-shadow: 5px 5px 5px #776C6C;
+    -webkit-box-shadow: 5px 5px 5px #776C6C;
+    box-shadow: 5px 5px 5px #776C6C;
+    -moz-transform: rotate(6deg);
+    -webkit-transform: rotate(6deg);
+    -o-transform: rotate(6deg);   
+    -moz-transition: -moz-transform .15s linear; 
+      -o-transition: -o-transform .15s linear; 
+      -webkit-transition: -webkit-transform .15s linear;   
+}
+
+
+
+/*
 .inProcess li{
 	margin: 3px -11px 3px 11px;
 	margin-left: 22%;
 	background:rgb(0, 178, 255);
 	color:#555555;
-	/*color:#0000FF;
-	border:1px solid #0000FF;*/
+	
 	padding: 23px;
 	width: 100px;
 	height: 67px;
 	text-align: center;
 	list-style-type: none;
-}
+}*/
+
 
 .done li{
+	list-style-type: none;
+	margin: 3px 3px 3px 0;
+	margin-left: 10%;
+}
+
+.done li p {
+    font-family:'Reenie Beanie', serif;
+    font-size: 165%;
+}
+
+
+.done li:nth-child(even) a {
+    -moz-transform: rotate(4deg);
+    -webkit-transform: rotate(4deg);
+    -o-transform: rotate(4deg);
+    position: relative;
+    top: 5px;    
+}
+ 
+.done li:nth-child(3n) a {
+    -moz-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    position: relative;
+    top: -5px;    
+}
+ 
+
+.done li:nth-child(5n) a {
+    -moz-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    position: relative;
+    top: -10px;    
+}
+
+
+
+.done li a {
+    background-color:rgb(226, 249, 23);
+    color: black;
+    display: block;
+   height: 8em;
+padding: 1em;
+text-decoration: none;
+width: 9em;
+    -moz-box-shadow: 5px 5px 5px #776C6C;
+    -webkit-box-shadow: 5px 5px 5px #776C6C;
+    box-shadow: 5px 5px 5px #776C6C;
+    -moz-transform: rotate(6deg);
+    -webkit-transform: rotate(6deg);
+    -o-transform: rotate(6deg);   
+    -moz-transition: -moz-transform .15s linear; 
+      -o-transition: -o-transform .15s linear; 
+      -webkit-transition: -webkit-transform .15s linear;   
+}
+
+
+
+/*.done li{
 	margin: 3px -11px 3px 11px;
 	margin-left: 22%;
 	color: grey;
 	background: rgb(226, 249, 23);
-	/*color:yellow;
-	border:1px solid yellow;*/
+	
 	padding: 23px;
 	width: 100px;
 	height: 67px;
 	text-align: center;
 	list-style-type: none;
+}*/
+
+
+.poAcceptedrejected li{
+	list-style-type: none;
+	margin: 3px 3px 3px 0;
+	margin-left: 10%;
 }
 
+.poAcceptedrejected li p {
+    font-family:'Reenie Beanie', serif;
+    font-size: 165%;
+}
+
+
+.poAcceptedrejected li:nth-child(even) a {
+    -moz-transform: rotate(4deg);
+    -webkit-transform: rotate(4deg);
+    -o-transform: rotate(4deg);
+    position: relative;
+    top: 5px;    
+}
+ 
+.poAcceptedrejected li:nth-child(3n) a {
+    -moz-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    position: relative;
+    top: -5px;    
+}
+ 
+
+.poAcceptedrejected li:nth-child(5n) a {
+    -moz-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    position: relative;
+    top: -10px;    
+}
+
+
+
+.poAcceptedrejected li a {
+    background-color:rgb(73, 224, 21);
+    color: black;
+    display: block;
+   height: 8em;
+padding: 1em;
+text-decoration: none;
+width: 9em;
+    -moz-box-shadow: 5px 5px 5px #776C6C;
+    -webkit-box-shadow: 5px 5px 5px #776C6C;
+    box-shadow: 5px 5px 5px #776C6C;
+    -moz-transform: rotate(6deg);
+    -webkit-transform: rotate(6deg);
+    -o-transform: rotate(6deg);   
+    -moz-transition: -moz-transform .15s linear; 
+      -o-transition: -o-transform .15s linear; 
+      -webkit-transition: -webkit-transform .15s linear;   
+}
+
+
+/*
 .poAcceptedrejected li{
 	margin: 3px -11px 3px 11px;
 	margin-left: 22%;
 	background:rgb(73, 224, 21);
 	color:grey;
-	/*color:green;
-	border:1px solid green;*/
+	
 	padding: 23px;
 	width: 100px;
 	height: 67px;
 	text-align: center;
 	list-style-type: none;
-}
+}*/
+
 
 .clientAcceptedrejected li{
+	list-style-type: none;
+	margin: 3px 3px 3px 0;
+	margin-left: 10%;
+}
+
+.clientAcceptedrejected li p {
+    font-family:'Reenie Beanie', serif;
+    font-size: 165%;
+}
+
+
+.clientAcceptedrejected li:nth-child(even) a {
+    -moz-transform: rotate(4deg);
+    -webkit-transform: rotate(4deg);
+    -o-transform: rotate(4deg);
+    position: relative;
+    top: 5px;    
+}
+ 
+.clientAcceptedrejected li:nth-child(3n) a {
+    -moz-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    position: relative;
+    top: -5px;    
+}
+ 
+
+.clientAcceptedrejected li:nth-child(5n) a {
+    -moz-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    position: relative;
+    top: -10px;    
+}
+
+
+
+.clientAcceptedrejected li a {
+    background-color:rgb(255, 200, 100);
+    color: black;
+    display: block;
+   height: 8em;
+padding: 1em;
+text-decoration: none;
+width: 9em;
+    -moz-box-shadow: 5px 5px 5px #776C6C;
+    -webkit-box-shadow: 5px 5px 5px #776C6C;
+    box-shadow: 5px 5px 5px #776C6C;
+    -moz-transform: rotate(6deg);
+    -webkit-transform: rotate(6deg);
+    -o-transform: rotate(6deg);   
+    -moz-transition: -moz-transform .15s linear; 
+      -o-transition: -o-transform .15s linear; 
+      -webkit-transition: -webkit-transform .15s linear;   
+}
+
+
+
+
+/*.clientAcceptedrejected li{
 	margin: 3px -11px 3px 11px;
 	margin-left: 22%;
 	background:rgb(255, 200, 100);
 	color:grey;
-	/*color:orange;
-	border:1px solid orange;*/
 	padding: 23px;
 	width: 100px;
 	height: 67px;
 	text-align: center;
 	list-style-type: none;
-}
+}*/
+
+
 
 .needDisucssion li{
+	list-style-type: none;
+	margin: 3px 3px 3px 0;
+	margin-left: 10%;
+}
+
+.needDisucssion li p {
+    font-family:'Reenie Beanie', serif;
+    font-size: 165%;
+}
+
+
+.needDisucssion li:nth-child(even) a {
+    -moz-transform: rotate(4deg);
+    -webkit-transform: rotate(4deg);
+    -o-transform: rotate(4deg);
+    position: relative;
+    top: 5px;    
+}
+ 
+.needDisucssion li:nth-child(3n) a {
+    -moz-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    position: relative;
+    top: -5px;    
+}
+ 
+
+.needDisucssion li:nth-child(5n) a {
+    -moz-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    position: relative;
+    top: -10px;    
+}
+
+
+
+.needDisucssion li a {
+    background-color:rgb(66, 190, 72);
+    color: black;
+    display: block;
+   height: 8em;
+padding: 1em;
+text-decoration: none;
+width: 9em;
+    -moz-box-shadow: 5px 5px 5px #776C6C;
+    -webkit-box-shadow: 5px 5px 5px #776C6C;
+    box-shadow: 5px 5px 5px #776C6C;
+    -moz-transform: rotate(6deg);
+    -webkit-transform: rotate(6deg);
+    -o-transform: rotate(6deg);   
+    -moz-transition: -moz-transform .15s linear; 
+      -o-transition: -o-transform .15s linear; 
+      -webkit-transition: -webkit-transform .15s linear;   
+}
+
+
+/*.needDisucssion li{
 	margin: 3px -11px 3px 11px;
 	margin-left: 22%;
 	background:rgb(66, 190, 72);
 	color:grey;
-	/*color:brown;
-	border:1px solid brown;*/
+	
 	padding: 23px;
 	width: 100px;
 	height: 67px;
 	text-align: center;
 	list-style-type: none;
-}
+}*/
+
 
 .redflag li{
+	list-style-type: none;
+	margin: 3px 3px 3px 0;
+	margin-left: 10%;
+}
+
+.redflag li p {
+    font-family:'Reenie Beanie', serif;
+    font-size: 165%;
+}
+
+
+.redflag li:nth-child(even) a {
+    -moz-transform: rotate(4deg);
+    -webkit-transform: rotate(4deg);
+    -o-transform: rotate(4deg);
+    position: relative;
+    top: 5px;    
+}
+ 
+.redflag li:nth-child(3n) a {
+    -moz-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    position: relative;
+    top: -5px;    
+}
+ 
+
+.redflag li:nth-child(5n) a {
+    -moz-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    position: relative;
+    top: -10px;    
+}
+
+
+
+.redflag li a {
+    background-color:#d9534f;
+    color: black;
+    display: block;
+   height: 8em;
+padding: 1em;
+text-decoration: none;
+width: 9em;
+    -moz-box-shadow: 5px 5px 5px #776C6C;
+    -webkit-box-shadow: 5px 5px 5px #776C6C;
+    box-shadow: 5px 5px 5px #776C6C;
+    -moz-transform: rotate(6deg);
+    -webkit-transform: rotate(6deg);
+    -o-transform: rotate(6deg);   
+    -moz-transition: -moz-transform .15s linear; 
+      -o-transition: -o-transform .15s linear; 
+      -webkit-transition: -webkit-transform .15s linear;   
+}
+
+
+
+/*.redflag li{
 	margin: 3px -11px 3px 11px;
 	margin-left: 15%;
-	/*background:rgb(246, 24, 24);*/
+	
 	background:#d9534f;
 	color:grey;
-	/*color:red;
-	border:1px solid red;*/
+	
 	padding: 23px;
 	width: 100px;
 	height: 67px;
 	text-align: center;
 	list-style-type: none;
-}
+}*/
 
 #dialog-confirm{
 	display:none;
@@ -181,31 +610,72 @@ footer{
 
 .storycolumn{
     background:#f5f4f3;
+   padding-top: 9px;
+   padding-bottom: 16px;
 }
 
 .inProcess{
     color:blue;
+    padding-top: 9px;
+    padding-bottom: 16px;
 }
 
 .done{
     color:brown;
+    padding-top: 9px;
+    padding-bottom: 16px;
 }
 
 .poAcceptedrejected{
     color:purple;
+    padding-top: 9px;
+    padding-bottom: 16px;
 }
 
 .clientAcceptedrejected{
     color:green;
+    padding-top: 9px;
+    padding-bottom: 16px;
 }
 
 .needDisucssion{
     color:grey;
+    padding-top: 9px;
+    padding-bottom: 16px;
 }
 
 .redflag{
     color:brown;
+    padding-top: 9px;
+    padding-bottom: 16px;
 }
+
+.addStoryStyle{
+float: right;
+margin-right: 3%;
+border: 1px solid black;
+/*background: #fcffa3;*/
+background:#004FFE;
+height: 25px;
+width: 26px;
+}
+
+.addLink{
+	color:rgb(226, 165, 165);
+}
+
+#item1{
+	display:none;
+}
+
+#item2{
+	display:none;
+}
+
+#item3{
+	display:none;
+}
+<<<<<<< Updated upstream
  
 .active{
 	font-weight: bold}
@@ -249,6 +719,51 @@ footer{
 	overflow:auto;
 			
 }
+
+ 
+.active{
+	font-weight: bold}
+.panel-default > .panel-heading
+{
+	color:#555555;
+		
+}
+.backlog
+{
+	width:40%;
+	margin-top:50px;
+	overflow:auto;
+	height:80%;
+}
+.list-group
+{
+	width:30%;
+}
+		
+.dropdiv
+{
+	width:40%;
+	position:absolute;
+	margin-top:-344px;
+	margin-left:600px;
+			
+
+}
+	
+.dropTable thead th{
+    background:#E4E2DF;
+    height: 40px;
+    width: 14%;
+    text-align: center;
+}
+		
+.dropTable{
+	width: 671px;
+	height: 246px;
+	overflow:auto;
+			
+}
+
 .storycell li{
 	margin: 3px -11px 3px 11px;
 	margin-left: 22%;
@@ -273,5 +788,21 @@ footer{
 			
 
 	margin-left:358px;
+
+}
+
+#item{
+	display:none;
+}
+#item3{
+	display:none;
+
+}
+
+#item4{
+	display:none;
+}
+#item5{
+	display:none;
 
 }

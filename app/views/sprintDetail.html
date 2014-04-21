@@ -7,7 +7,7 @@
 	<table border="1" class="sprintTable" cellspacing="2px" cellpadding="2px">
 		<thead>
 			<tr>
-				<th>SPRINT</th>
+				<th>SPRINT <span class="addStoryStyle"  ng-click="addStory()" title="Add story"><a class="addLink" href="">+</a></span></th>
 				<th>inProcess</th>
 				<th>Done</th>
 				<th>PO Accepted / Rejected</th>
@@ -20,7 +20,13 @@
 		<tbody>
 			<td class="storycolumn">
 				<ul id="sprintlist">
-					<li ng-repeat="story in stories" class="ui-state-default item" id="item{{$index}}" draggable>{{story}}</li>
+					 <li ng-repeat="story in stories" id="item{{$index}}" draggable> 
+			          <a>
+			            <h4> {{story}} </h4>
+			            <p> About story </p>
+			          </a>
+			        </li>
+					<!--<li ng-repeat="story in stories" class="ui-state-default item" id="item{{$index}}" draggable>{{story}}</li>-->
 					<!--<li class="item" id="item1" draggable>
 						Story1
 					</li>
