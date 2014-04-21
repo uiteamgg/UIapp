@@ -9,21 +9,13 @@ angular
   ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/', {
+      .when('/Dashboard', {
         templateUrl: 'views/main.html',
         controller: 'pieChartController'
       })
       .when('/SprintDetail', {
         templateUrl: 'views/sprintDetail.html',
         controller: 'SprintCtrl'
-      })
-      .when('/HotelTable', {
-        templateUrl: 'views/hotelTable.html',
-        controller: 'HotelCtrl'
-      })
-      .when('/ContactTable', {
-        templateUrl: 'views/ContactTable.html',
-        controller: 'ContactCtrl'
       })
 	  .when('/Overview',{
 		templateUrl: 'views/Overview.html',
@@ -33,6 +25,6 @@ angular
 	  })
       
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/Dashboard'
       });
   });

@@ -2,8 +2,9 @@ angular.module('yoAngularProjectApp')
 
  .controller('pieChartController', function ($scope,Myservice) {
 
-    console.log("Inside pie chart controller");
-        $('.nav').closest('ul li').removeClass("active");
+    console.log("Inside piechart controller");
+
+        $('.nav').find('li').removeClass("active");
         $('#dashboard').closest('li').addClass("active");
     
     var myPieChart= function (values) {
