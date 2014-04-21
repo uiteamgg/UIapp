@@ -122,8 +122,21 @@ angular.module('yoAngularProjectApp')
 
 					console.log("Item before dropping is:");
 					console.log(item);
+                    console.log("Id of item is:");
+                    console.log(item.id);
+                    var itemid=item.id;
+
 					console.log("After item--------");
-					console.log($('#item0').parent().parent().id);
+                  /*  console.log("item dropped is:");
+                    console.log($('.item'));
+                    console.log("Length is:");
+                    console.log($('#item0').closest('.inProcess').length);
+                    if($('#item0').closest('.inProcess').length==1)
+                    {
+                        alert("Choose accepted or rejected------");
+                    }  */
+
+					//console.log($('#item0').parent().parent().id);
 					//console.log("Class added is:");
 					//console.log($(li).class);
 
@@ -131,6 +144,56 @@ angular.module('yoAngularProjectApp')
 					 // console.log(e.dataTransfer.index());
 
 					this.appendChild(item);
+
+                    
+                    console.log("item id before checking is:")
+                    console.log(item.id);
+                    console.log($("#" + item.id));
+                    console.log("Length is:");
+                    console.log($("#" + item.id).closest('.poAcceptedrejected').length);
+                    if($("#" + item.id).closest('.poAcceptedrejected').length==1)
+                    {
+                         $( "#dialog-confirm" ).dialog({
+                              resizable: false,
+                              height:140,
+                              modal: true,
+                              buttons: {
+                                Accept: function() {
+                                  $( this ).dialog( "close" );
+                                  $("#" + item.id).css('background','rgb(73, 224, 21)');
+                                },
+                                Reject: function() {
+                                  $( this ).dialog( "close" );
+                                  $("#" + item.id).css('background','rgb(217, 35, 35)');
+                                }
+                              }
+                            });
+
+
+                      // alert("Choose accepted or rejected for po------");
+                    }
+                    if($("#" + item.id).closest('.clientAcceptedrejected').length==1)
+                    {
+
+                         $( "#dialog-confirm" ).dialog({
+                              resizable: false,
+                              height:140,
+                              modal: true,
+                              buttons: {
+                                Accept: function() {
+                                  $( this ).dialog( "close" );
+                                  $("#" + item.id).css('background','rgb(255, 200, 100)');
+                                },
+                                Reject: function() {
+                                  $( this ).dialog( "close" );
+                                  $("#" + item.id).css('background','rgb(217, 35, 35)');
+                                }
+                              }
+                            });
+
+                         
+                       // alert("Choose accepted or rejected for client------");
+                    }
 
 					// call the drop passed drop function
 					scope.$apply('drop()');

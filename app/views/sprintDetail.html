@@ -1,15 +1,6 @@
-<!--<div class="header">
-  <ul class="nav nav-pills pull-right">
-    <li><a ng-href="#">Home</a></li>
-    <li class="active"><a href="#/SprintDetail">Sprint Detail</a></li>
-    <li><a ng-href="#/HotelTable">Hotel</a></li>
-    <li><a href="#/ContactTable">Contact</a></li>
-  </ul>
-  <h3 class="text-muted">UI project</h3>
-</div>-->
-
-
-
+<div id="dialog-confirm" title="Story??">
+  <p>Story is accepted or rejected</p>
+</div>
 <div>
 	<h2>Sprint details</h2>
 	<div class="sprintDiv">
@@ -28,8 +19,8 @@
 		</thead>
 		<tbody>
 			<td class="storycolumn">
-				<ul>
-					<li ng-repeat="story in stories" class="item" id="item{{$index}}" draggable>{{story}}</li>
+				<ul id="sprintlist">
+					<li ng-repeat="story in stories" class="ui-state-default item" id="item{{$index}}" draggable>{{story}}</li>
 					<!--<li class="item" id="item1" draggable>
 						Story1
 					</li>
