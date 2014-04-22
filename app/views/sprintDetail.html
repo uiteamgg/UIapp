@@ -3,8 +3,8 @@
 </div>
 <div>
 	 <h1 class="page-header">Sprint Details</h1>
-	<div class="sprintDiv table-responsive">
-	<table border="1" class="sprintTable" cellspacing="2px" cellpadding="2px">
+	<div class="sprintDiv">
+	<table border="1" class="sprintTable  table-responsive" cellspacing="2px" cellpadding="2px">
 		<thead>
 			<tr>
 				<th>SPRINT <span class="addStoryStyle"  ng-click="addStory()" title="Add story"><a class="addLink" href=""><i class="fa fa-plus-square"></i></a></span></th>
@@ -13,7 +13,7 @@
 				<th>PO Accepted<!--<i class="fa fa-check-circle"></i>-->/ Rejected</th>
 				<th>Client Accepted<!--<i class="fa fa-check-square"></i>-->/ Rejected</th>
 				<th>Need Discussion <!--<i class="fa fa-comment-o"></i>--></th>
-				<th>Red Flag<!--<i class="fa fa-flag"></i>--></th>
+				<th>Red Flag</th>
 				
 			</tr>
 		</thead>
@@ -21,25 +21,12 @@
 			<td class="storycolumn">
 				<ul id="sprintlist">
 					 <li ng-repeat="story in stories" id="item{{$index}}" draggable> 
-			          <span>E</span><span>X</span>
+			         
 			          <a>
 			            <h4> {{story}} </h4>
 			            <p> About story </p>
 			          </a>
 			        </li>
-					<!--<li ng-repeat="story in stories" class="ui-state-default item" id="item{{$index}}" draggable>{{story}}</li>-->
-					<!--<li class="item" id="item1" draggable>
-						Story1
-					</li>
-					<li class="item" id="item2" draggable>Story2</li>
-					<li class="item" id="item3" draggable>Story3</li>
-					<li class="item" id="item4" draggable>Story4</li>
-					<li class="item" id="item5" draggable>Story5</li>
-					<li class="item" id="item6" draggable>Story6</li>
-					<li class="item" id="item7" draggable>Story7</li>
-					<li class="item" id="item8" draggable>Story8</li>
-					<li class="item" id="item9" draggable>Story9</li>
-					<li class="item" id="item10" draggable>Story10</li>-->
 					
 				</ul>
 			</td>
@@ -55,9 +42,12 @@
 			
 		</tbody>
 	</table>
+</div>
 
-	<button type="button" class="btn" id="graphics"> Graphical View </button>
-	<div id="graphical_representation"></div>
+	<div class="chartDiv"><button type="button" class="btn btn-primary" id="graphics"> Graphical View </button></div>
+	<div class="sprintDiv2">
+		<div id="graphical_representation"></div>
 	</div>
+
 </div>
 

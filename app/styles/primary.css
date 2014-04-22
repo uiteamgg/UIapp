@@ -66,9 +66,42 @@ body{
 }
 .sprintDiv{
 	margin-bottom: 3%;
-	height:500px;
-	overflow-y:auto;
+    position: relative;
+    height:400px;
+    float: :right;
+    display: inline-block;
+    text-align: center;
+    border:1px solid #ddd;
+   
+    left:-2%;
+    background: #ddd;
+    height:auto;
+    border-radius: 8px;
+	/*height:500px;
+	overflow-y:auto;*/
 }
+
+.sprintDiv2{
+    margin-bottom: 3%;
+    position: relative;
+    height:400px;
+    float: :right;
+    display: inline-block;
+    text-align: center;
+    border:1px solid #ddd;
+  
+    left:17%;
+    background: #ddd;
+    height:auto;
+    border-radius: 8px;
+    /*height:500px;
+    overflow-y:auto;*/
+}
+
+.chartDiv{
+    margin-bottom:6px;
+}
+
 #sprintlist li{
 	list-style-type: none;
 	margin: 3px 3px 3px 0;
@@ -142,7 +175,7 @@ body{
 .inProcess li{
 	list-style-type: none;
 	margin: 3px 3px 3px 0;
-	margin-left: 10%;
+	margin-left: 6%;
 }
 
 .inProcess li p {
@@ -201,7 +234,7 @@ body{
 .done li{
 	list-style-type: none;
 	margin: 3px 3px 3px 0;
-	margin-left: 10%;
+	margin-left: 6%;
 }
 
 .done li p {
@@ -275,7 +308,7 @@ width: 9em;
 .poAcceptedrejected li{
 	list-style-type: none;
 	margin: 3px 3px 3px 0;
-	margin-left: 10%;
+	margin-left: 6%;
 }
 
 .poAcceptedrejected li p {
@@ -333,7 +366,7 @@ width: 9em;
 .clientAcceptedrejected li{
 	list-style-type: none;
 	margin: 3px 3px 3px 0;
-	margin-left: 10%;
+	margin-left: 6%;
 }
 
 .clientAcceptedrejected li p {
@@ -391,7 +424,7 @@ width: 9em;
 .needDisucssion li{
 	list-style-type: none;
 	margin: 3px 3px 3px 0;
-	margin-left: 10%;
+	margin-left: 6%;
 }
 
 .needDisucssion li p {
@@ -449,7 +482,7 @@ width: 9em;
 .redflag li{
 	list-style-type: none;
 	margin: 3px 3px 3px 0;
-	margin-left: 10%;
+	margin-left: 6%;
 }
 
 .redflag li p {
@@ -510,17 +543,24 @@ footer{
 	text-align: center;
 }
 
+
+
 .sprintTable{
-    width: 1266px;
+   /* width: 1266px;*/
+    width:1040px;
     height: 246px;
-    margin-left: 3%;
+    margin-left: 10px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+     margin-right: 10px;
 }
 
 
 .sprintTable thead th{
     background:#E4E2DF;
     height: 40px;
-    width: 14%;
+    width:14%;
+    /*width: 14%;*/
     text-align: center;
 }
 
@@ -531,36 +571,42 @@ footer{
 }
 
 .inProcess{
+    background: #f5f4f3;
     color:blue;
     padding-top: 9px;
     padding-bottom: 16px;
 }
 
 .done{
+    background: #f5f4f3;
     color:brown;
     padding-top: 9px;
     padding-bottom: 16px;
 }
 
 .poAcceptedrejected{
+    background: #f5f4f3;
     color:purple;
     padding-top: 9px;
     padding-bottom: 16px;
 }
 
 .clientAcceptedrejected{
+    background: #f5f4f3;
     color:green;
     padding-top: 9px;
     padding-bottom: 16px;
 }
 
 .needDisucssion{
+    background: #f5f4f3;
     color:grey;
     padding-top: 9px;
     padding-bottom: 16px;
 }
 
 .redflag{
+    background: #f5f4f3;
     color:brown;
     padding-top: 9px;
     padding-bottom: 16px;
@@ -759,7 +805,11 @@ footer{
 
 #graphical_representation{
 	/*display: none;*/
-	height:400px;
-	width:300px;
+	height:466px;
+	width:500px;
 	border:1px solid red;
+    margin-left: 10px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-right: 10px;
 }
