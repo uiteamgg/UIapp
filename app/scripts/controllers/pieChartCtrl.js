@@ -312,9 +312,12 @@ angular.module('yoAngularProjectApp')
 
 
 $("#test").click(function(){
-    console.log("disiisiisiasfdu");
     var funnel = GetChart.funnelChart();
     var divisonFunnel = $(".chart5");
+    divisonFunnel.css({"display":"block"});
+    divisonFunnel.stop().animate({
+            left: '450px'    
+        }, 400);
     funnel(divisonFunnel);
 });
   });

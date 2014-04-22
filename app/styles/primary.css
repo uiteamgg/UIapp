@@ -813,3 +813,13 @@ footer{
     margin-bottom: 12px;
     margin-right: 10px;
 }
+
+.chart5{
+	display:none;
+	position: absolute;
+	top:230%;right:21.5%;
+	height:510px;
+	width:390px;
+	border:1px solid #eee;
+	border-radius: 8px;
+}
