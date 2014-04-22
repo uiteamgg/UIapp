@@ -10,19 +10,16 @@ angular.module('yoAngularProjectApp')
     var len;
     var i=0;
 
-    $scope.stories=["story1","story2"];/*,"story6","story7","story8","story9","story10"];*/
-    i=$scope.stories.length;
-
-
-
+    $scope.stories=["story1","story2","story3","story4","story5","story6"];/*,"story6","story7","story8","story9","story10"];*/
+    
     len=$scope.stories.length;
 
-   /* for(var j=1;j<len;j++)
+    for(var j=1;j<len;j++)
     {
     	//console.log("Hi");
     	console.log($("#item"+j));
     	$("#item"+j).css('display','none');
-    }*/
+    }
 
     $scope.addStory=function(){
     	i=i+1;
@@ -32,13 +29,20 @@ angular.module('yoAngularProjectApp')
     	console.log($scope.stories.length);
     	
     	console.log($('#item0'));
-   /* 	if(i<6)
-    	$("#item"+i).css('display','block');*/
-    
+    	if(i<6)
+    	$("#item"+i).css('display','block');
+    	/*if(i>=5)
+    	{
+    		i=0;
+    	}8/
+    	/*for(var j=1;j<len;j++)
+    	{
+    		//console.log("Hi");
+    		console.log($("#item"+j));
+    		$("#item"+j).css('display','none');
+    	}*/
     	
-    	$scope.stories.push("story"+i);
-    	console.log("Stories array is:");
-    	console.log($scope.stories);
+
     }
 
     $scope.handleDrop = function() {
