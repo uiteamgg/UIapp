@@ -595,7 +595,7 @@ footer{
  
 .active{
 	font-weight: bold}
-.panel-default > .panel-heading
+/*.panel-default > .panel-heading
 {
 	color:#555555;
 		
@@ -608,7 +608,7 @@ footer{
 	overflow:auto;
 	height:80%;
 }
-
+*/
 .list-group
 {
 	width:30%;
@@ -685,7 +685,7 @@ footer{
 	border: 2px solid blue;
 	margin-top: 10px;
 	}
-
+/*
 #item{
 	display:none;
 }
@@ -698,7 +698,7 @@ footer{
 	display:none;
 }
 #item5{
-	display:none;}
+	display:none;}*/
 
 .panel-default > .panel-heading
 {
