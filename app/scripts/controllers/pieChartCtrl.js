@@ -1,6 +1,6 @@
 angular.module('yoAngularProjectApp')
 
- .controller('pieChartController', function ($scope,Myservice) {
+ .controller('pieChartController', function ($scope,Myservice,GetChart) {
 
     console.log("Inside piechart controller");
 
@@ -311,4 +311,11 @@ angular.module('yoAngularProjectApp')
     storyPicksPerSprint(values4);
 
 
+$("#test").click(function(){
+    console.log("disiisiisiasfdu");
+    var funnel = GetChart.funnelChart();
+    var divisonFunnel = $(".chart5");
+    funnel(divisonFunnel);
+});
   });
+
