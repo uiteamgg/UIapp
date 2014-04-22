@@ -321,10 +321,5 @@ angular.module('yoAngularProjectApp')
 
     var values4="";
     storyPicksPerSprint(values4);
-
-
-$("#test").click(function(){
-    
-});
   });
 
