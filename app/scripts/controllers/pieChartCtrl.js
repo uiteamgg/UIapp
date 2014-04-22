@@ -42,7 +42,19 @@ angular.module('yoAngularProjectApp')
         series: [{
             type: 'pie',
             name: 'Sprint share',
-            data: arr
+            data: arr,
+            events: {
+                click: function (e){
+                    event.preventDefault();
+                    var funnel = GetChart.funnelChart();
+                    var divisonFunnel = $(".chart5");
+                    divisonFunnel.css({"display":"block"});
+                    divisonFunnel.stop().animate({
+                            left: '450px'    
+                        }, 400);
+                    funnel(divisonFunnel);
+                }
+            }
             }]
         });
     };
@@ -312,13 +324,7 @@ angular.module('yoAngularProjectApp')
 
 
 $("#test").click(function(){
-    var funnel = GetChart.funnelChart();
-    var divisonFunnel = $(".chart5");
-    divisonFunnel.css({"display":"block"});
-    divisonFunnel.stop().animate({
-            left: '450px'    
-        }, 400);
-    funnel(divisonFunnel);
+    
 });
   });
 
