@@ -30,7 +30,7 @@ body{
 	text-align: center;
 	border:1px solid #ddd;
 	position: absolute;
-	top:20%;left:30%;
+	top:160%;left:10%;
 	background: #ddd;
 	height:auto;
 	border-radius: 8px;
@@ -47,22 +47,22 @@ body{
 .chart1{
 	display: inline-block;
 	width:300px;
-	height: 200px;
+	height: 250px;
 }
 .chart2{
 	display: inline-block;
-	width:400px;
-	height: 200px;
+	width:500px;
+	height: 250px;
 }
 .chart3{
 	display: inline-block;
 	width:300px;
-	height: 200px;
+	height: 250px;
 }
 .chart4{
 	display: inline-block;
-	width:400px;
-	height: 200px;
+	width:500px;
+	height: 250px;
 }
 .sprintDiv{
 	margin-bottom: 3%;
