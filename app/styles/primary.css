@@ -809,3 +809,7 @@ width: 26px;
 	display:none;
 
 }
+
+.navbar-default .navbar-nav > li > a{
+	text-align:center;
+}
