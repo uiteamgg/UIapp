@@ -46,13 +46,24 @@ body{
 
 .chart1{
 	display: inline-block;
-	width:200px;
+	width:300px;
+	height: 200px;
 }
 .chart2{
 	display: inline-block;
-	width:300px;
+	width:400px;
+	height: 200px;
 }
-
+.chart3{
+	display: inline-block;
+	width:300px;
+	height: 200px;
+}
+.chart4{
+	display: inline-block;
+	width:400px;
+	height: 200px;
+}
 .sprintDiv{
 	margin-bottom: 3%;
 	height:500px;
@@ -728,35 +739,28 @@ width: 26px;
  
 .active{
 	font-weight: bold;
-    }
-    .panel-default > .panel-heading
-
-.panel-default > .panel-heading
-
-{
-	color:#555555;
-		
 }
-.backlog
-{
+
+.panel-default > .panel-heading{
+	color:#555555;		
+}
+
+.backlog{
 	width:40%;
 	margin-top:50px;
 	overflow:auto;
 	height:80%;
 }
-.list-group
-{
+
+.list-group{
 	width:30%;
 }
 		
-.dropdiv
-{
+.dropdiv{
 	width:40%;
 	position:absolute;
 	margin-top:-344px;
 	margin-left:600px;
-			
-
 }
 	
 .dropTable thead th{
@@ -783,8 +787,7 @@ width: 26px;
 	height: 67px;
 	text-align: center;
 	list-style-type: none;
-
-		}
+}
 		
 #main {
 	width: 1312px;
@@ -794,14 +797,8 @@ width: 26px;
 	}
 .btn 
 {
-			
-
 	margin-left:358px;
-
-
-
 }
-
 
 #item{
 	display:none;
@@ -817,9 +814,6 @@ width: 26px;
 #item5{
 	display:none;}
 
-
-
-
 .panel-default > .panel-heading
 {
 	color:#555555;
@@ -837,14 +831,11 @@ width: 26px;
 	width:30%;
 }
 		
-.dropdiv
-{
+.dropdiv{
 	width:40%;
 	position:absolute;
 	margin-top:-344px;
 	margin-left:600px;
-			
-
 }
 	
 .dropTable thead th{
@@ -870,19 +861,14 @@ width: 26px;
 	height: 67px;
 	text-align: center;
 	list-style-type: none;
-
-		}
+}
 		
 #main {
 	width: 1312px;
 	height: 500px;
 	border: 2px solid blue;
 	margin-top: 10px;
-	}
-.btn 
-{
-			
-
+}
+.btn {
 	margin-left:358px;
-
 }
