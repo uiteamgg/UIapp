@@ -49,4 +49,61 @@ angular.module('yoAngularProjectApp')
         console.log('Item has been dropped');
     }
     
+
+    $("#graphics").click (function(){
+    	console.log("click");
+    	$(this ).show();
+    	$( this ).slideDown( "slow", function() {
+    		// Animation complete.
+  		});
+    	var graphical_representation = function(values){
+			// start function
+			$('#graphical_representation').highcharts({
+        chart: {
+            type: 'funnel',
+            marginRight: 100
+        },
+        title: {
+            text: 'Story Status',
+            x: -50
+        },
+        plotOptions: {
+            series: {
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b> ({point.y:,.0f})',
+                    color: 'black',
+                    softConnector: true
+                },
+                neckWidth: '30%',
+                neckHeight: '25%'
+                
+                //-- Other available options
+                // height: pixels or percent
+                // width: pixels or percent
+            }
+        },
+        legend: {
+            enabled: false
+        },
+        series: [{
+            name: 'Stories',
+            data: [
+                ['In process',   45],
+                ['Done',       40],
+                ['PO Accepted/ Rejected', 17],
+                ['Client Accepted/ Rejected',    19],
+                ['Need Discussion',    8],
+                ['Red Flag', 5]
+            ]
+        }]
+    });
+
+    // end function
+    	};
+
+    	var details="";
+    	graphical_representation(details);
+
+    });
   });

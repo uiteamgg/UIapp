@@ -756,3 +756,10 @@ footer{
 .btn {
 	margin-left:358px;
 }
+
+#graphical_representation{
+	/*display: none;*/
+	height:400px;
+	width:300px;
+	border:1px solid red;
+}
