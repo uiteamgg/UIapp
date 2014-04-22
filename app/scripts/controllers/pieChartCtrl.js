@@ -23,7 +23,7 @@ angular.module('yoAngularProjectApp')
             plotBorderWidth: null,
             plotShadow: false
         },
-        title: {},
+        title: {text:"Sprint share (Story based)"},
         tooltip: {
             pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
         },
@@ -243,7 +243,7 @@ angular.module('yoAngularProjectApp')
                 type: 'column'
             },
             title: {
-                text: 'Stacked column chart'
+                text: 'Individual Contribution (current release)'
             },
             xAxis: {
                 categories: ['D1', 'D2', 'D3', 'D4', 'D5']
