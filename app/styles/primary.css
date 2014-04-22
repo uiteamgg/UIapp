@@ -862,3 +862,7 @@ width: 26px;
 	margin-left:358px;
 
 }
+
+.navbar-default .navbar-nav > li > a{
+	text-align:center;
+}

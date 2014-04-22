@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="styles/primary.css">
     <link href='http://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
-  
+    <link rel="stylesheet" href="lib/font-awesome-4.0.3/css/font-awesome.css">
     <!-- endbuild -->
   </head>
   <body ng-app="yoAngularProjectApp"  style="">
@@ -37,7 +37,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="#">Link</a></li>
+        <li><a href="#"><i class="fa fa-anchor"></i></a></li>
       </ul>
      <!--  <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
@@ -46,9 +46,9 @@
         <button type="submit" class="btn btn-default">Submit</button>
       </form> -->
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a ng-href="#/Dashboard" id='dashboard'>DashBoard</a></li>
-        <li><a ng-href="#/SprintDetail" id='sprint'>Sprint</a></li>
-        <li><a ng-href="#/Overview" id='overview'>Overview</a></li> 
+        <li class="active"><a ng-href="#/Dashboard" id='dashboard'><i class="fa fa-tachometer"></i><br>DashBoard </a></li>
+        <li><a ng-href="#/SprintDetail" id='sprint'><i class="fa fa-list-ol"></i><br>Sprint </a></li>
+        <li><a ng-href="#/Overview" id='overview'><i class="fa fa-paperclip"></i><br>Overview </a></li> 
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
