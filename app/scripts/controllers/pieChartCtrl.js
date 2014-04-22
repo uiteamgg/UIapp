@@ -185,7 +185,6 @@ angular.module('yoAngularProjectApp')
                 rotation: 'auto'
             },
             title: {
-                text: 'commits/h'
             },
             plotBands: [{
                 from: 0,
@@ -206,7 +205,7 @@ angular.module('yoAngularProjectApp')
             name: 'Commits',
             data: [0],
             tooltip: {
-                valueSuffix: ' commits/hr'
+                valueSuffix: ' c/day'
             }
         }]
     
