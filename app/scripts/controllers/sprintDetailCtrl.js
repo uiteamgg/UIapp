@@ -76,7 +76,8 @@ angular.module('yoAngularProjectApp')
                     softConnector: true
                 },
                 neckWidth: '30%',
-                neckHeight: '25%'
+                neckHeight: '25%',
+                colors:['rgb(0, 178, 255)', 'rgb(226, 249, 23)', 'rgb(73, 224, 21)', 'rgb(255, 200, 100)', 'rgb(66, 190, 72)', 'rgb(217, 83, 79)']
                 
                 //-- Other available options
                 // height: pixels or percent
