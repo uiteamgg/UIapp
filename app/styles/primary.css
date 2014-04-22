@@ -685,8 +685,8 @@ footer{
 	border: 2px solid blue;
 	margin-top: 10px;
 	}
-/*
-#item{
+
+#item2{
 	display:none;
 }
 #item3{
@@ -698,7 +698,7 @@ footer{
 	display:none;
 }
 #item5{
-	display:none;}*/
+	display:none;}
 
 .panel-default > .panel-heading
 {
