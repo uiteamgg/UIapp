@@ -678,7 +678,7 @@ width: 26px;
 #item3{
 	display:none;
 }
-<<<<<<< Updated upstream
+
  
 .active{
 	font-weight: bold}
@@ -687,6 +687,7 @@ width: 26px;
 	color:#555555;
 		
 }
+
 .backlog
 {
 	width:40%;
@@ -694,6 +695,7 @@ width: 26px;
 	overflow:auto;
 	height:80%;
 }
+
 .list-group
 {
 	width:30%;
@@ -725,8 +727,12 @@ width: 26px;
 
  
 .active{
-	font-weight: bold}
+	font-weight: bold;
+    }
+    .panel-default > .panel-heading
+
 .panel-default > .panel-heading
+
 {
 	color:#555555;
 		
@@ -792,7 +798,10 @@ width: 26px;
 
 	margin-left:358px;
 
+
+
 }
+
 
 #item{
 	display:none;
@@ -806,7 +815,75 @@ width: 26px;
 	display:none;
 }
 #item5{
-	display:none;
+	display:none;}
+
+
+
+
+.panel-default > .panel-heading
+{
+	color:#555555;
+		
+}
+.backlog
+{
+	width:40%;
+	margin-top:50px;
+	overflow:auto;
+	height:80%;
+}
+.list-group
+{
+	width:30%;
+}
+		
+.dropdiv
+{
+	width:40%;
+	position:absolute;
+	margin-top:-344px;
+	margin-left:600px;
+			
+
+}
+	
+.dropTable thead th{
+    background:#E4E2DF;
+    height: 40px;
+    width: 14%;
+    text-align: center;
+}
+		
+.dropTable{
+	width: 671px;
+	height: 246px;
+	overflow:auto;
+			
+}
+.storycell li{
+	margin: 3px -11px 3px 11px;
+	margin-left: 22%;
+	background:rgb(0, 178, 255);
+	color:#555555;
+	padding: 23px;
+	width: 100px;
+	height: 67px;
+	text-align: center;
+	list-style-type: none;
+
+		}
+		
+#main {
+	width: 1312px;
+	height: 500px;
+	border: 2px solid blue;
+	margin-top: 10px;
+	}
+.btn 
+{
+			
+
+	margin-left:358px;
 
 }
 
