@@ -122,9 +122,9 @@ angular.module('yoAngularProjectApp')
 
 					console.log("Item before dropping is:");
 					console.log(item);
-                    console.log("Id of item is:");
-                    console.log(item.id);
-                    var itemid=item.id;
+          console.log("Id of item is:");
+          console.log(item.id);
+          var itemid=item.id;
 
 					console.log("After item--------");
                  
