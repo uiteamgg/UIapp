@@ -790,3 +790,8 @@ textarea.stickynotes {
     padding-top: 1%;
     overflow:hidden;
 }
+
+.panel
+{   
+    width:400px; !important
+}

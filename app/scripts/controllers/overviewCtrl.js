@@ -16,6 +16,20 @@ angular.module('yoAngularProjectApp')
     $scope.handleDrop = function() {
         console.log('Item has been dropped');
     }
+
+    $("#showLeft").click(function () {
+ 	console.log("running script");
+    // Set the effect type
+    var effect = 'slide';
+ 
+    // Set the options for the effect type chosen
+    var options = { direction: 'left' };
+ 
+    // Set the duration (default: 400 milliseconds)
+    var duration = 700;
+ 
+    $('.backlogbottom').toggle(effect, options, duration);
+});
  
    
 
