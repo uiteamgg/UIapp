@@ -804,16 +804,16 @@ textarea.stickynotes {
 }
 
 .info1 .title{
-    background-color: red;
+    background-color: #36a9e1;;
 }
 .info2 .title{
-    background-color: green;
+    background-color: #ff5454;
 }
 .info3 .title{
-    background-color: blue;
+    background-color: #bdea74;
 }
 .info4 .title{
-    background-color: yellow;
+    background-color: #36a9e1;
 }
 .title, .information{
     height: 100%;
