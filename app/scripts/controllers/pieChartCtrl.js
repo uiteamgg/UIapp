@@ -53,6 +53,9 @@ angular.module('yoAngularProjectApp')
                             left: '450px'    
                         }, 400);
                     funnel(divisonFunnel);
+                    //divisonFunnel.modal();
+
+
                 }
             }
             }]

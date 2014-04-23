@@ -799,8 +799,7 @@ footer{
 
 .chart5{
 	display:none;
-	position: absolute;
-	top:230%;right:21.5%;
+	top:20%;right:21.5%;
 	height:510px;
 	width:390px;
 	border:1px solid #eee;
@@ -845,13 +844,9 @@ footer{
 }
 
 .information{
-<<<<<<< HEAD
    background-color:white;
-
-=======
     display: inline;
 /*    border:1px solid green;*/
     float: right;
     text-align: center;
->>>>>>> Making the text center aligned in bottom divs
 }
