@@ -71,14 +71,15 @@ body{
 }
 .sprintDiv{
 	margin-bottom: 3%;
-    position: relative;
+    position: absolute;
     height:400px;
     float: :right;
     display: inline-block;
     text-align: center;
     border:1px solid #ddd;
    
-    left:-2%;
+    left:133%;
+    top:10%;
     background: #ddd;
     height:auto;
     border-radius: 8px;
@@ -86,23 +87,21 @@ body{
 	overflow-y:auto;*/
 }
 
-.sprintDiv2{
-    margin-bottom: 3%;
-    position: relative;
-    height:400px;
-    float: :right;
-    display: inline-block;
-    text-align: center;
-    border:1px solid #ddd;
-  
-    left:17%;
-    background: #ddd;
-    height:auto;
-    border-radius: 8px;
-    /*height:500px;
-    overflow-y:auto;*/
-}
 
+.sprintDiv2 {
+margin-bottom: 3%;
+position: absolute;
+height: 400px;
+float: :right;
+display: inline-block;
+text-align: center;
+border: 1px solid #ddd;
+left: 262%;
+background: #ddd;
+height: auto;
+border-radius: 8px;
+top: 48%;
+}
 .chartDiv{
     margin-bottom:6px;
 }
