@@ -32,7 +32,7 @@ body{
 	border:1px solid #ddd;
 	position: absolute;
 	top:9%;left:133%;
-	background: #ddd;
+	/*background: #ddd;*/
 	height:auto;
 	border-radius: 8px;
     width:1073px;
@@ -794,4 +794,47 @@ textarea.stickynotes {
 .panel
 {   
     width:400px; !important
+}
+
+.info1,.info2,.info3,.info4{
+    display:inline-block;
+    width:20%;
+    height: 60px;
+    border: 1px solid #eee;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.title {
+    display: inline;
+    text-align: center;/*
+    border:1px solid red;*/
+    float:left;
+    color:white;
+
+}
+
+.info1 .title{
+    background-color: red;
+}
+.info2 .title{
+    background-color: green;
+}
+.info3 .title{
+    background-color: blue;
+}
+.info4 .title{
+    background-color: yellow;
+}
+.title, .information{
+    height: 100%;
+    width:49%;
+    padding-top: 8%;
+    font-size: 17px;
+}
+
+.information{
+    display: inline;
+/*    border:1px solid green;*/
+    float: right;
 }
