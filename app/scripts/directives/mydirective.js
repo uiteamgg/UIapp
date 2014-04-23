@@ -42,8 +42,37 @@ angular.module('yoAngularProjectApp')
             function(e) {
 
             	console.log("Inside DRAG- dragend----");
+               var storyid=this.id;
 
-                this.classList.remove('drag');
+                var storytext=$("#" + storyid +" a h4").text();
+
+              console.log("story text is:" +storytext);
+
+
+              var storytext1=storytext.trim();
+              console.log("Trimmed storytext is:"+storytext1);
+
+               for(var i=0;i<scope.stories.length;i++)
+                {
+                
+                  var str1=(scope.stories[i]).trim();
+                  console.log("str1 is:"+str1);
+                  console.log(str1.localeCompare(storytext1));
+                  if(str1.localeCompare(storytext1)==0)
+                  {
+                    
+                    console.log("Inside matched story");
+                    console.log(scope.stories[i]);
+                   scope.stories.splice(i,1);
+                  }
+                }
+
+              this.classList.remove('drag');
+
+               
+              console.log("Stories array after splice is:");
+              console.log(scope.stories);
+
                 return false;
             },
             false

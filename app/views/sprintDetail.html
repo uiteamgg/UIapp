@@ -26,23 +26,24 @@
                 </tr>
             </thead>
             <tbody>
-                <td class="storycolumn">
+               <td class="storycolumn">
                     <ul id="sprintlist">
                         <li ng-repeat="story in stories" id="item{{$index}}" draggable>
 
                             <a>
-                                <h4 class="storyHeading">{{story}}</h4>
+                                <span ng-click="deleteNote($index)" class="stickyclose">X</span>
+                                
+                                <h4  class="headingstyle">{{story}}</h4>
 
-                                <!-- <p> About story </p>-->
-                                <textarea class="stickynotes">Text Here</textarea>
+                               
+                                <textarea class="stickynotes" placeholder="Text Here"></textarea>
                             </a>
                         </li>
 
                     </ul>
                 </td>
                 <td class="inProcess" droppable drop="handleDrop()" id="1" data-column="1">
-                    <!--<div class="bin" droppable drop="handleDrop()">
-				</div>-->
+                    
                 </td>
                 <td class="done" droppable drop="handleDrop()" data-column="2"></td>
                 <td class="poAcceptedrejected" droppable drop="handleDrop()" data-column="3"></td>
@@ -54,11 +55,5 @@
         </table>
     </div>
 
-   <!--  <div class="chartDiv">
-        <button type="button" class="btn btn-primary" id="graphics">Graphical View</button>
-    </div>
-    <div class="sprintDiv2">
-        <div id="graphical_representation"></div>
-    </div> -->
-
+   
 </div>
