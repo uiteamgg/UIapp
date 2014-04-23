@@ -1,55 +1,64 @@
-<div id="dialog-confirm" title="Story??">
-  <p>Story is accepted or rejected</p>
-</div>
-<div>
-	 <h1 class="page-header">Sprint Details</h1>
-	<div class="sprintDiv">
-	<table border="1" class="sprintTable  table-responsive" cellspacing="2px" cellpadding="2px">
-		<thead>
-			<tr>
-				<th>SPRINT <span class="addStoryStyle"  ng-click="addStory()" title="Add story"><a class="addLink" href=""><i class="fa fa-plus-square"></i></a></span></th>
-				<th>inProcess<!-- <i class="fa fa-pencil-square"></i>--></th>
-				<th>Done<!--<i class="fa fa-check"></i>--></th>
-				<th>PO Accepted<!--<i class="fa fa-check-circle"></i>-->/ Rejected</th>
-				<th>Client Accepted<!--<i class="fa fa-check-square"></i>-->/ Rejected</th>
-				<th>Need Discussion <!--<i class="fa fa-comment-o"></i>--></th>
-				<th>Red Flag</th>
-				
-			</tr>
-		</thead>
-		<tbody>
-			<td class="storycolumn">
-				<ul id="sprintlist">
-					 <li ng-repeat="story in stories" id="item{{$index}}" draggable> 
-			         
-			          <a>
-			            <h4 class="storyHeading"> {{story}} </h4>
+<div class="row">
+    <h1 >Sprint Details</h1>
+    <div >
+        <table border="1" class="sprintTable  table-responsive " cellspacing="2px" cellpadding="2px">
+            <thead>
+                <tr class="panel panel-primary">
+                    <th class="panel-heading">SPRINT
+                        <span class="addStoryStyle" ng-click="addStory()" title="Add story"><a class="addLink" href=""><i class="fa fa-plus-square"></i></a>
+                        </span>
+                    </th>
+                    <th class="panel-heading">inProcess
+                        <!-- <i class="fa fa-pencil-square"></i>-->
+                    </th>
+                    <th class="panel-heading">Done
+                        <!--<i class="fa fa-check"></i>-->
+                    </th>
+                    <th class="panel-heading">PO Accepted
+                        <!--<i class="fa fa-check-circle"></i>-->/ Rejected</th>
+                    <th class="panel-heading">Client Accepted
+                        <!--<i class="fa fa-check-square"></i>-->/ Rejected</th>
+                    <th class="panel-heading">Need Discussion
+                        <!--<i class="fa fa-comment-o"></i>-->
+                    </th>
+                    <th class="panel-heading">Red Flag</th>
 
-			           <!-- <p> About story </p>-->
-			            <textarea class="stickynotes">Text Here</textarea>
-			          </a>
-			        </li>
-					
-				</ul>
-			</td>
-			<td class="inProcess" droppable drop="handleDrop()" id="1" data-column="1">
-				<!--<div class="bin" droppable drop="handleDrop()">
+                </tr>
+            </thead>
+            <tbody>
+                <td class="storycolumn">
+                    <ul id="sprintlist">
+                        <li ng-repeat="story in stories" id="item{{$index}}" draggable>
+
+                            <a>
+                                <h4 class="storyHeading">{{story}}</h4>
+
+                                <!-- <p> About story </p>-->
+                                <textarea class="stickynotes">Text Here</textarea>
+                            </a>
+                        </li>
+
+                    </ul>
+                </td>
+                <td class="inProcess" droppable drop="handleDrop()" id="1" data-column="1">
+                    <!--<div class="bin" droppable drop="handleDrop()">
 				</div>-->
-			</td>
-			<td class="done" droppable drop="handleDrop()" data-column="2"></td>
-			<td class="poAcceptedrejected" droppable drop="handleDrop()" data-column="3"></td>
-			<td class="clientAcceptedrejected" droppable drop="handleDrop()" data-column="4"></td>
-			<td class="needDisucssion" droppable drop="handleDrop()" data-column="5"></td>
-			<td class="redflag" droppable drop="handleDrop()" data-column="6"></td>
-			
-		</tbody>
-	</table>
+                </td>
+                <td class="done" droppable drop="handleDrop()" data-column="2"></td>
+                <td class="poAcceptedrejected" droppable drop="handleDrop()" data-column="3"></td>
+                <td class="clientAcceptedrejected" droppable drop="handleDrop()" data-column="4"></td>
+                <td class="needDisucssion" droppable drop="handleDrop()" data-column="5"></td>
+                <td class="redflag" droppable drop="handleDrop()" data-column="6"></td>
+
+            </tbody>
+        </table>
+    </div>
+
+   <!--  <div class="chartDiv">
+        <button type="button" class="btn btn-primary" id="graphics">Graphical View</button>
+    </div>
+    <div class="sprintDiv2">
+        <div id="graphical_representation"></div>
+    </div> -->
+
 </div>
-
-	<div class="chartDiv"><button type="button" class="btn btn-primary" id="graphics"> Graphical View </button></div>
-	<div class="sprintDiv2">
-	<div id="graphical_representation"></div>
-	</div>
-
-</div>
-

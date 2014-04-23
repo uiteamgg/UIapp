@@ -49,25 +49,8 @@ body{
 	padding-top: 2%;
 }
 
-.chart1{
-	display: inline-block;
-	width:300px;
-	height: 250px;
-}
-.chart2{
-	display: inline-block;
-	width:500px;
-	height: 250px;
-}
-.chart3{
-	display: inline-block;
-	width:300px;
-	height: 250px;
-}
-.chart4{
-	display: inline-block;
-	width:500px;
-	height: 250px;
+.chart1,.chart2,.chart3,.chart4{
+	height: 220px;
 }
 .sprintDiv{
 	margin-bottom: 3%;
@@ -532,10 +515,12 @@ footer{
 	text-align: center;
 }
 
-
-
 .sprintTable{
-   /* width: 1266px;*/
+     margin:0px 5px;
+}
+
+/*.sprintTable{
+   
     width:1040px;
     height: 246px;
     margin-left: 10px;
@@ -543,15 +528,19 @@ footer{
     margin-bottom: 12px;
      margin-right: 10px;
 }
-
+*/
 
 .sprintTable thead th{
-    background:#E4E2DF;
-    height: 40px;
-    width:14%;
-    /*width: 14%;*/
-    text-align: center;
+    width:10%;
+  border: 1px solid white !important;
+  padding: 5px;
+  border-radius: 15px 15px 0px 0px;
+
 }
+.sprintTable td{
+     border: 1px solid #428bca;
+}
+
 
 .storycolumn{
     background:white;
