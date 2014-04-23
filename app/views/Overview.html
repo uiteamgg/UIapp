@@ -2,7 +2,9 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		 
+		
+
+
 		
 	<script>
 	console.log("running script");
@@ -22,29 +24,37 @@
 
 
 	</script>
-		<!--<script src="js/modernizr.custom.js"></script>-->
+
+		
+		
 	</head>
 	<body>
 		<div id="main" ng-controller="OverviewController">
 
 			<div class="panel panel-default backlog">
  
-  				<div class="panel-heading">Backlog <button type="button" id="showLeft" class="btn btn-default btn-lg">
+  				<div class="panel-heading page-header">Backlog<button type="button" id="showLeft" class="btn btn-default btn-lg">
   				<span class="glyphicon glyphicon-align-justify"></span></button>
   				</div>
+  				<div class="panel-body menu slide-menu-left">
   				<div class="backlogbottom" ng-repeat="item in items">
-  				<ul class="list-group storycell">
-    			<li class="list-group-item" "item" id="item{{$index}}" draggable "> {{item}}</li>
+  				<ul class="list-group" id="sprintlist">
+    			<li class= "item" id="item{{$index}}" draggable "> <a>
+			            <h4> {{item}} </h4>
+			            <p> About story </p>
+			          </a></li>
+
   				</ul>
+  				</div>
 				</div>
 			</div>
 					
 			
 
-			<div class="table-responsive dropdiv">
+			<div class="dropdiv">
   
   		 	<!-- Table -->
-  			<table border="1 " class="table dropTable" cellspacing="2px" cellpadding="2px" margin="2px">
+  			<table border="1 " class="dropTable" cellspacing="2px" cellpadding="2px" margin="2px">
 			<thead>
 			<tr>
 				<th>Sprint1</th>
@@ -54,11 +64,11 @@
 				
 			</tr>
 			</thead>
-			<tbody>
-			<tr>
-			<td   class="storycell"  droppable drop="handleDrop()" id="1" data-column="1"></td>
-			<td   class="storycell" droppable drop="handleDrop()" data-column="2"></td>
-			<td   class="storycell" droppable drop="handleDrop()" data-column="3"></td></tr>
+			<tbody class="tscroll">
+			<tr class="storycolumn">
+			<td   class="inProcess"  droppable drop="handleDrop()"  data-column="1"></td>
+			<td   class="inProcess" droppable drop="handleDrop()" data-column="2"></td>
+			<td   class="inProcess" droppable drop="handleDrop()" data-column="3"></td></tr>
 			
 			
 			</tbody>

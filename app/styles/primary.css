@@ -641,57 +641,26 @@ footer{
  
 .active{
 	font-weight: bold}
-/*.panel-default > .panel-heading
-{
-	color:#555555;
-		
-}
 
-.backlog
-{
-	width:40%;
-	margin-top:50px;
-	overflow:auto;
-	height:80%;
-}
-*/
 .list-group
 {
 	width:30%;
 }
 		
-/*.dropdiv{
-	width:40%;
-	position:absolute;
-	margin-top:-344px;
-	margin-left:600px;
-}
-	
-.dropTable thead th{
-    background:#E4E2DF;
-    height: 40px;
-    width: 14%;
-    text-align: center;
-}
-		
-.dropTable{
-	width: 671px;
-	height: 246px;
-	overflow:auto;	
-}
+
 
 .active{
 	font-weight: bold;
 }
 
 .panel-default > .panel-heading{
-	color:#555555;		
+	color:#555555;	
+    height:50px;	
 }
 
 .list-group{
 	width:30%;
-}
-*/		
+}	
 .dropdiv{
 	width:40%;
 	position:absolute;
@@ -707,9 +676,13 @@ footer{
 }
 		
 .dropTable{
-	width: 671px;
-	height: 246px;
-	overflow:auto;
+	
+    width: 638px;
+    height: 341px;
+    overflow: auto;
+    margin-left: -193px;
+    margin-top: -153px;
+}
 			
 }
 
@@ -726,11 +699,28 @@ footer{
 }
 		
 #main {
-	width: 1312px;
-	height: 500px;
-	border: 2px solid blue;
-	margin-top: 10px;
+	
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    width:1073px;
+    border: 2px solid blue;
+  
+    display: inline-block;
+
+    border: 1px solid #ddd;
+    position: absolute;
+    top: 160%;
+    left: 3%;
+    background: #ddd;
+    height: 600px;
+    border-radius: 8px;
 	}
+    #showLeft
+    {
+        margin-left:275px;
+        margin-top:-43px;
+    }
 
 #item2{
 	display:none;
@@ -746,58 +736,14 @@ footer{
 #item5{
 	display:none;}
 
-.panel-default > .panel-heading
-{
-	color:#555555;
-		
-}
+
 .backlog
 {
-	width:40%;
+	width:35%;
 	margin-top:50px;
-	overflow:auto;
+	overflow-y:scroll;
 	height:80%;
 }
-/*
-
-.dropdiv{
-	width:40%;
-	position:absolute;
-	margin-top:-344px;
-	margin-left:600px;
-}
-	
-.dropTable thead th{
-    background:#E4E2DF;
-    height: 40px;
-    width: 14%;
-    text-align: center;
-}
-		
-.dropTable{
-	width: 671px;
-	height: 246px;
-	overflow:auto;
-			
-}
-.storycell li{
-	margin: 3px -11px 3px 11px;
-	margin-left: 22%;
-	background:rgb(0, 178, 255);
-	color:#555555;
-	padding: 23px;
-	width: 100px;
-	height: 67px;
-	text-align: center;
-	list-style-type: none;
-}
-		
-#main {
-	width: 1312px;
-	height: 500px;
-	border: 2px solid blue;
-	margin-top: 10px;
-}*/
 
 .btn {
 	margin-left:358px;
@@ -812,4 +758,8 @@ footer{
     margin-top: 12px;
     margin-bottom: 12px;
     margin-right: 10px;
+}
+.tscroll
+{
+    overflow-y:scroll;
 }
