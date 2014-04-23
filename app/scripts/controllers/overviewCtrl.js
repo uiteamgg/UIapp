@@ -17,7 +17,7 @@ angular.module('yoAngularProjectApp')
         console.log('Item has been dropped');
     }
 
-    $("#showLeft").click(function () {
+    /*$("#showLeft").click(function () {
 	 	console.log("running script");
 	    // Set the effect type
 	    var effect = 'slide';
@@ -25,8 +25,8 @@ angular.module('yoAngularProjectApp')
 	    var options = { direction: 'left' };
 	    // Set the duration (default: 400 milliseconds)
 	    var duration = 700;
-	    $('.backlogbottom').hide(effect, options, duration);
-});
+	    $('.backlogbottom').toggler(effect, options, duration);
+});*/
  
    
 
