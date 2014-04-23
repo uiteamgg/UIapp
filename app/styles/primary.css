@@ -633,9 +633,9 @@ footer{
 }
 
 .panel-default > .panel-heading{
-	color:#20A8D8;	
+	background-color:#20A8D8;	
     height:50px;	
-    margin-top:1px;
+    margin-top:0px;
 }
 
 .list-group{
@@ -651,10 +651,11 @@ footer{
 }
 	
 .dropTable thead th{
-    background:#E4E2DF;
-    height: 40px;
-    width: 14%;
+    background:#20A8D8;
+    height: 46px;
+    width: 15%;
     text-align: center;
+    color:black;
 }
 		
 .dropTable{
@@ -699,7 +700,7 @@ footer{
 	}
     #showLeft
     {
-        margin-left:275px;
+        margin-left:314px;
         margin-top:-43px;
     }
 

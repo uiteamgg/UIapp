@@ -25,7 +25,7 @@ angular.module('yoAngularProjectApp')
 	    var options = { direction: 'left' };
 	    // Set the duration (default: 400 milliseconds)
 	    var duration = 700;
-	    $('.backlogbottom').toggle(effect, options, duration);
+	    $('.backlogbottom').hide(effect, options, duration);
 });
  
    
