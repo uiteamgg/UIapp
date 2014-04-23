@@ -129,129 +129,9 @@ angular.module('yoAngularProjectApp')
     var myCommitMeter= function (values) {
         var arr3=[];
         console.log("commit meter");
-        $('.chart3').highcharts({
+        $('.chart4').highcharts({
     
         chart: {
-            type: 'gauge',
-            plotBackgroundColor: null,
-            plotBackgroundImage: null,
-            plotBorderWidth: 0,
-            plotShadow: false
-        },
-        
-        title: {
-            text: 'Commit Frequency'
-        },
-        
-        pane: {
-            startAngle: -150,
-            endAngle: 150,
-            background: [{
-                backgroundColor: {
-                    linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
-                    stops: [
-                        [0, '#FFF'],
-                        [1, '#333']
-                    ]
-                },
-                borderWidth: 0,
-                outerRadius: '109%'
-            }, {
-                backgroundColor: {
-                    linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
-                    stops: [
-                        [0, '#333'],
-                        [1, '#FFF']
-                    ]
-                },
-                borderWidth: 1,
-                outerRadius: '107%'
-            }, {
-                // default background
-            }, {
-                backgroundColor: '#DDD',
-                borderWidth: 0,
-                outerRadius: '105%',
-                innerRadius: '103%'
-            }]
-        },
-           
-        // the value axis
-        yAxis: {
-            min: 0,
-            max: 200,
-            
-            minorTickInterval: 'auto',
-            minorTickWidth: 1,
-            minorTickLength: 10,
-            minorTickPosition: 'inside',
-            minorTickColor: '#666',
-    
-            tickPixelInterval: 30,
-            tickWidth: 2,
-            tickPosition: 'inside',
-            tickLength: 10,
-            tickColor: '#666',
-            labels: {
-                step: 2,
-                rotation: 'auto'
-            },
-            title: {
-            },
-            plotBands: [{
-                from: 0,
-                to: 120,
-                color: '#55BF3B' // green
-            }, {
-                from: 120,
-                to: 160,
-                color: '#DDDF0D' // yellow
-            }, {
-                from: 160,
-                to: 200,
-                color: '#DF5353' // red
-            }]        
-        },
-    
-        series: [{
-            name: 'Commits',
-            data: [0],
-            tooltip: {
-                valueSuffix: ' c/day'
-            }
-        }]
-    
-    }, 
-    // Add some life
-    function (chart) {
-        if (!chart.renderer.forExport) {
-            setInterval(function () {
-                var point = chart.series[0].points[0],
-                    newVal,
-                    inc = Math.round((Math.random() - 0.5) * 20);
-                
-                newVal = point.y + inc;
-                if (newVal < 0 || newVal > 200) {
-                    newVal = point.y - inc;
-                }
-                
-                point.update(newVal);
-                
-            }, 3000);
-        }
-    });
-
-
-    };
-    
-    var values3="";
-    myCommitMeter(values3);
-
-    var storyPicksPerSprint= function(values){
-
-        var arr4=[];
-        $('.chart4').highcharts({
-            chart: {
                 type: 'column'
             },
             title: {
@@ -315,6 +195,87 @@ angular.module('yoAngularProjectApp')
             },{
                 name: 'Sprint4',
                 data: [3, 4, 4, 2, 5]
+            }] 
+    
+    }, 
+    // Add some life
+    function (chart) {
+        if (!chart.renderer.forExport) {
+            setInterval(function () {
+                var point = chart.series[0].points[0],
+                    newVal,
+                    inc = Math.round((Math.random() - 0.5) * 20);
+                
+                newVal = point.y + inc;
+                if (newVal < 0 || newVal > 200) {
+                    newVal = point.y - inc;
+                }
+                
+                point.update(newVal);
+                
+            }, 3000);
+        }
+    });
+
+
+    };
+    
+    var values3="";
+    myCommitMeter(values3);
+
+    var storyPicksPerSprint= function(values){
+
+        var arr4=[];
+        $('.chart3').highcharts({
+            chart: {
+                type: 'areaspline'
+            },
+            title: {
+                text: 'Stories Completed Per sprint'
+            },
+            legend: {
+                layout: 'vertical',
+                align: 'left',
+                verticalAlign: 'top',
+                x: 150,
+                y: 100,
+                floating: true,
+                borderWidth: 1,
+                backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'
+            },
+            xAxis: {
+                categories: [
+                    'sprint 1',
+                    'sprint 2',
+                    'sprint 3',
+                    'sprint 4'
+                ],
+                plotBands: [{ // visualize the weekend
+                    from: 4.5,
+                    to: 6.5,
+                    color: 'rgba(68, 170, 213, .2)'
+                }]
+            },
+            yAxis: {
+                title: {
+                    text: 'Stories'
+                }
+            },
+            tooltip: {
+                shared: true,
+                valueSuffix: ' stories'
+            },
+            credits: {
+                enabled: false
+            },
+            plotOptions: {
+                areaspline: {
+                    fillOpacity: 0.5
+                }
+            },
+            series: [{
+                name: 'Burn-down',
+                data: [16, 9, 13, 5]
             }]
         });
     };
