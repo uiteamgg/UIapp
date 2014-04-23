@@ -10,61 +10,13 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-<link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/primary.css">
-   
-   
-    <link rel="stylesheet" href="lib/font-awesome-4.0.3/css/font-awesome.css">
-    
 
         <!-- build:css({.tmp,app}) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
 </head>
-  <body ng-app="yoAngularProjectApp">
-
- <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="">Backlog Maintenance</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a ng-href="#/Dashboard" id='dashboard'>Dashboard</a></li>
-            <li><a ng-href="#/SprintDetail" id='sprint'>Sprint</a></li>
-            <li><a ng-href="#/Overview" id='overview'>Overview</a></li>
-            <li><a href="">Help</a></li>
-          </ul>
-          
-        </div>
-      </div>
-    </div>
-
-
-    <div class="container-fluid">
-      <div class="row">
-
-        <div class="col-sm-3 col-md-2 sidebar">
-          <ul class="nav nav-sidebar">
-            <li class="active"><a ng-href="#/Dashboard" id='dashboard'>Dashboard</a></li>
-            <li><a ng-href="#/SprintDetail" id='sprint'>Sprint</a></li>
-            <li><a ng-href="#/Overview" id='overview'>Overview</a></li>
-            <li><a href="">Export</a></li>
-          </ul>
-        
-        </div>
-
-
-
- 
-
-   <!--[if lt IE 7]>
+  <body ng-app="uiappApp">
+    <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
@@ -114,23 +66,7 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
-        <!--<script src="scripts/controllers/main.js"></script>-->
-         <script src="scripts/highcharts/highcharts.js"></script>
-        <script src="scripts/highcharts/exporting.js"></script>
-        <script src="scripts/highcharts/highcharts.more.js"></script>
-    
-  
-   
-        <script src="scripts/app.js"></script>
-        <!--<script src="scripts/controllers/main.js"></script>-->
-        <script src="scripts/controllers/mycontroller.js"></script>
-        <script src="scripts/directives/mydirective.js"></script>
-        <script src="scripts/filters/myfilter.js"></script>
-        <script src="scripts/services/myservice.js"></script>
-        <script src="scripts/controllers/sprintDetailCtrl.js"></script>
-        <script src="scripts/controllers/overviewCtrl.js"></script>
-        <script src="scripts/controllers/pieChartCtrl.js"></script>
-       
+        <script src="scripts/controllers/main.js"></script>
         <!-- endbuild -->
 </body>
 </html>
