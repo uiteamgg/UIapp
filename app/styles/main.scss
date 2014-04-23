@@ -1,10 +1,6 @@
-$icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
-@import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
-
-// bower:scss
-@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
-// endbower
+@import 'sass-bootstrap/lib/bootstrap';
 
 .browsehappy {
     margin: 0.2em 0;
@@ -45,23 +41,6 @@ body {
     padding-top: 19px;
     color: #777;
     border-top: 1px solid #e5e5e5;
-}
-
-.hotelTable{
-    width: 1000px;
-    height: 200px;
-    margin-left: 55px;
-}
-
-
-.hotelTable thead th{
-    background:#E4E2DF;
-}
-
-
-
-.contactHeader{
-    text-align:center;
 }
 
 .container-narrow > hr {
@@ -110,15 +89,3 @@ body {
         border-bottom: 0;
     }
 }
-
-
-.bin{
-
-   /* border:1px solid yellow;
-    height:30px;*/
-
-}
-
-
-
-
