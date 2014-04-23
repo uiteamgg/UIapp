@@ -47,6 +47,12 @@ angular.module('yoAngularProjectApp')
     var i=0;
 
     $scope.stories=["story1","story2"];
+    $scope.stories1=[];
+    $scope.stories2=[];
+    $scope.stories3=[];
+    $scope.stories4=[];
+    $scope.stories5=[];
+    $scope.stories6=[];
     
     i=$scope.stories.length;
 

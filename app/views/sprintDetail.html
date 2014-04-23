@@ -43,13 +43,85 @@
                     </ul>
                 </td>
                 <td class="inProcess" droppable drop="handleDrop()" id="1" data-column="1">
-                    
+                     <li ng-repeat="story in stories1" id="item{{$index}}" draggable>
+
+                            <a>
+                                <span ng-click="deleteNote($index)" class="stickyclose">X</span>
+                                
+                                <h4  class="headingstyle">{{story}}</h4>
+
+                               
+                                <textarea class="stickynotes" placeholder="Text Here"></textarea>
+                            </a>
+                        </li>
+
+                    </ul>
                 </td>
-                <td class="done" droppable drop="handleDrop()" data-column="2"></td>
-                <td class="poAcceptedrejected" droppable drop="handleDrop()" data-column="3"></td>
-                <td class="clientAcceptedrejected" droppable drop="handleDrop()" data-column="4"></td>
-                <td class="needDisucssion" droppable drop="handleDrop()" data-column="5"></td>
-                <td class="redflag" droppable drop="handleDrop()" data-column="6"></td>
+                <td class="done" droppable drop="handleDrop()" data-column="2">
+                     <li ng-repeat="story in stories2" id="item{{$index}}" draggable>
+
+                            <a>
+                                <span ng-click="deleteNote($index)" class="stickyclose">X</span>
+                                
+                                <h4  class="headingstyle">{{story}}</h4>
+
+                               
+                                <textarea class="stickynotes" placeholder="Text Here"></textarea>
+                            </a>
+                        </li>
+                </td>
+                <td class="poAcceptedrejected" droppable drop="handleDrop()" data-column="3">
+                     <li ng-repeat="story in stories3" id="item{{$index}}" draggable>
+
+                            <a>
+                                <span ng-click="deleteNote($index)" class="stickyclose">X</span>
+                                
+                                <h4  class="headingstyle">{{story}}</h4>
+
+                               
+                                <textarea class="stickynotes" placeholder="Text Here"></textarea>
+                            </a>
+                        </li>
+                </td>
+                <td class="clientAcceptedrejected" droppable drop="handleDrop()" data-column="4">
+                     <li ng-repeat="story in stories4" id="item{{$index}}" draggable>
+
+                            <a>
+                                <span ng-click="deleteNote($index)" class="stickyclose">X</span>
+                                
+                                <h4  class="headingstyle">{{story}}</h4>
+
+                               
+                                <textarea class="stickynotes" placeholder="Text Here"></textarea>
+                            </a>
+                        </li>
+                </td>
+                <td class="needDisucssion" droppable drop="handleDrop()" data-column="5">
+                     <li ng-repeat="story in stories5" id="item{{$index}}" draggable>
+
+                            <a>
+                                <span ng-click="deleteNote($index)" class="stickyclose">X</span>
+                                
+                                <h4  class="headingstyle">{{story}}</h4>
+
+                               
+                                <textarea class="stickynotes" placeholder="Text Here"></textarea>
+                            </a>
+                        </li>
+                </td>
+                <td class="redflag" droppable drop="handleDrop()" data-column="6">
+                     <li ng-repeat="story in stories6" id="item{{$index}}" draggable>
+
+                            <a>
+                                <span ng-click="deleteNote($index)" class="stickyclose">X</span>
+                                
+                                <h4  class="headingstyle">{{story}}</h4>
+
+                               
+                                <textarea class="stickynotes" placeholder="Text Here"></textarea>
+                            </a>
+                        </li>
+                </td>
 
             </tbody>
         </table>

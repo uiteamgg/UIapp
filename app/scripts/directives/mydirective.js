@@ -42,9 +42,15 @@ angular.module('yoAngularProjectApp')
             function(e) {
 
             	console.log("Inside DRAG- dragend----");
+              console.log("Story array inside dragend is:");
+              console.log(scope.stories);
+
                var storyid=this.id;
 
+               console.log("Story id is:"+storyid);
+
                 var storytext=$("#" + storyid +" a h4").text();
+                console.log("Storytext is:"+storytext);
 
               console.log("story text is:" +storytext);
 
@@ -63,6 +69,32 @@ angular.module('yoAngularProjectApp')
                     
                     console.log("Inside matched story");
                     console.log(scope.stories[i]);
+                     if($("#" + this.id).closest('.inProcess').length==1){
+                      scope.stories1.push(str1);
+                      storytext1="";
+                     }
+                     if($("#" + this.id).closest('.done').length==1){
+                      scope.stories2.push(str1);
+                       storytext1="";
+                     }
+                     if($("#" + this.id).closest('.poAcceptedrejected').length==1){
+                      scope.stories3.push(str1);
+                       storytext1="";
+                     }
+                     if($("#" + this.id).closest('.clientAcceptedrejected').length==1){
+                      scope.stories4.push(str1);
+                       storytext1="";
+                     }
+                     if($("#" + this.id).closest('.needDisucssion').length==1){
+                      scope.stories5.push(str1);
+                       storytext1="";
+                     }
+                     if($("#" + this.id).closest('.redflag').length==1){
+                      scope.stories6.push(str1);
+                       storytext1="";
+                     }
+                    
+                    
                    scope.stories.splice(i,1);
                   }
                 }
@@ -72,6 +104,24 @@ angular.module('yoAngularProjectApp')
                
               console.log("Stories array after splice is:");
               console.log(scope.stories);
+
+              console.log("Story1 array is:");
+              console.log(scope.stories1);
+
+              console.log("Story2 array is:");
+              console.log(scope.stories2);
+
+              console.log("Story3 array is:");
+              console.log(scope.stories3);
+
+              console.log("Story4 array is:");
+              console.log(scope.stories4);
+
+              console.log("Story5 array is:");
+              console.log(scope.stories5);
+
+              console.log("Story6 array is:");
+              console.log(scope.stories6);
 
                 return false;
             },
