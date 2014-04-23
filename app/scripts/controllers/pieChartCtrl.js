@@ -197,25 +197,8 @@ angular.module('yoAngularProjectApp')
                 data: [3, 4, 4, 2, 5]
             }] 
     
-    }, 
-    // Add some life
-    function (chart) {
-        if (!chart.renderer.forExport) {
-            setInterval(function () {
-                var point = chart.series[0].points[0],
-                    newVal,
-                    inc = Math.round((Math.random() - 0.5) * 20);
-                
-                newVal = point.y + inc;
-                if (newVal < 0 || newVal > 200) {
-                    newVal = point.y - inc;
-                }
-                
-                point.update(newVal);
-                
-            }, 3000);
-        }
     });
+    // Add some life
 
 
     };
