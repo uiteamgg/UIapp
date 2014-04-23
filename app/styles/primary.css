@@ -30,10 +30,14 @@ body{
 	text-align: center;
 	border:1px solid #ddd;
 	position: absolute;
-	top:10%;left:10%;
+	top:9%;left:133%;
 	background: #ddd;
 	height:auto;
 	border-radius: 8px;
+    width:1073px;
+   
+    
+ 
 }
 
 .centerdiv p{
@@ -629,7 +633,7 @@ footer{
 }
 
 .panel-default > .panel-heading{
-	color:#555555;	
+	color:#20A8D8;	
     height:50px;	
     margin-top:1px;
 }
@@ -687,8 +691,8 @@ footer{
 
     border: 1px solid #ddd;
     position: absolute;
-    top: 24%;
-    left: 19%;
+    top: 9%;
+    left: 133%;
     background: #ddd;
     height: 600px;
     border-radius: 8px;
@@ -720,6 +724,7 @@ footer{
 	margin-top:40px;
 	overflow-y:scroll;
 	height:80%;
+
 }
 
 .btn {
@@ -784,11 +789,3 @@ textarea.stickynotes {
     padding-top: 1%;
     overflow:hidden;
 }
-
-
-
-
-
-
-
-/* for sidebar*/
