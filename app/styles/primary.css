@@ -631,10 +631,12 @@ footer{
 .panel-default > .panel-heading{
 	color:#555555;	
     height:50px;	
+    margin-top:1px;
 }
 
 .list-group{
 	width:30%;
+    margin-left:30px;
 }	
 
 .dropdiv{
@@ -660,7 +662,6 @@ footer{
     margin-top: -153px;
 }
 			
-}
 
 .storycell li{
 	margin: 3px -11px 3px 11px;
@@ -686,8 +687,8 @@ footer{
 
     border: 1px solid #ddd;
     position: absolute;
-    top: 160%;
-    left: 3%;
+    top: 24%;
+    left: 19%;
     background: #ddd;
     height: 600px;
     border-radius: 8px;
@@ -715,8 +716,8 @@ footer{
 
 .backlog
 {
-	width:35%;
-	margin-top:50px;
+	width:438px;
+	margin-top:40px;
 	overflow-y:scroll;
 	height:80%;
 }
