@@ -868,3 +868,49 @@ position: absolute;
 z-index: 1000;
 margin-left: -76px;
 }
+.cbp-spmenu {
+    background: #47a3da;
+    position: absolute;
+margin-top: -78px;
+}
+ 
+.cbp-spmenu h3 {
+    color: #afdefa;
+    font-size: 1.9em;
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+    background: black;
+}
+.cbp-spmenu-vertical {
+    width: 240px;
+    height: 100%;
+    top: 128px;
+    z-index: 1000;
+    overflow:scroll;
+}
+.cbp-spmenu-left {
+    left: -240px;
+}
+ 
+
+ 
+.cbp-spmenu-left.cbp-spmenu-open {
+    left: 0px;
+}
+ 
+.cbp-spmenu-push {
+    overflow-x: hidden;
+    position: relative;
+    left: 0;
+}
+ 
+.cbp-spmenu-push-toleft {
+    left: -240px;
+}
+.cbp-spmenu,
+.cbp-spmenu-push {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
