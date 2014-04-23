@@ -23,7 +23,7 @@
         <link rel="stylesheet" href="styles/sidebarstyle.css">
         <!-- endbuild -->
 </head>
-  <body ng-app="yoAngularProjectApp">
+<body ng-app="yoAngularProjectApp">
  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -45,39 +45,11 @@
           
         </div>
       </div>
-    </div>
+  </div>
 
 
-  <!--   <div class="container-fluid">
-      <div class="row">
-
-        <div class="col-sm-3 col-md-2 sidebar">
-          <ul class="nav nav-sidebar">
-            <li class="active"><a ng-href="#/Dashboard" id='dashboard'>Dashboard</a></li>
-            <li><a ng-href="#/SprintDetail" id='sprint'>Sprint</a></li>
-            <li><a ng-href="#/Overview" id='overview'>Overview</a></li>
-            <li><a href="">Export</a></li>
-          </ul>
-        
-        </div> -->
-
-
-
- 
-
-   <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
-    <!--[if lt IE 9]>
-      <script src="bower_components/es5-shim/es5-shim.js"></script>
-      <script src="bower_components/json3/lib/json3.min.js"></script>
-    <![endif]-->
-
-    <!-- Add your site or application content here -->
-    
-    <div class="container" ng-view=""></div>
-  <div class="sidebar">
+  <div class="container"></div>
+    <div class="sidebar">
       
         <div class="sidey">
       
@@ -166,7 +138,8 @@
           <!-- Sidebar navigation ends -->
           
         </div>
-      </div>
+    <div class="content" ng-view=""></div>
+  </div>
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
