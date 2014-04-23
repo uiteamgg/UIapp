@@ -845,6 +845,13 @@ footer{
 }
 
 .information{
+<<<<<<< HEAD
    background-color:white;
 
+=======
+    display: inline;
+/*    border:1px solid green;*/
+    float: right;
+    text-align: center;
+>>>>>>> Making the text center aligned in bottom divs
 }
