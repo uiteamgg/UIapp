@@ -15,7 +15,7 @@ angular.module('yoAngularProjectApp')
                 type: 'column'
             },
             title: {
-                text: 'Sprint Release-wise'
+                text: null /*'Sprint Release-wise'*/
             },
             subtitle: {
                 text: ''
@@ -77,7 +77,7 @@ var storyPicksPerSprint= function(values){
                 type: 'areaspline'
             },
             title: {
-                text: 'Stories Completed Per sprint'
+                text: null /*'Stories Completed Per sprint'*/
             },
             legend: {
                 layout: 'vertical',
@@ -143,7 +143,7 @@ var contribution= function (values) {
                 type: 'column'
             },
             title: {
-                text: 'Individual Contribution (current release)'
+                text: null/*'Individual Contribution (current release)'*/
             },
             xAxis: {
                 categories: ['D1', 'D2', 'D3', 'D4', 'D5']
@@ -234,7 +234,7 @@ var contribution= function (values) {
             plotBorderWidth: null,
             plotShadow: false
         },
-        title: {text:"Sprint share (Story based)"},
+        title: {text:null/*"Sprint share (Story based)"*/},
         tooltip: {
             pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
         },
