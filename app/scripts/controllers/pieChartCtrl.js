@@ -7,13 +7,5 @@ angular.module('yoAngularProjectApp')
         $('.nav').find('li').removeClass("active");
         $('#dashboard').closest('li').addClass("active");
     
-
-     
-
-
-
-    
-
-    
-  });
+});
 

@@ -215,7 +215,7 @@ var myCommitMeter= function (values) {
 };
 })
 
-.directive('chartdirectiveburn', function () {
+.directive('chartdirectivepie', function () {
   		return function(scope, element) {
 
     var myPieChart= function (values) {
