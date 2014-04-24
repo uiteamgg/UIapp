@@ -861,6 +861,7 @@ border: 1px solid #428bca;
     display: inline;
     text-align: center;   
     color:white;
+    padding-top: 2%;
 }
 
 .info1 .title{
@@ -877,7 +878,7 @@ border: 1px solid #428bca;
 }
 .title, .information{
     height: 100%;
-    padding-top: 8%;
+    /*padding-top: 8%;*/
     font-size: 17px;
 }
 
@@ -887,6 +888,7 @@ border: 1px solid #428bca;
 /*    border:1px solid green;*/
     float: right;
     text-align: center;
+    padding-top: 6%;
 }
 
     
