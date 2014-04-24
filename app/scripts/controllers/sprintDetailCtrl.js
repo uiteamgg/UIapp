@@ -64,10 +64,12 @@ angular.module('yoAngularProjectApp')
     }
 
     $scope.addStory=function(){
-        i=i+1;
-        var random=Math.random();
+        //i=i+1;
+        var random=Math.floor(Math.random()*10);
+        //var random=Math.random();
         var newobj={id:"item"+random,name:"story"+random};
-        $scope.stories.push("story"+i);
+       /* $scope.stories.push("story"+i);*/
+        $scope.stories.push(newobj);
          console.log("Stories array after push is:");
        console.log($scope.stories);
 

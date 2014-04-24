@@ -16,11 +16,7 @@ angular.module('yoAngularProjectApp')
         // this gives us the native JS object
         var el = element[0];
 
-
-      /*  console.log("element 0 is:");
-        console.log(element.index());
-        console.log(el);*/
-
+        var itemParent;
         el.draggable = true;
 
         el.addEventListener(
@@ -28,8 +24,35 @@ angular.module('yoAngularProjectApp')
             function(e) {
 
                 console.log(el);
+
                 e.dataTransfer.effectAllowed = 'move';
                 e.dataTransfer.setData('Text', this.id);
+
+            
+
+                     if($("#" + this.id).closest('.inProcess').length==1){
+                      itemParent="inProcess";
+                     }
+                     else if($("#" + this.id).closest('.done').length==1){
+                      itemParent="done";
+                     }
+                     else if($("#" + this.id).closest('.poAcceptedrejected').length==1){
+                      itemParent="poAcceptedrejected";
+                     }
+                     else if($("#" + this.id).closest('.clientAcceptedrejected').length==1){
+                      itemParent="clientAcceptedrejected";
+                     }
+                     else if($("#" + this.id).closest('.needDisucssion').length==1){
+                      itemParent="needDisucssion";
+                     }
+                     else if($("#" + this.id).closest('.redflag').length==1){
+                      itemParent="redflag";
+                     }
+                     else{
+                      itemParent="sprint";
+                     }
+
+                     console.log("Itemparent is (dragstart):"+itemParent);
 
                 this.classList.add('drag');
                 return false;
@@ -42,47 +65,146 @@ angular.module('yoAngularProjectApp')
             function(e) {
 
                var storyid=this.id;
-                var storytext=$("#" + storyid +" a h4").text();
-              var storytext1=storytext.trim();
-            
-               console.log(storytext1);
-               for(var i=0;i<scope.stories.length;i++)
-                {
-                
+               var str1;
 
-                  var str1=(scope.stories[i].name).trim();
-                  console.log("str1 is:"+str1);
-                  console.log(str1.localeCompare(storytext1));
+          
+               var storytext=$("#" + storyid +" a h4").text();
+               var storytext1=storytext.trim();
+               var arr;
+               console.log("Itemparent is (dragend):"+itemParent);
+
+
+                    if(itemParent.localeCompare("inProcess")==0){
+                   
+                      arr=scope.stories1;
+                      
+                     }
+                     else if(itemParent.localeCompare("done")==0){
+                     
+                      arr=scope.stories2;
+                     }
+                     else if(itemParent.localeCompare("poAcceptedrejected")==0){
+                     
+                      arr=scope.stories3;
+                     }
+                     else if(itemParent.localeCompare("clientAcceptedrejected")==0){
+                     
+                      arr=scope.stories4;
+                     }  
+                     else if(itemParent.localeCompare("needDisucssion")==0){
+                     
+                      arr=scope.stories5;
+                     }
+                     else if(itemParent.localeCompare("redflag")==0){
+                    
+                      arr=scope.stories6;
+                     }
+                     else if(itemParent.localeCompare("sprint")==0){
+                     
+                      arr=scope.stories;
+                   }
+
+            console.log("Array length is:"+arr.length);
+               console.log("Story text is:"+storytext1);
+               for(var i=0;i<arr.length;i++)
+                {
+
+                  str1=(arr[i].name).trim();
+         
                   if(str1.localeCompare(storytext1)==0)
                   {
-                    
+                      console.log("b4 push");
                      if($("#" + this.id).closest('.inProcess').length==1){
-                      scope.stories1.push(str1);
+                    
+                      scope.stories1.push(arr[i]);
                       storytext1="";
                      }
-                     if($("#" + this.id).closest('.done').length==1){
-                      scope.stories2.push(str1);
+                     else if($("#" + this.id).closest('.done').length==1){
+                      scope.stories2.push(arr[i]);
                        storytext1="";
                      }
-                     if($("#" + this.id).closest('.poAcceptedrejected').length==1){
-                      scope.stories3.push(str1);
+                     else if($("#" + this.id).closest('.poAcceptedrejected').length==1){
+                      scope.stories3.push(arr[i]);
                        storytext1="";
                      }
-                     if($("#" + this.id).closest('.clientAcceptedrejected').length==1){
-                      scope.stories4.push(str1);
+                     else if($("#" + this.id).closest('.clientAcceptedrejected').length==1){
+                      scope.stories4.push(arr[i]);
                        storytext1="";
                      }
-                     if($("#" + this.id).closest('.needDisucssion').length==1){
-                      scope.stories5.push(str1);
+                     else if($("#" + this.id).closest('.needDisucssion').length==1){
+                      scope.stories5.push(arr[i]);
                        storytext1="";
                      }
-                     if($("#" + this.id).closest('.redflag').length==1){
-                      scope.stories6.push(str1);
+                     else if($("#" + this.id).closest('.redflag').length==1){
+                      scope.stories6.push(arr[i]);
                        storytext1="";
                      }
-                   scope.stories.splice(i,1);
+
+                     if(itemParent.localeCompare("inProcess")==0){
+                      
+                      scope.stories1.splice(i,1);
+                      itemParent="";
+                     }
+                     else if(itemParent.localeCompare("done")==0){
+                     
+                      scope.stories2.splice(i,1);
+                      itemParent="";
+                     }
+                     else if(itemParent.localeCompare("poAcceptedrejected")==0){
+                     
+                      scope.stories3.splice(i,1);
+                      itemParent="";
+                     }
+                     else if(itemParent.localeCompare("clientAcceptedrejected")==0){
+                    
+                      scope.stories4.splice(i,1);
+                      itemParent="";
+                     }
+                     else if(itemParent.localeCompare("needDisucssion")==0){
+                     
+                      scope.stories5.splice(i,1);
+                      itemParent="";
+                     }
+                     else if(itemParent.localeCompare("redflag")==0){
+                    
+                      scope.stories6.splice(i,1);
+                      itemParent="";
+                     }
+                     else if(itemParent.localeCompare("sprint")==0){
+                    
+                     scope.stories.splice(i,1);
+                     itemParent="";
+                   }
+                  
                   }
                 }
+
+
+
+
+
+                console.log("After splicing--");
+
+                console.log("Story array is:");
+                console.log(scope.stories);
+
+                console.log("stories1 array is:");
+                console.log(scope.stories1);
+
+                console.log("stories2 array is:");
+                console.log(scope.stories2);
+
+              console.log("stories3 array is:");
+                console.log(scope.stories3);
+
+                console.log("stories4 array is:");
+                console.log(scope.stories4);
+
+                console.log("stories5 array is:");
+                console.log(scope.stories5);
+
+                console.log("stories6 array is:");
+                console.log(scope.stories6);
 
               this.classList.remove('drag');
                 return false;
@@ -111,7 +233,7 @@ angular.module('yoAngularProjectApp')
 			        if (e.preventDefault) e.preventDefault();
 			        this.classList.add('over');
 
-			        console.log("Inside DROP-dragover----");
+			//        console.log("Inside DROP-dragover----");
 
 			        return false;
 			    },
@@ -126,7 +248,7 @@ angular.module('yoAngularProjectApp')
 			    function(e) {
 			        this.classList.add('over');
 
-			        console.log("Inside DROP-dragenter----");
+		//	        console.log("Inside DROP-dragenter----");
 
 			        return false;
 			    },
@@ -138,7 +260,7 @@ angular.module('yoAngularProjectApp')
 			    function(e) {
 
 
-			    	console.log("Inside DROP-drag leave event--");
+	//		    	console.log("Inside DROP-drag leave event--");
 
 			        this.classList.remove('over');
 			        return false;
@@ -150,33 +272,18 @@ angular.module('yoAngularProjectApp')
 				'drop',
 				function(e) {
 
-					console.log("Inside DROP-drop event--");
-					// Stops some browsers from redirecting.
 					if (e.stopPropagation) e.stopPropagation();
 
 					this.classList.remove('over');
 
 					var item = document.getElementById(e.dataTransfer.getData('Text'));
 
-
-
-
-					console.log("Item before dropping is:");
-					console.log(item);
-          console.log("Id of item is:");
-          console.log(item.id);
+          console.log("Item is:")
+          console.log(item);
           var itemid=item.id;
-
-					console.log("After item--------");
                  
 					this.appendChild(item);
 
-                    
-                    console.log("item id before checking is:")
-                    console.log(item.id);
-                    console.log($("#" + item.id +" a"));
-                    console.log("Length is:");
-                    console.log($("#" + item.id).closest('.poAcceptedrejected').length);
                     if($("#" + item.id).closest('.poAcceptedrejected').length==1)
                     {
                          $( "#dialog-confirm" ).dialog({
@@ -194,9 +301,6 @@ angular.module('yoAngularProjectApp')
                                 }
                               }
                             });
-
-
-                      // alert("Choose accepted or rejected for po------");
                     }
                     if($("#" + item.id).closest('.clientAcceptedrejected').length==1)
                     {

@@ -1,35 +1,71 @@
+
 <div class="row">
-   <!-- <h1 >Sprint Details</h1>-->
-    <div >
+    <div class="col-md-2">
+        <div class="panel panel-primary">
+          <div class="panel-heading">SPRINT
+             <span class="addStoryStyle" ng-click="addStory()" title="Add story"><a class="addLink" href=""><i class="fa fa-plus-square"></i></a>
+            </span>
+          </div>
+          <div class="panel-body">
+            <ul id="sprintlist">
+                        
+                        <li ng-repeat="story in stories" id="{{story.id}}"  draggable>
+
+                            <a>
+                                <span ng-click="deleteNote($index)" class="stickyclose">X</span>
+                                
+                                <h4  class="headingstyle">{{story.name}}</h4>
+
+                               
+                                <textarea class="stickynotes" placeholder="Text Here"></textarea>
+                            </a>
+                        </li>
+
+            </ul>
+          </div>
+        </div>
+    </div>
+    <div class="col-md-10">
         <table border="1" class="sprintTable  table-responsive " cellspacing="2px" cellpadding="2px">
             <thead>
                 <tr class="panel panel-primary">
-                    <th class="panel-heading">SPRINT
+                   <!-- <th class="panel-heading">SPRINT
                         <span class="addStoryStyle" ng-click="addStory()" title="Add story"><a class="addLink" href=""><i class="fa fa-plus-square"></i></a>
                         </span>
-                    </th>
+                    </th>-->
                     <th class="panel-heading">inProcess
-                        <!-- <i class="fa fa-pencil-square"></i>-->
+                        
                     </th>
                     <th class="panel-heading">Done
-                        <!--<i class="fa fa-check"></i>-->
                     </th>
-                    <th class="panel-heading">PO Accepted
-                        <!--<i class="fa fa-check-circle"></i>-->/ Rejected</th>
-                    <th class="panel-heading">Client Accepted
-                        <!--<i class="fa fa-check-square"></i>-->/ Rejected</th>
-                    <th class="panel-heading">Need Discussion
-                        <!--<i class="fa fa-comment-o"></i>-->
-                    </th>
+                    <th class="panel-heading">PO Accepted / Rejected</th>
+                    <th class="panel-heading">Client Accepted / Rejected</th>
+                    <th class="panel-heading">Need Discussion</th>
                     <th class="panel-heading">Red Flag</th>
 
                 </tr>
             </thead>
             <tbody>
-               <td class="storycolumn">
+              <!-- <td class="storycolumn">
                     <ul id="sprintlist">
-                        <!--<li ng-repeat="story in stories" id="item{{$index}}" draggable>-->
-                        <li ng-repeat="story in stories" id="story.id"  draggable>
+                        
+                        <li ng-repeat="story in stories" id="{{story.id}}"  draggable>
+
+                            <a>
+                                <span ng-click="deleteNote($index)" class="stickyclose">X</span>
+                                
+                                <h4  class="headingstyle">{{story.name}}</h4>
+
+                               
+                                <textarea class="stickynotes" placeholder="Text Here"></textarea>
+                            </a>
+                        </li>
+
+                    </ul>
+                </td>-->
+                <td class="inProcess" droppable drop="handleDrop()" id="1" data-column="1">
+                 <ul>
+                     <li ng-repeat="story in stories1" id="{{story.id}}" draggable>
 
                             <a>
                                 <span ng-click="deleteNote($index)" class="stickyclose">X</span>
@@ -43,13 +79,126 @@
 
                     </ul>
                 </td>
-                <td class="inProcess" droppable drop="handleDrop()" id="1" data-column="1">
-                     <li ng-repeat="story in stories1" id="item{{$index}}" draggable>
+                <td class="done" droppable drop="handleDrop()" data-column="2">
+                <ul>
+                     <li ng-repeat="story in stories2" id="{{story.id}}" draggable>
 
                             <a>
                                 <span ng-click="deleteNote($index)" class="stickyclose">X</span>
                                 
-                                <h4  class="headingstyle">{{story}}</h4>
+                                <h4  class="headingstyle">{{story.name}}</h4>
+
+                               
+                                <textarea class="stickynotes" placeholder="Text Here"></textarea>
+                            </a>
+                        </li>
+                    </ul>
+                </td>
+                <td class="poAcceptedrejected" droppable drop="handleDrop()" data-column="3">
+                <ul>
+                     <li ng-repeat="story in stories3" id="{{story.id}}" draggable>
+
+                            <a>
+                                <span ng-click="deleteNote($index)" class="stickyclose">X</span>
+                                
+                                <h4  class="headingstyle">{{story.name}}</h4>
+
+                               
+                                <textarea class="stickynotes" placeholder="Text Here"></textarea>
+                            </a>
+                        </li>
+                </ul>
+                </td>
+                <td class="clientAcceptedrejected" droppable drop="handleDrop()" data-column="4">
+                <ul>
+                     <li ng-repeat="story in stories4" id="{{story.id}}" draggable>
+
+                            <a>
+                                <span ng-click="deleteNote($index)" class="stickyclose">X</span>
+                                
+                                <h4  class="headingstyle">{{story.name}}</h4>
+
+                               
+                                <textarea class="stickynotes" placeholder="Text Here"></textarea>
+                            </a>
+                        </li>
+                </ul>
+                </td>
+                <td class="needDisucssion" droppable drop="handleDrop()" data-column="5">
+                <ul>
+                     <li ng-repeat="story in stories5" id="{{story.id}}" draggable>
+
+                            <a>
+                                <span ng-click="deleteNote($index)" class="stickyclose">X</span>
+                                
+                                <h4  class="headingstyle">{{story.name}}</h4>
+
+                               
+                                <textarea class="stickynotes" placeholder="Text Here"></textarea>
+                            </a>
+                        </li>
+                    </ul>
+                </td>
+                <td class="redflag" droppable drop="handleDrop()" data-column="6">
+                <ul>
+                     <li ng-repeat="story in stories6" id="{{story.id}}" draggable>
+
+                            <a>
+                                <span ng-click="deleteNote($index)" class="stickyclose">X</span>
+                                
+                                <h4  class="headingstyle">{{story.name}}</h4>
+
+                               
+                                <textarea class="stickynotes" placeholder="Text Here"></textarea>
+                            </a>
+                        </li>
+                        </ul>
+                </td>
+
+            </tbody>
+        </table>
+        </div>
+        </div>
+ 
+
+
+   <!--<div class="row">
+    <div class="col-md-1">
+        <div class="panel panel-primary">
+          <div class="panel-heading">SPRINT
+             <span class="addStoryStyle1" ng-click="addStory()" title="Add story"><a class="addLink" href=""><i class="fa fa-plus-square"></i></a>
+            </span>
+          </div>
+          <div class="panel-body">
+            <ul id="sprintlist">
+                        
+                        <li ng-repeat="story in stories" id="{{story.id}}"  draggable>
+
+                            <a>
+                                <span ng-click="deleteNote($index)" class="stickyclose">X</span>
+                                
+                                <h4  class="headingstyle">{{story.name}}</h4>
+
+                               
+                                <textarea class="stickynotes" placeholder="Text Here"></textarea>
+                            </a>
+                        </li>
+
+            </ul>
+          </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="panel panel-primary">
+          <div class="panel-heading">inProcess</div>
+          <div class="panel-body inProcess" droppable drop="handleDrop()" data-column="1">
+            <ul>
+                     <li ng-repeat="story in stories1" id="{{story.id}}" draggable>
+
+                            <a>
+                                <span ng-click="deleteNote($index)" class="stickyclose">X</span>
+                                
+                                <h4  class="headingstyle">{{story.name}}</h4>
 
                                
                                 <textarea class="stickynotes" placeholder="Text Here"></textarea>
@@ -57,76 +206,119 @@
                         </li>
 
                     </ul>
-                </td>
-                <td class="done" droppable drop="handleDrop()" data-column="2">
-                     <li ng-repeat="story in stories2" id="item{{$index}}" draggable>
+          </div>
+
+        </div>
+    </div>
+     <div class="col-md-2">
+        <div class="panel panel-primary">
+
+          <div class="panel-heading">Done</div>
+          <div class="panel-body done" droppable drop="handleDrop()" data-column="2">
+             <ul>
+                     <li ng-repeat="story in stories2" id="{{story.id}}" draggable>
 
                             <a>
                                 <span ng-click="deleteNote($index)" class="stickyclose">X</span>
                                 
-                                <h4  class="headingstyle">{{story}}</h4>
+                                <h4  class="headingstyle">{{story.name}}</h4>
 
                                
                                 <textarea class="stickynotes" placeholder="Text Here"></textarea>
                             </a>
                         </li>
-                </td>
-                <td class="poAcceptedrejected" droppable drop="handleDrop()" data-column="3">
-                     <li ng-repeat="story in stories3" id="item{{$index}}" draggable>
+                    </ul>
+          </div>
+        </div>
+    </div>
+     <div class="col-md-2">
+        <div class="panel panel-primary">
+
+          <div class="panel-heading">PO Accepted / Rejected</div>
+          <div class="panel-body poAcceptedrejected" droppable drop="handleDrop()" data-column="3">
+             <ul>
+                     <li ng-repeat="story in stories3" id="{{story.id}}" draggable>
 
                             <a>
                                 <span ng-click="deleteNote($index)" class="stickyclose">X</span>
                                 
-                                <h4  class="headingstyle">{{story}}</h4>
+                                <h4  class="headingstyle">{{story.name}}</h4>
 
                                
                                 <textarea class="stickynotes" placeholder="Text Here"></textarea>
                             </a>
                         </li>
-                </td>
-                <td class="clientAcceptedrejected" droppable drop="handleDrop()" data-column="4">
-                     <li ng-repeat="story in stories4" id="item{{$index}}" draggable>
+                </ul>
+          </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="panel panel-primary">
+
+          <div class="panel-heading">Client Accepted / Rejected</div>
+          <div class="panel-body clientAcceptedrejected" droppable drop="handleDrop()" data-column="4">
+           <ul>
+                     <li ng-repeat="story in stories4" id="{{story.id}}" draggable>
 
                             <a>
                                 <span ng-click="deleteNote($index)" class="stickyclose">X</span>
                                 
-                                <h4  class="headingstyle">{{story}}</h4>
+                                <h4  class="headingstyle">{{story.name}}</h4>
 
                                
                                 <textarea class="stickynotes" placeholder="Text Here"></textarea>
                             </a>
                         </li>
-                </td>
-                <td class="needDisucssion" droppable drop="handleDrop()" data-column="5">
-                     <li ng-repeat="story in stories5" id="item{{$index}}" draggable>
+                </ul>
+          </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="panel panel-primary">
+
+          <div class="panel-heading">Need Discussion</div>
+          <div class="panel-body needDisucssion" droppable drop="handleDrop()" data-column="5">
+            <ul>
+                     <li ng-repeat="story in stories5" id="{{story.id}}" draggable>
 
                             <a>
                                 <span ng-click="deleteNote($index)" class="stickyclose">X</span>
                                 
-                                <h4  class="headingstyle">{{story}}</h4>
+                                <h4  class="headingstyle">{{story.name}}</h4>
 
                                
                                 <textarea class="stickynotes" placeholder="Text Here"></textarea>
                             </a>
                         </li>
-                </td>
-                <td class="redflag" droppable drop="handleDrop()" data-column="6">
-                     <li ng-repeat="story in stories6" id="item{{$index}}" draggable>
+                    </ul>
+          </div>
+        </div>
+    </div>
+    <div class="col-md-1">
+        <div class="panel panel-primary">
+
+          <div class="panel-heading">Red Flag</div>
+          <div class="panel-body redflag" droppable drop="handleDrop()" data-column="6">
+           <ul>
+                     <li ng-repeat="story in stories6" id="{{story.id}}" draggable>
 
                             <a>
                                 <span ng-click="deleteNote($index)" class="stickyclose">X</span>
                                 
-                                <h4  class="headingstyle">{{story}}</h4>
+                                <h4  class="headingstyle">{{story.name}}</h4>
 
                                
                                 <textarea class="stickynotes" placeholder="Text Here"></textarea>
                             </a>
                         </li>
-                </td>
-
-            </tbody>
-        </table>
+                        </ul>
+          </div>
+        </div>
     </div>
 
-   
-</div>
+  
+</div>-->
+
+
+
+  
