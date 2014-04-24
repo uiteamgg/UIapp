@@ -33,9 +33,9 @@ angular.module('yoAngularProjectApp')
        var existingCol=parseInt($("#main").find('thead th').length) + 1;
        //finding the table
        var elementHead="<th> Sprint"+existingCol+"</th>";
-       var elementCol="<td></td>";
+       var elementtd="<td   class='inProcess' droppable drop='handleDrop()' data-column="+existingCol+"></td>";
        $("#main").find('thead tr:first-child').append(elementHead);
-       $("#main").find('tbody tr:first-child').append(elementCol);
+       $("#main").find('tbody tr:first-child').append(elementtd);
     }
 
      
