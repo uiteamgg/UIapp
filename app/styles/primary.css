@@ -720,7 +720,7 @@ border-color: #428bca;
     /*border-radius: 15px 15px 0px 0px;*/
 }
 		
-.dropTable{
+/*.dropTable{
 	width: 873px;
     height: 341px;
     overflow: auto;
@@ -728,6 +728,15 @@ border-color: #428bca;
     margin-top: 58px;
     border: 1px solid #428bca
     
+}*/
+.dropTable
+{
+width: 959px;
+height: 426px;
+overflow: auto;
+margin-left: -1px;
+margin-top: -1px;
+border: 1px solid #428bca;
 }
 			
 
@@ -750,17 +759,18 @@ border-color: #428bca;
     font-weight: bold;
     width:960px;
     border: 2px solid blue;
-  
     display: inline-block;
-
     border: 1px solid #ddd;
     position: absolute;
-    top: 9%;
+    top: 15%;
     left: 21%;
     background: white;
-    height: 600px;
+    height: 430px;
+    overflow:auto;
     border-radius: 8px;
-	}
+    }
+
+
     #showLeft
     {
         margin-left:314px;
@@ -867,12 +877,12 @@ border-color: #428bca;
     
 
 /*css for sliding begins*/
-button
+.showLeftPush
 {
 height: 50px;
 width: 62px;
-margin-top: -42px;
-position: absolute;
+margin-top: -96px;
+position: fixed;
 z-index: 1000;
 margin-left: -76px;
 }

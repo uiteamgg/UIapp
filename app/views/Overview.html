@@ -45,18 +45,22 @@ var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
 
 <!-- Table -->
 <!--<button type="button" id="showLeft" class="btn btn-default btn-lg">-->
- <div class="leftbutton">
-  <button class="showLeftPush">
+ 
+  <button class="showLeftPush" style="border:2px solid green">
         <span class="glyphicon glyphicon-align-justify"></span></button>
-    </div>
+ 
     <!--table div-->
     <table border="1" class="dropTable table-responsive" cellspacing="2px" cellpadding="2px" margin="2px">
         <thead>
             <tr panel panel-primary>
                 <th class="panel-heading">Sprint1</th>
                 <th panel-heading>Sprint2</th>
-                <th panel-heading>Sprint3</th>
-                <th panel-heading>Sprint4</th>
+                <th panel-heading>Sprint3
+                 <span class="addStoryStyle" ng-click="addSprint()" title="Add sprint"><a class="addLink" href=""><i class="fa fa-plus-square"></i></a>
+                        </span>
+                </th>
+                
+
             </tr>
         </thead>
         <tbody class="tscroll">
@@ -64,7 +68,7 @@ var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
                 <td   class="inProcess"  droppable drop="handleDrop()"  data-column="1"></td>
                 <td   class="inProcess" droppable drop="handleDrop()" data-column="2"></td>
                 <td   class="inProcess" droppable drop="handleDrop()" data-column="3"></td>
-          <td   class="inProcess" droppable drop="handleDrop()" data-column="4"></td>
+            
             </tr>       
         </tbody>
     </table>

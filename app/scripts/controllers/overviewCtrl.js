@@ -28,7 +28,10 @@ angular.module('yoAngularProjectApp')
 	    $('.backlogbottom').toggler(effect, options, duration);
 });*/
  
-   
+    $scope.addSprint=function(){
+       console.log("inside add sprint");
+
+    }
 
      
       
