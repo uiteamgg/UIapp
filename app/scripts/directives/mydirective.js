@@ -27,7 +27,7 @@ angular.module('yoAngularProjectApp')
             'dragstart',
             function(e) {
 
-
+                console.log(el);
                 e.dataTransfer.effectAllowed = 'move';
                 e.dataTransfer.setData('Text', this.id);
 
@@ -41,34 +41,21 @@ angular.module('yoAngularProjectApp')
             'dragend',
             function(e) {
 
-            	console.log("Inside DRAG- dragend----");
-              console.log("Story array inside dragend is:");
-              console.log(scope.stories);
-
                var storyid=this.id;
-
-               console.log("Story id is:"+storyid);
-
                 var storytext=$("#" + storyid +" a h4").text();
-                console.log("Storytext is:"+storytext);
-
-              console.log("story text is:" +storytext);
-
-
               var storytext1=storytext.trim();
-              console.log("Trimmed storytext is:"+storytext1);
-
+            
+               console.log(storytext1);
                for(var i=0;i<scope.stories.length;i++)
                 {
                 
-                  var str1=(scope.stories[i]).trim();
+
+                  var str1=(scope.stories[i].name).trim();
                   console.log("str1 is:"+str1);
                   console.log(str1.localeCompare(storytext1));
                   if(str1.localeCompare(storytext1)==0)
                   {
                     
-                    console.log("Inside matched story");
-                    console.log(scope.stories[i]);
                      if($("#" + this.id).closest('.inProcess').length==1){
                       scope.stories1.push(str1);
                       storytext1="";
@@ -93,36 +80,11 @@ angular.module('yoAngularProjectApp')
                       scope.stories6.push(str1);
                        storytext1="";
                      }
-                    
-                    
                    scope.stories.splice(i,1);
                   }
                 }
 
               this.classList.remove('drag');
-
-               
-              console.log("Stories array after splice is:");
-              console.log(scope.stories);
-
-              console.log("Story1 array is:");
-              console.log(scope.stories1);
-
-              console.log("Story2 array is:");
-              console.log(scope.stories2);
-
-              console.log("Story3 array is:");
-              console.log(scope.stories3);
-
-              console.log("Story4 array is:");
-              console.log(scope.stories4);
-
-              console.log("Story5 array is:");
-              console.log(scope.stories5);
-
-              console.log("Story6 array is:");
-              console.log(scope.stories6);
-
                 return false;
             },
             false

@@ -1,5 +1,5 @@
 <div class="row">
-    <h1 >Sprint Details</h1>
+   <!-- <h1 >Sprint Details</h1>-->
     <div >
         <table border="1" class="sprintTable  table-responsive " cellspacing="2px" cellpadding="2px">
             <thead>
@@ -28,12 +28,13 @@
             <tbody>
                <td class="storycolumn">
                     <ul id="sprintlist">
-                        <li ng-repeat="story in stories" id="item{{$index}}" draggable>
+                        <!--<li ng-repeat="story in stories" id="item{{$index}}" draggable>-->
+                        <li ng-repeat="story in stories" id="story.id"  draggable>
 
                             <a>
                                 <span ng-click="deleteNote($index)" class="stickyclose">X</span>
                                 
-                                <h4  class="headingstyle">{{story}}</h4>
+                                <h4  class="headingstyle">{{story.name}}</h4>
 
                                
                                 <textarea class="stickynotes" placeholder="Text Here"></textarea>

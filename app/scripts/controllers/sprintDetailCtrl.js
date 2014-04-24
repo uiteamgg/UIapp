@@ -46,7 +46,7 @@ angular.module('yoAngularProjectApp')
     var len;
     var i=0;
 
-    $scope.stories=["story1","story2"];
+    $scope.stories=[ {id:"item1",name:"story1"},{id:"item2",name:"story2"}];
     $scope.stories1=[];
     $scope.stories2=[];
     $scope.stories3=[];
@@ -65,6 +65,8 @@ angular.module('yoAngularProjectApp')
 
     $scope.addStory=function(){
         i=i+1;
+        var random=Math.random();
+        var newobj={id:"item"+random,name:"story"+random};
         $scope.stories.push("story"+i);
          console.log("Stories array after push is:");
        console.log($scope.stories);
