@@ -30,7 +30,12 @@ angular.module('yoAngularProjectApp')
  
     $scope.addSprint=function(){
        console.log("inside add sprint");
-
+       var existingCol=parseInt($("#main").find('thead th').length) + 1;
+       //finding the table
+       var elementHead="<th> Sprint"+existingCol+"</th>";
+       var elementCol="<td></td>";
+       $("#main").find('thead tr:first-child').append(elementHead);
+       $("#main").find('tbody tr:first-child').append(elementCol);
     }
 
      
