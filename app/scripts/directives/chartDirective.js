@@ -131,10 +131,10 @@ var storyPicksPerSprint= function(values){
 };
 }) 
 
-.directive('chartdirectiveburn', function () {
+.directive('chartdirectivecontribute', function () {
   		return function(scope, element) {
 
-var myCommitMeter= function (values) {
+var contribution= function (values) {
         var arr3=[];
         console.log("commit meter");
         $('.chart4').highcharts({
@@ -211,7 +211,7 @@ var myCommitMeter= function (values) {
     };
     
     var values3="";
-    myCommitMeter(values3);
+    contribution(values3);
 };
 })
 
