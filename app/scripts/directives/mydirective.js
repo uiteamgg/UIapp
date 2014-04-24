@@ -179,32 +179,8 @@ angular.module('yoAngularProjectApp')
                   }
                 }
 
+                scope.$apply();
 
-
-
-
-                console.log("After splicing--");
-
-                console.log("Story array is:");
-                console.log(scope.stories);
-
-                console.log("stories1 array is:");
-                console.log(scope.stories1);
-
-                console.log("stories2 array is:");
-                console.log(scope.stories2);
-
-              console.log("stories3 array is:");
-                console.log(scope.stories3);
-
-                console.log("stories4 array is:");
-                console.log(scope.stories4);
-
-                console.log("stories5 array is:");
-                console.log(scope.stories5);
-
-                console.log("stories6 array is:");
-                console.log(scope.stories6);
 
               this.classList.remove('drag');
                 return false;
