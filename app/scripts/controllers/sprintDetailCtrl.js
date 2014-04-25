@@ -5,46 +5,15 @@ angular.module('yoAngularProjectApp')
  	$('.nav').find('li').removeClass("active");
  	$('#sprint').closest('li').addClass("active");
 
- /*   console.log("Inside sprint detail controller");
-
-    var len;
-    var i=0;
-
-    $scope.stories=["story1","story2","story3","story4","story5","story6"];
-    
-    len=$scope.stories.length;
-
-    for(var j=1;j<len;j++)
-    {
-    	//console.log("Hi");
-    	console.log($("#item"+j));
-    	$("#item"+j).css('display','none');
-    }
-
-    $scope.addStory=function(){
-    	i=i+1;
-    	console.log("Incremented value of i is:" +i);
-    	console.log("Inside add story function");
-    	
-    	console.log($scope.stories.length);
-    	
-    	console.log($('#item0'));
-    	if(i<6)
-    	$("#item"+i).css('display','block');
-    	
-    	
-
-    }
-
-    $scope.handleDrop = function() {
-        console.log('Item has been dropped');
-    }
-    
-*/
  console.log("Inside sprint detail controller");
 
     var len;
     var i=0;
+    
+    var repeat=0;
+    var min=3;
+    var max=100;
+
 
     $scope.stories=[ {id:"item1",name:"story1"},{id:"item2",name:"story2"}];
     $scope.stories1=[];
@@ -65,14 +34,30 @@ angular.module('yoAngularProjectApp')
 
     $scope.addStory=function(){
         //i=i+1;
-        var random=Math.floor(Math.random()*10);
-        //var random=Math.random();
-        var newobj={id:"item"+random,name:"story"+random};
-       /* $scope.stories.push("story"+i);*/
-        $scope.stories.push(newobj);
+
+       // var random=Math.round(Math.random()*100)+1;
+          random = Math.round(min + Math.random() * (max - min));
+
+        console.log("Random num generated is:"+random);
+
+        for (var j=0;j<$scope.stories.length;j++)
+        {
+            if($scope.stories[j]==random)
+            {
+                repeat=1;
+                break;
+            }
+        }
+
+        if((random!=0)&&(random!=1)&&(random!=2)&&(repeat!=1))
+        {
+            var newobj={id:"item"+random,name:"story"+random};
+            $scope.stories.push(newobj);
+        }
          console.log("Stories array after push is:");
        console.log($scope.stories);
-
+       repeat=0;
+       $scope.$apply;
     }
 
     $scope.handleDrop = function() {

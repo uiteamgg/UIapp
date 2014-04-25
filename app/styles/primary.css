@@ -732,15 +732,7 @@ border-color: #428bca;
     /*border-radius: 15px 15px 0px 0px;*/
 }
 		
-/*.dropTable{
-	width: 873px;
-    height: 341px;
-    overflow: auto;
-    margin-left:37px;
-    margin-top: 58px;
-    border: 1px solid #428bca
-    
-}*/
+
 .dropTable
 {
 width: 959px;
@@ -788,37 +780,21 @@ border: 1px solid #428bca;
         margin-left:314px;
         margin-top:-43px;
     }
-/*
-#item2{
-	display:none;
-}
-#item3{
-	display:none;
-
-}
-
-#item4{
-	display:none;
-}
-#item5{
-	display:none;}
-*/
 
 .backlog
 {
 	width:438px;
 	margin-top:40px;
 	overflow-y:scroll;
-	height:80%;
+	height:80%;}
 
-}
 
 .btn {
 	margin-left:358px;
 }
 
 #graphical_representation{
-	/*display: none;*/
+	
 	height:466px;
 	width:500px;
 	border:1px solid red;
