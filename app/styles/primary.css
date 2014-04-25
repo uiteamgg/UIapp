@@ -930,15 +930,29 @@ margin-top: -78px;
 
 #cbp-spmenu-s1::-webkit-scrollbar {
     width: 10px;
-    color: #aaa;
 }
 
 #cbp-spmenu-s1::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 1px 1px 6px #666;
-    background-color: #ccc;
+    background-color: #fff;
     border-radius: 0px;
 }
 
 #cbp-spmenu-s1::-webkit-scrollbar-thumb {
-    background-color: #999;
+    background-color: #bbb;
+}
+
+
+#main::-webkit-scrollbar {
+    width: 10px;
+}
+
+#main::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 1px 1px 6px #666;
+    background-color: #fff;
+    border-radius: 0px;
+}
+
+#main::-webkit-scrollbar-thumb {
+    background-color: #bbb;
 }
