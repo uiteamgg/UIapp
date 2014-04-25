@@ -2,6 +2,7 @@
 
 angular.module('yoAngularProjectApp')
   .directive('chartdirectivecolumn', function () {
+    //Sprint1#8FDFF7Sprint2#3BDBE3sprint3#05C1FASprint4#3DB6DB
   		return function(scope, element) {
   			var myColumnChart= function (scope) {
     var arr2=[              
@@ -45,19 +46,22 @@ angular.module('yoAngularProjectApp')
             },
             series: [{
                 name: arr2[0].rel,
-                data: arr2[0].series
-    
+                data: arr2[0].series,
+                color:'#8FDFF7'
             }, {
                 name: arr2[1].rel,
-                data: arr2[1].series
+                data: arr2[1].series,
+                color:'#3BDBE3'
     
             }, {
                 name: arr2[2].rel,
-                data: arr2[2].series
+                data: arr2[2].series,
+                color:'#05C1FA'
     
             }, {
                 name: arr2[3].rel,
-                data: arr2[3].series
+                data: arr2[3].series,
+                color:'#3DB6DB'
     
             }]
         });
@@ -193,16 +197,20 @@ var contribution= function (values) {
             },
             series: [{
                 name: 'Sprint1',
-                data: [5, 3, 4, 7, 2]
+                data: [5, 3, 4, 7, 2],
+                color:'#8FDFF7'             
             }, {
                 name: 'Sprint2',
-                data: [2, 2, 3, 2, 1]
+                data: [2, 2, 3, 2, 1],
+                color:'#3BDBE3'             
             }, {
                 name: 'Sprint3',
-                data: [3, 4, 4, 2, 5]
+                data: [3, 4, 4, 2, 5],
+                color:'#05C1FA'                
             },{
                 name: 'Sprint4',
-                data: [3, 4, 4, 2, 5]
+                data: [3, 4, 4, 2, 5],
+                color:'#3DB6DB'             
             }] 
     
     });
@@ -216,6 +224,9 @@ var contribution= function (values) {
 })
 
 .directive('chartdirectivepie', function () {
+    Highcharts.setOptions({
+     colors: ['#8FDFF7','#3BDBE3','#05C1FA','#3DB6DB']
+    });
   		return function(scope, element) {
 
     var myPieChart= function (values) {
@@ -228,6 +239,7 @@ var contribution= function (values) {
                 ['SP4', 8.5]
                 
                 ];
+    
     $('.chart1').highcharts({
         chart: {
             plotBackgroundColor: null,
@@ -272,7 +284,6 @@ var contribution= function (values) {
             }]
         });
     };
-
     var values1="";
     myPieChart(values1);
 
