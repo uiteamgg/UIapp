@@ -72,6 +72,7 @@ textarea.stickynotes {
 	max-width: 100%;
 	/*min-width: 400px;*/
 	width:100%;
+    padding-top: 5%;
 	
 }
 
@@ -201,7 +202,7 @@ top: 48%;
     background-color: #fcffa3;
     color: black;
     display: block;
-    height: 8em;
+    height: 9em;
 	padding: 1em;
 	text-decoration: none;
 	width: 9em;
