@@ -926,3 +926,19 @@ margin-top: -78px;
     transition: all 0.3s ease;
 }
 /*css for sliding*/
+
+
+#cbp-spmenu-s1::-webkit-scrollbar {
+    width: 5px;
+    color: #aaa;
+}
+
+#cbp-spmenu-s1::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 1px 1px 6px #666;
+    background-color: #ccc;
+    border-radius: 0px;
+}
+
+#cbp-spmenu-s1::-webkit-scrollbar-thumb {
+    background-color: #999;
+}
