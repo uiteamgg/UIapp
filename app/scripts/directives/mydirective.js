@@ -115,7 +115,7 @@ angular.module('yoAngularProjectApp')
                   {
                       console.log("b4 push");
                      if($("#" + this.id).closest('.inProcess').length==1){
-                    
+                      console.log("Inside inProcess push");
                       scope.stories1.push(arr[i]);
                       storytext1="";
                      }
@@ -139,6 +139,7 @@ angular.module('yoAngularProjectApp')
                       scope.stories6.push(arr[i]);
                        storytext1="";
                      }
+                     scope.$apply();
 
                      if(itemParent.localeCompare("inProcess")==0){
                       

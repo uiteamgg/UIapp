@@ -57,7 +57,7 @@ angular.module('yoAngularProjectApp')
          console.log("Stories array after push is:");
        console.log($scope.stories);
        repeat=0;
-       $scope.$apply;
+       $scope.$apply();
     }
 
     $scope.handleDrop = function() {
