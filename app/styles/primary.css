@@ -666,18 +666,19 @@ margin-right: -15%;
 
 .addStoryStyle{
 	float: right;
-	/*margin-right: 3%;*/
-	border: 1px solid black;
+	/*margin-right: 3%;*//*
+	border: 1px solid black;*/
 	/*background: #fcffa3;*/
-	background:#004FFE;
-	background: #004FFE;
-    height: 25px;
-    width: 26px;
+    height: 46px;
+    width: 46px;
     position: absolute;
     top: 0px;
     right: 0px;
 }
 
+.addStoryStyle .fa{
+    font-size: 46px;
+}
 .addLink{
 	color:rgb(235, 229, 229);
     margin-left:6px;
