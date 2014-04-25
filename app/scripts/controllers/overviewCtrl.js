@@ -30,8 +30,8 @@ angular.module('yoAngularProjectApp')
  
     $scope.addSprint=function(){
        console.log("inside add sprint");
-       var existingCol=parseInt($("#main").find('thead th').length) + 1;
-       //finding the table
+        var existingCol=parseInt($("#main").find('thead th').length) + 1;
+      
        var elementHead="<th> Sprint"+existingCol+"</th>";
        var elementtd="<td   class='inProcess' droppable drop='handleDrop()' data-column="+existingCol+"></td>";
        $("#main").find('thead tr:first-child').append(elementHead);

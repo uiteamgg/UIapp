@@ -24,19 +24,54 @@ angular.module('yoAngularProjectApp')
     $scope.stories6=[];
     
     i=$scope.stories.length;
+    var arrDel=[];
 
-
-    $scope.deleteNote=function(index){
+    $scope.deleteNote=function(parent,index){
+        console.log("Inside delete");
+        console.log("Parent class is:"+parent);
         console.log("Index is:"+index);
-        console.log("Inside delete note function");
-        console.log($("#item"+index).remove());
+
+        if(parent=="sprintlist")
+        {
+             $scope.stories.splice(index,1);
+
+        }
+        else if(parent=="inProcess")
+        {
+             $scope.stories1.splice(index,1);
+        }
+        else if(parent=="done")
+        {
+             $scope.stories2.splice(index,1);
+        }
+        else if(parent=="poAcceptedrejected")
+        {
+             $scope.stories3.splice(index,1);
+        }
+        else if(parent=="clientAcceptedrejected")
+        {
+             $scope.stories4.splice(index,1);
+        }
+        else if(parent=="needDisucssion")
+        {
+             $scope.stories5.splice(index,1);
+        }
+        else if(parent=="redflag")
+        {
+             $scope.stories6.splice(index,1);
+        }
+       // console.log($("#"+index).remove());
+       
+//       $scope.$apply();
+
     }
 
-    $scope.addStory=function(){
-        //i=i+1;
+    
 
-       // var random=Math.round(Math.random()*100)+1;
-          random = Math.round(min + Math.random() * (max - min));
+
+    $scope.addStory=function(){
+      
+        random = Math.round(min + Math.random() * (max - min));
 
         console.log("Random num generated is:"+random);
 
@@ -57,7 +92,7 @@ angular.module('yoAngularProjectApp')
          console.log("Stories array after push is:");
        console.log($scope.stories);
        repeat=0;
-       $scope.$apply();
+      // $scope.$apply();
     }
 
     $scope.handleDrop = function() {

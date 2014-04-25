@@ -263,7 +263,7 @@ angular.module('yoAngularProjectApp')
 
                     if($("#" + item.id).closest('.poAcceptedrejected').length==1)
                     {
-                         $( "#dialog-confirm" ).dialog({
+                        /* $( "#dialog-confirm" ).dialog({
                               resizable: false,
                               height:140,
                               modal: true,
@@ -277,7 +277,22 @@ angular.module('yoAngularProjectApp')
                                   $("#" + item.id +" a").css('background','rgb(217, 35, 35)');
                                 }
                               }
-                            });
+                            });*/
+                        BootstrapDialog.show({
+                           title: 'Default Title',
+                            message: 'Click buttons below.',
+                             buttons: [{
+                              label: 'Title 1',
+                              action: function(dialog) {
+                                  dialog.setTitle('Title 1');
+                              }
+                          }, {
+                              label: 'Title 2',
+                              action: function(dialog) {
+                                  dialog.setTitle('Title 2');
+                              }
+                          }]
+                      });
                     }
                     if($("#" + item.id).closest('.clientAcceptedrejected').length==1)
                     {

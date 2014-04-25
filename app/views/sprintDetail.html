@@ -12,7 +12,7 @@
                         <li ng-repeat="story in stories" id="{{story.id}}"  draggable>
 
                             <a>
-                                <span ng-click="deleteNote($index)" class="stickyclose">X</span>
+                                <span ng-click="deleteNote('sprintlist',$index)" class="stickyclose">X</span>
                                 
                                 <h4  class="headingstyle">{{story.name}}</h4>
 
@@ -68,7 +68,7 @@
                      <li ng-repeat="story in stories1" id="{{story.id}}" draggable>
 
                             <a>
-                                <span ng-click="deleteNote($index)" class="stickyclose">X</span>
+                                <span ng-click="deleteNote('inProcess',$index)" class="stickyclose">X</span>
                                 
                                 <h4  class="headingstyle">{{story.name}}</h4>
 
@@ -84,7 +84,7 @@
                      <li ng-repeat="story in stories2" id="{{story.id}}" draggable>
 
                             <a>
-                                <span ng-click="deleteNote($index)" class="stickyclose">X</span>
+                                <span ng-click="deleteNote('done',$index)" class="stickyclose">X</span>
                                 
                                 <h4  class="headingstyle">{{story.name}}</h4>
 
@@ -99,7 +99,7 @@
                      <li ng-repeat="story in stories3" id="{{story.id}}" draggable>
 
                             <a>
-                                <span ng-click="deleteNote($index)" class="stickyclose">X</span>
+                                <span ng-click="deleteNote('poAcceptedrejected',$index)" class="stickyclose">X</span>
                                 
                                 <h4  class="headingstyle">{{story.name}}</h4>
 
@@ -114,7 +114,7 @@
                      <li ng-repeat="story in stories4" id="{{story.id}}" draggable>
 
                             <a>
-                                <span ng-click="deleteNote($index)" class="stickyclose">X</span>
+                                <span ng-click="deleteNote('clientAcceptedrejected',$index)" class="stickyclose">X</span>
                                 
                                 <h4  class="headingstyle">{{story.name}}</h4>
 
@@ -129,7 +129,7 @@
                      <li ng-repeat="story in stories5" id="{{story.id}}" draggable>
 
                             <a>
-                                <span ng-click="deleteNote($index)" class="stickyclose">X</span>
+                                <span ng-click="deleteNote('needDisucssion',$index)" class="stickyclose">X</span>
                                 
                                 <h4  class="headingstyle">{{story.name}}</h4>
 
@@ -144,7 +144,7 @@
                      <li ng-repeat="story in stories6" id="{{story.id}}" draggable>
 
                             <a>
-                                <span ng-click="deleteNote($index)" class="stickyclose">X</span>
+                                <span ng-click="deleteNote('redflag',$index)" class="stickyclose">X</span>
                                 
                                 <h4  class="headingstyle">{{story.name}}</h4>
 
