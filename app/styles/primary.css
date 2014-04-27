@@ -747,8 +747,15 @@ border-color: #428bca;
     overflow: auto;
     margin-left: -1px;
     margin-top: -1px;
-    border: 1px solid #428bca;
-}
+    border: 1px solid #428bca;}
+/*
+width: 959px;
+height: 429px;
+overflow: auto;
+margin-left: -1px;
+margin-top: -1px;
+border: 1px solid #428bca;
+}*/
 			
 
 .storycell li{
@@ -875,14 +882,23 @@ border-color: #428bca;
 /*css for sliding begins*/
 .showLeftPush
 {
-height: 50px;
+height: 54px;
 width: 62px;
-/*margin-top: -96px;*/
+margin-top: -70px;
 position: fixed;
-z-index: 1000;
-/*margin-left: -76px;*/
+z-index: 2000;
+margin-left: 178px;
 border: 2px solid #555;
 border-radius: 2px;
+
+}
+.leftbutton
+{
+border:2px solid green;
+height:30px;
+width:50px;
+
+
 }
 .cbp-spmenu {
     background: #47a3da;
@@ -944,6 +960,7 @@ margin-top: -78px;
 }
 
 #cbp-spmenu-s1::-webkit-scrollbar-thumb {
+
     background-color: #bbb;
 }
 
@@ -960,4 +977,8 @@ margin-top: -78px;
 
 #main::-webkit-scrollbar-thumb {
     background-color: #bbb;
+    /*background-color: #999;
+
+    background-color: #999;*/
+
 }

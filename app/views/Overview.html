@@ -13,7 +13,7 @@ var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
     //disableOther( 'showLeftPush' );
 });
 </script>
-
+ 
 <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
     <div  ng-repeat="item in items">
         <ul class="list-group" id="sprintlist">
@@ -25,13 +25,15 @@ var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
         </ul>
     </div> 
 </nav>
+
+            <button class="showLeftPush" ><span class="glyphicon glyphicon-align-justify"></span></button>
+    
 <div id="main" ng-controller="OverviewController">
     <!-- Table -->
     <!--<button type="button" id="showLeft" class="btn btn-default btn-lg">-->
+    
     <div class="row">
-        <div class="">
-            <button class="showLeftPush" ><span class="glyphicon glyphicon-align-justify"></span></button>
-     
+      
         <!--table div-->
             <table border="1" class="dropTable table-responsive" cellspacing="2px" cellpadding="2px" margin="2px">
                 <thead>
@@ -52,6 +54,6 @@ var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
             <span class="addStoryStyle" ng-click="addSprint()" title="Add sprint">
                                 <a class="addLink" href=""><i class="fa fa-plus-square"></i></a>
                             </span>
-        </div>
+      
     </div>
 </div>
