@@ -628,6 +628,7 @@ footer{
     padding-top: 9px;
     padding-bottom: 16px;
     min-width: 200px;
+    padding-left:40px;
 }
 
 .done{
@@ -714,8 +715,9 @@ border-color: #428bca;
 }
 .list-group{
 	width:30%;
-    margin-left:60px;
-     direction: rtl;
+    direction: rtl;
+    margin-top: 53px;
+    margin-right: 29px;
 }	
 
 .dropdiv{
