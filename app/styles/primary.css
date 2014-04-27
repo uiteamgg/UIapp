@@ -714,6 +714,7 @@ border-color: #428bca;
 .list-group{
 	width:30%;
     margin-left:60px;
+     direction: rtl;
 }	
 
 .dropdiv{
@@ -903,7 +904,7 @@ width:50px;
 .cbp-spmenu {
     background: #47a3da;
     position: absolute;
-margin-top: -78px;
+    margin-top: -78px;
 }
  
 .cbp-spmenu h3 {
@@ -919,7 +920,11 @@ margin-top: -78px;
     height: 90%;
     top: 128px;
     z-index: 1000;
-    overflow:scroll;
+    overflow:auto;
+}
+.flipped
+{
+    direction: rtl;
 }
 .cbp-spmenu-left {
     left: -240px;
