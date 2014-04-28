@@ -1,6 +1,6 @@
 angular.module('yoAngularProjectApp')
 
- .controller('SprintCtrl', function ($scope,Myservice,GetChart) {
+ .controller('SprintCtrl', ['$modal', '$scope','$rootScope', function ($modal,$scope,$rootScope,Myservice,GetChart) {
 
  	$('.nav').find('li').removeClass("active");
  	$('#sprint').closest('li').addClass("active");
@@ -100,5 +100,47 @@ angular.module('yoAngularProjectApp')
     }
     
 
-    
-  });
+    $scope.open = function (){
+
+            console.log("Inside alert");
+           $rootScope.modalInstance=$modal.open({templateUrl:'views/sprintModal.html',
+                    backdrop: 'static', keyboard: true,controller:'ModalCtrl'});
+           
+       }
+
+    $scope.acceptClick=function(itemid){
+        console.log("Inside accept click");
+        $("#" + itemid +" a").css('background','rgb(73, 224, 21)');
+    }
+
+    $scope.rejectClick=function(){
+        console.log("Inside reject click");
+        $("#" + item.id +" a").css('background','rgb(217, 35, 35)');
+    }
+
+  }])
+
+.controller('sprintModalCtrl', ['$modal', '$scope','$rootScope',function($modal, $scope, $rootScope) {   
+        console.log("Sprint Modal window");
+       
+       
+     
+  }])
+
+.controller('ModalCtrl', ['$modal', '$scope','$rootScope',function($modal, $scope, $rootScope) {   
+        console.log("Modal window");
+       
+        $scope.ok = function (){
+            $modal.close();
+        }
+        $scope.close = function () {
+          $rootScope.modalInstance.close();
+        };
+       $scope.showTab = function(val){
+          console.log("hi")
+          $rootScope.tab  = val;
+        }
+     
+  }]);
+
+

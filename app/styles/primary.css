@@ -668,19 +668,21 @@ footer{
 
 .addStoryStyle{
 	float: right;
-	/*margin-right: 3%;*//*
-	border: 1px solid black;*/
+	/*margin-right: 3%;*/
+	border: 1px solid black;
 	/*background: #fcffa3;*/
-    height: 46px;
-    width: 46px;
-    position: absolute;
+    background:#004FFE;
+    height: 25px;
+    width: 26px;
+   /* position: absolute;
     top: 0px;
-    right: 0px;
+    right: 0px;*/
 }
 
-.addStoryStyle .fa{
+/*.addStoryStyle .fa{
     font-size: 46px;
-}
+}*/
+
 .addLink{
 	color:rgb(235, 229, 229);
     margin-left:6px;
@@ -803,12 +805,13 @@ border: 1px solid #428bca;
 	width:438px;
 	margin-top:40px;
 	overflow-y:scroll;
-	height:80%;}
+	height:80%;
+}
 
-
+/*
 .btn {
 	margin-left:358px;
-}
+}*/
 
 #graphical_representation{
 	
@@ -879,7 +882,58 @@ border: 1px solid #428bca;
     padding-top: 6%;
 }
 
-    
+.modalTable{
+  width:100%;
+  border:1px solid #000000;
+  background-color:#FFFFFF;
+}
+
+
+.classHead{
+background-color:#006ac8;
+font-family:Arial, Helvetica, sans-serif;
+font-size:16px;
+font-weight:bold;
+color:#FFFFFF;
+height:50;
+padding-left:15px;
+}
+
+.classMainArea{
+background-color:#ffffff;
+font-family:Arial, Helvetica, sans-serif;
+font-size:14px;
+color:#000000;
+padding-left:7px;
+border: 1px solid #0066cc;
+text-align:left !important;
+}
+
+
+
+.modal-body{
+  position: absolute !important;
+  float: left;
+  margin-bottom: 30px;
+  background-color: #fff;
+  border-radius: 5px !important;
+  left: -18%;
+  top: 30%;
+  width: 803px;
+}
+
+.modal-placeholder{
+  float: right;
+  background:url('../images/cross.png');
+  position: absolute;
+  width: 25px;
+  height: 22px;
+  top: 23px;
+  right: -91px;
+  cursor: pointer;
+}
+
+
 
 /*css for sliding begins*/
 .showLeftPush

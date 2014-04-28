@@ -194,7 +194,9 @@ angular.module('yoAngularProjectApp')
   .directive('droppable', function() {
     return {
         scope: {
-            drop: '&' // parent
+            drop: '&',
+            open: '&',
+            acceptClick: '&' // parent
         },
         link: function(scope, element) {
             // again we need the native object
@@ -263,6 +265,12 @@ angular.module('yoAngularProjectApp')
 
                     if($("#" + item.id).closest('.poAcceptedrejected').length==1)
                     {
+                        
+  
+                        scope.open();
+                        scope.acceptCLick=function(){
+                          return item.id;
+                        }
                         /* $( "#dialog-confirm" ).dialog({
                               resizable: false,
                               height:140,
@@ -278,21 +286,7 @@ angular.module('yoAngularProjectApp')
                                 }
                               }
                             });*/
-                        BootstrapDialog.show({
-                           title: 'Default Title',
-                            message: 'Click buttons below.',
-                             buttons: [{
-                              label: 'Title 1',
-                              action: function(dialog) {
-                                  dialog.setTitle('Title 1');
-                              }
-                          }, {
-                              label: 'Title 2',
-                              action: function(dialog) {
-                                  dialog.setTitle('Title 2');
-                              }
-                          }]
-                      });
+                       
                     }
                     if($("#" + item.id).closest('.clientAcceptedrejected').length==1)
                     {

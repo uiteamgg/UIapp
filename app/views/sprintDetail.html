@@ -29,15 +29,9 @@
         <table border="1" class="sprintTable  table-responsive " cellspacing="2px" cellpadding="2px">
             <thead>
                 <tr class="panel panel-primary">
-                   <!-- <th class="panel-heading">SPRINT
-                        <span class="addStoryStyle" ng-click="addStory()" title="Add story"><a class="addLink" href=""><i class="fa fa-plus-square"></i></a>
-                        </span>
-                    </th>-->
-                    <th class="panel-heading">inProcess
-                        
-                    </th>
-                    <th class="panel-heading">Done
-                    </th>
+                  
+                    <th class="panel-heading">inProcess</th>
+                    <th class="panel-heading">Done</th>
                     <th class="panel-heading">PO Accepted / Rejected</th>
                     <th class="panel-heading">Client Accepted / Rejected</th>
                     <th class="panel-heading">Need Discussion</th>
@@ -46,24 +40,7 @@
                 </tr>
             </thead>
             <tbody>
-              <!-- <td class="storycolumn">
-                    <ul id="sprintlist">
-                        
-                        <li ng-repeat="story in stories" id="{{story.id}}"  draggable>
-
-                            <a>
-                                <span ng-click="deleteNote($index)" class="stickyclose">X</span>
-                                
-                                <h4  class="headingstyle">{{story.name}}</h4>
-
-                               
-                                <textarea class="stickynotes" placeholder="Text Here"></textarea>
-                            </a>
-                        </li>
-
-                    </ul>
-                </td>-->
-                <td class="inProcess" droppable drop="handleDrop()" id="1" data-column="1">
+                <td class="inProcess" droppable drop="handleDrop()"  open="open()" id="1" data-column="1">
                  <ul>
                      <li ng-repeat="story in stories1" id="{{story.id}}" draggable>
 
@@ -79,7 +56,7 @@
 
                     </ul>
                 </td>
-                <td class="done" droppable drop="handleDrop()" data-column="2">
+                <td class="done" droppable drop="handleDrop()"  open="open()" data-column="2">
                 <ul>
                      <li ng-repeat="story in stories2" id="{{story.id}}" draggable>
 
@@ -94,7 +71,7 @@
                         </li>
                     </ul>
                 </td>
-                <td class="poAcceptedrejected" droppable drop="handleDrop()" data-column="3">
+                <td class="poAcceptedrejected" droppable drop="handleDrop()" open="open()" data-column="3">
                 <ul>
                      <li ng-repeat="story in stories3" id="{{story.id}}" draggable>
 
@@ -109,7 +86,7 @@
                         </li>
                 </ul>
                 </td>
-                <td class="clientAcceptedrejected" droppable drop="handleDrop()" data-column="4">
+                <td class="clientAcceptedrejected" droppable drop="handleDrop()"  open="open()" data-column="4">
                 <ul>
                      <li ng-repeat="story in stories4" id="{{story.id}}" draggable>
 
@@ -124,7 +101,7 @@
                         </li>
                 </ul>
                 </td>
-                <td class="needDisucssion" droppable drop="handleDrop()" data-column="5">
+                <td class="needDisucssion" droppable drop="handleDrop()"  open="open()" data-column="5">
                 <ul>
                      <li ng-repeat="story in stories5" id="{{story.id}}" draggable>
 
@@ -139,7 +116,7 @@
                         </li>
                     </ul>
                 </td>
-                <td class="redflag" droppable drop="handleDrop()" data-column="6">
+                <td class="redflag" droppable drop="handleDrop()"  open="open()" data-column="6">
                 <ul>
                      <li ng-repeat="story in stories6" id="{{story.id}}" draggable>
 
@@ -160,165 +137,3 @@
         </div>
         </div>
  
-
-
-   <!--<div class="row">
-    <div class="col-md-1">
-        <div class="panel panel-primary">
-          <div class="panel-heading">SPRINT
-             <span class="addStoryStyle1" ng-click="addStory()" title="Add story"><a class="addLink" href=""><i class="fa fa-plus-square"></i></a>
-            </span>
-          </div>
-          <div class="panel-body">
-            <ul id="sprintlist">
-                        
-                        <li ng-repeat="story in stories" id="{{story.id}}"  draggable>
-
-                            <a>
-                                <span ng-click="deleteNote($index)" class="stickyclose">X</span>
-                                
-                                <h4  class="headingstyle">{{story.name}}</h4>
-
-                               
-                                <textarea class="stickynotes" placeholder="Text Here"></textarea>
-                            </a>
-                        </li>
-
-            </ul>
-          </div>
-        </div>
-    </div>
-    <div class="col-md-2">
-        <div class="panel panel-primary">
-          <div class="panel-heading">inProcess</div>
-          <div class="panel-body inProcess" droppable drop="handleDrop()" data-column="1">
-            <ul>
-                     <li ng-repeat="story in stories1" id="{{story.id}}" draggable>
-
-                            <a>
-                                <span ng-click="deleteNote($index)" class="stickyclose">X</span>
-                                
-                                <h4  class="headingstyle">{{story.name}}</h4>
-
-                               
-                                <textarea class="stickynotes" placeholder="Text Here"></textarea>
-                            </a>
-                        </li>
-
-                    </ul>
-          </div>
-
-        </div>
-    </div>
-     <div class="col-md-2">
-        <div class="panel panel-primary">
-
-          <div class="panel-heading">Done</div>
-          <div class="panel-body done" droppable drop="handleDrop()" data-column="2">
-             <ul>
-                     <li ng-repeat="story in stories2" id="{{story.id}}" draggable>
-
-                            <a>
-                                <span ng-click="deleteNote($index)" class="stickyclose">X</span>
-                                
-                                <h4  class="headingstyle">{{story.name}}</h4>
-
-                               
-                                <textarea class="stickynotes" placeholder="Text Here"></textarea>
-                            </a>
-                        </li>
-                    </ul>
-          </div>
-        </div>
-    </div>
-     <div class="col-md-2">
-        <div class="panel panel-primary">
-
-          <div class="panel-heading">PO Accepted / Rejected</div>
-          <div class="panel-body poAcceptedrejected" droppable drop="handleDrop()" data-column="3">
-             <ul>
-                     <li ng-repeat="story in stories3" id="{{story.id}}" draggable>
-
-                            <a>
-                                <span ng-click="deleteNote($index)" class="stickyclose">X</span>
-                                
-                                <h4  class="headingstyle">{{story.name}}</h4>
-
-                               
-                                <textarea class="stickynotes" placeholder="Text Here"></textarea>
-                            </a>
-                        </li>
-                </ul>
-          </div>
-        </div>
-    </div>
-    <div class="col-md-2">
-        <div class="panel panel-primary">
-
-          <div class="panel-heading">Client Accepted / Rejected</div>
-          <div class="panel-body clientAcceptedrejected" droppable drop="handleDrop()" data-column="4">
-           <ul>
-                     <li ng-repeat="story in stories4" id="{{story.id}}" draggable>
-
-                            <a>
-                                <span ng-click="deleteNote($index)" class="stickyclose">X</span>
-                                
-                                <h4  class="headingstyle">{{story.name}}</h4>
-
-                               
-                                <textarea class="stickynotes" placeholder="Text Here"></textarea>
-                            </a>
-                        </li>
-                </ul>
-          </div>
-        </div>
-    </div>
-    <div class="col-md-2">
-        <div class="panel panel-primary">
-
-          <div class="panel-heading">Need Discussion</div>
-          <div class="panel-body needDisucssion" droppable drop="handleDrop()" data-column="5">
-            <ul>
-                     <li ng-repeat="story in stories5" id="{{story.id}}" draggable>
-
-                            <a>
-                                <span ng-click="deleteNote($index)" class="stickyclose">X</span>
-                                
-                                <h4  class="headingstyle">{{story.name}}</h4>
-
-                               
-                                <textarea class="stickynotes" placeholder="Text Here"></textarea>
-                            </a>
-                        </li>
-                    </ul>
-          </div>
-        </div>
-    </div>
-    <div class="col-md-1">
-        <div class="panel panel-primary">
-
-          <div class="panel-heading">Red Flag</div>
-          <div class="panel-body redflag" droppable drop="handleDrop()" data-column="6">
-           <ul>
-                     <li ng-repeat="story in stories6" id="{{story.id}}" draggable>
-
-                            <a>
-                                <span ng-click="deleteNote($index)" class="stickyclose">X</span>
-                                
-                                <h4  class="headingstyle">{{story.name}}</h4>
-
-                               
-                                <textarea class="stickynotes" placeholder="Text Here"></textarea>
-                            </a>
-                        </li>
-                        </ul>
-          </div>
-        </div>
-    </div>
-
-  
-</div>-->
-
-
-
-  
