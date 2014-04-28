@@ -81,7 +81,7 @@ angular.module('yoAngularProjectApp')
             flag=1;
           }
 
-        console.log(unique);
+    //    console.log(unique);
         num = unique[unique.length -1];
 
         if(flag != 1){
