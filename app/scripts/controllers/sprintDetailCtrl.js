@@ -66,37 +66,33 @@ angular.module('yoAngularProjectApp')
 
     }
 
-    
-
-
+    unique=[];
     $scope.addStory=function(){
-      
-        random = Math.round(min + Math.random() * (max - min));
+        flag=0;
+        random = Math.round(0 + Math.random() * (100 - 0));
+    //    console.log(random +"generated");
+        if(jQuery.inArray( random, unique ) == -1){
+            unique.push(random);
+    //        console.log("pushed");
+          }
+          else{
+    //        console.log("donothing");
+            $scope.addStory();
+            flag=1;
+          }
 
-        console.log("Random num generated is:"+random);
+    //    console.log(unique);
+        num = unique[unique.length -1];
 
-        for (var j=0;j<$scope.stories.length;j++)
-        {
-            if($scope.stories[j]==random)
-            {
-                repeat=1;
-                break;
-            }
-        }
-
-        if((random!=0)&&(random!=1)&&(random!=2)&&(repeat!=1))
-        {
-            var newobj={id:"item"+random,name:"story"+random};
+        if(flag != 1){
+            var newobj={id:"item"+num,name:"story"+num};
             $scope.stories.push(newobj);
+            flag=0;
         }
-         console.log("Stories array after push is:");
-       console.log($scope.stories);
-       repeat=0;
-      // $scope.$apply();
     }
 
     $scope.handleDrop = function() {
-        console.log('Item has been dropped');
+    //    console.log('Item has been dropped');
     }
     
 
