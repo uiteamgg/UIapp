@@ -66,7 +66,7 @@ angular.module('yoAngularProjectApp')
 
     }
 
-    unique=[];
+    unique=[1,2];
     $scope.addStory=function(){
         flag=0;
         random = Math.round(0 + Math.random() * (100 - 0));
@@ -81,7 +81,7 @@ angular.module('yoAngularProjectApp')
             flag=1;
           }
 
-    //    console.log(unique);
+        console.log(unique);
         num = unique[unique.length -1];
 
         if(flag != 1){
