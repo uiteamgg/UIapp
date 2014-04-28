@@ -125,7 +125,7 @@ var storyPicksPerSprint= function(values){
             },
             series: [{
                 name: 'Burn-down',
-                data: [16, 9, 13, 5]
+                data: [16, 9, 8, 5]
             }]
         });
     };
