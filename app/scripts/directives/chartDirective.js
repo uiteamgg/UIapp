@@ -238,7 +238,7 @@ var contribution= function (values) {
                 ['SP3', 12.8]   ,
                 ['SP4', 8.5]
                 
-                ];
+                ];      
     
     $('.chart1').highcharts({
         chart: {
@@ -268,7 +268,7 @@ var contribution= function (values) {
             data: arr,
             events: {
                 click: function (e){
-                    event.preventDefault();
+                    /*event.preventDefault();
                     var funnel = GetChart.funnelChart();
                     var divisonFunnel = $(".chart5");
                     divisonFunnel.css({"display":"block"});
@@ -276,9 +276,9 @@ var contribution= function (values) {
                             left: '450px'    
                         }, 400);
                     funnel(divisonFunnel);
-                    //divisonFunnel.modal();
-
-
+                    //divisonFunnel.modal();*/
+                    console.log("clicked");
+                    scope.$root.generateModal();
                 }
             }
             }]
@@ -288,4 +288,56 @@ var contribution= function (values) {
     myPieChart(values1);
 
   		};
+})
+.directive('chartdirectivefunnel', function () {
+    console.log("insdide chart5 ");
+        return function(scope, element) {
+        var storyStatus= function(values){
+        var arr5=[];
+
+
+    $('.chart5').highcharts({
+        chart: {
+            type: 'funnel',
+            marginRight: 100
+        },
+        title: {
+            text: null,
+            x: -50
+        },
+        plotOptions: {
+            series: {
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b> ({point.y:,.0f})',
+                    color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black',
+                    softConnector: true
+                },
+                neckWidth: '30%',
+                neckHeight: '25%'
+                
+                //-- Other available options
+                // height: pixels or percent
+                // width: pixels or percent
+            }
+        },
+        legend: {
+            enabled: false
+        },
+        series: [{
+            name: 'Status',
+            data: [
+                ['In process',   15],
+                ['Done',       14],
+                ['PO Accepted', 17],
+                ['Client Accepted',    6],
+                ['Need Discussion',    6],
+                ['Red Flag', 13]
+            ]
+        }]
+    });
+
+
+}
+}
 })
