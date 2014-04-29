@@ -60,9 +60,7 @@ angular.module('yoAngularProjectApp')
         {
              $scope.stories6.splice(index,1);
         }
-       // console.log($("#"+index).remove());
-       
-//       $scope.$apply();
+   
 
     }
 
@@ -70,18 +68,18 @@ angular.module('yoAngularProjectApp')
     $scope.addStory=function(){
         flag=0;
         random = Math.round(0 + Math.random() * (100 - 0));
-    //    console.log(random +"generated");
+    
         if(jQuery.inArray( random, unique ) == -1){
             unique.push(random);
-    //        console.log("pushed");
+    
           }
           else{
-    //        console.log("donothing");
+    
             $scope.addStory();
             flag=1;
           }
 
-    //    console.log(unique);
+    
         num = unique[unique.length -1];
 
         if(flag != 1){
@@ -89,10 +87,16 @@ angular.module('yoAngularProjectApp')
             $scope.stories.push(newobj);
             flag=0;
         }
+/*
+         console.log("Stories array after push is:");
+       console.log($scope.stories);
+       repeat=0;
+  */    
+
     }
 
     $scope.handleDrop = function() {
-    //    console.log('Item has been dropped');
+       console.log('Item has been dropped');
     }
     
 
@@ -106,6 +110,7 @@ angular.module('yoAngularProjectApp')
 
     $scope.acceptClick=function(itemid){
         console.log("Inside accept click");
+        console.log("Itemid is:"+itemid);
         $("#" + itemid +" a").css('background','rgb(73, 224, 21)');
     }
 
