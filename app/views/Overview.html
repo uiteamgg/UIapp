@@ -40,20 +40,21 @@ var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
                     <tr panel panel-primary>
                         <th class="panel-heading">Sprint1</th>
                         <th panel-heading>Sprint2</th>
-                        <th panel-heading>Sprint3</th>            
+                        <th panel-heading>Sprint3
+                        <span class="addStoryStyle" ng-click="addSprint()" title="Add sprint">
+                                <a class="addLink" href=""><i class="fa fa-plus-square"></i></a>
+                            </span></th>            
                     </tr>
                 </thead>
                 <tbody class="tscroll">
                     <tr class="storycolumn">
-                        <td   class="inProcess fixwidth"  droppable drop="handleDrop()"  data-column="1"></td>
-                        <td   class="inProcess fixwidth" droppable drop="handleDrop()" data-column="2"></td>
-                        <td   class="inProcess fixwidth" droppable drop="handleDrop()" data-column="3"></td>
+                        <td   class="overviewStory fixwidth"  droppable drop="handleDrop()"  data-column="1"></td>
+                        <td   class="overviewStory fixwidth" droppable drop="handleDrop()" data-column="2"></td>
+                        <td   class="overviewStory fixwidth" droppable drop="handleDrop()" data-column="3"></td>
                     </tr>       
                 </tbody>
             </table>
-            <span class="addStoryStyle" ng-click="addSprint()" title="Add sprint">
-                                <a class="addLink" href=""><i class="fa fa-plus-square"></i></a>
-                            </span>
+            
       
     </div>
 </div>

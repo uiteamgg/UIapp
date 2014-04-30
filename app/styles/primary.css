@@ -220,8 +220,8 @@ top: 48%;
 
 .inProcess li{
 	list-style-type: none;
-	margin: 3px 3px 3px 0;
-	margin-left: 6%;
+	margin: 11px 3px 3px 0;
+	margin-left: 19%;
 }
 
 .inProcess li p {
@@ -243,7 +243,7 @@ top: 48%;
     -webkit-transform: rotate(-3deg);
     -o-transform: rotate(-3deg);
     position: relative;
-    top: -5px;    
+    top: -5px;  
 }
  
 
@@ -625,8 +625,15 @@ footer{
 .inProcess{
     background: white;
     color:blue;
-    padding-top: 9px;
-    padding-bottom: 16px;
+    padding-top: 2px;
+   /* padding-bottom: 16px;*/
+   
+}
+.inProcessOverview{
+    background: white;
+    color:blue;
+    padding-top: 2px;
+   
    
 }
 
@@ -717,7 +724,7 @@ border-color: #428bca;
 .list-group{
 	width:30%;
     direction: rtl;
-    margin-top: 53px;
+    margin-top: 21px;
     margin-right: 29px;
 }	
 
@@ -791,7 +798,76 @@ border: 1px solid #428bca;
     overflow:auto;
     border-radius: 8px;
     }
+.overviewStory li{
+    list-style-type: none;
+    margin: 11px 3px 3px 0;
+    margin-left: 19%;
+}
+.overviewStory{
+    background: white;
+    color:blue;
+    padding-top: 2px;
+   
+   
+}
 
+.overviewStory li p {
+    font-family:'Reenie Beanie', serif;
+    font-size: 165%;
+}
+
+
+.overviewStory li:nth-child(even) a {
+    -moz-transform: rotate(4deg);
+    -webkit-transform: rotate(4deg);
+    -o-transform: rotate(4deg);
+    position: relative;
+    top: 2px;    
+}
+ 
+.overviewStory li:nth-child(3n) a {
+    -moz-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    position: relative;
+    top: 4px;   
+}
+ 
+
+.overviewStory li:nth-child(5n) a {
+    -moz-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    position: relative;
+    top: 8px;   
+}
+
+
+
+.overviewStory li a {
+    background-color:rgb(0, 178, 255);
+    color: black;
+    display: block;
+    height: 9em;
+    padding: 1em;
+    text-decoration: none;
+    width: 9em;
+    -moz-box-shadow: 5px 5px 5px #776C6C;
+    -webkit-box-shadow: 5px 5px 5px #776C6C;
+    box-shadow: 5px 5px 5px #776C6C;
+    -moz-transform: rotate(6deg);
+    -webkit-transform: rotate(6deg);
+    -o-transform: rotate(6deg);   
+    -moz-transition: -moz-transform .15s linear; 
+    -o-transition: -o-transform .15s linear; 
+    -webkit-transition: -webkit-transform .15s linear;   
+}
+
+
+.tscroll
+{
+    
+}
 
     #showLeft
     {
@@ -932,7 +1008,12 @@ text-align:left !important;
   cursor: pointer;
 }
 
-
+tbody
+{
+    
+    
+  
+}
 
 /*css for sliding begins*/
 .showLeftPush
