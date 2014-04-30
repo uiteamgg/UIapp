@@ -626,7 +626,7 @@ footer{
     background: white;
     color:blue;
     padding-top: 2px;
-   /* padding-bottom: 16px;*/
+    padding-bottom: 16px;
    
 }
 .inProcessOverview{
@@ -816,7 +816,12 @@ border: 1px solid #428bca;
     font-size: 165%;
     text-align:center;
 }
-
+.overviewStory li p{
+    font-family:'Reenie Beanie', serif;
+    font-size: 165%;
+    text-align:center;
+    padding-top:21px;
+}
 
 .overviewStory li:nth-child(even) a {
     -moz-transform: rotate(4deg);
@@ -849,7 +854,7 @@ border: 1px solid #428bca;
     background-color:rgb(0, 178, 255);
     color: black;
     display: block;
-    height: 4em;
+    height: 9em;
     padding: 1em;
     text-decoration: none;
     width: 9em;
