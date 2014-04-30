@@ -10,7 +10,7 @@ angular.module('yoAngularProjectApp')
 
  
     // array of items for dragging
-    $scope.items = ["story1","story2","story3","story4","story5","story6","story7","story8","story9","story10"];
+    $scope.items = ["Story1","Story2","Story3","Story4","Story5","Story6","Story7","Story8","Story9","Story10"];
     
  
     $scope.handleDrop = function() {

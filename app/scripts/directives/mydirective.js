@@ -104,7 +104,7 @@ angular.module('yoAngularProjectApp')
                       arr=scope.stories;
                    }
 
-            console.log("Array length is:"+arr.length);
+           // console.log("Array length is:"+arr.length);
                console.log("Story text is:"+storytext1);
                for(var i=0;i<arr.length;i++)
                 {
