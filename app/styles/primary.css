@@ -897,6 +897,11 @@ border: 1px solid #428bca;
     font-size: 165%;
     text-align:center;
 }
+#storylist  li p {
+    font-family:'Reenie Beanie', serif;
+    font-size: 140%;
+    text-align:center;
+}
 
 #storylist  li:nth-child(even) a {
     -moz-transform: rotate(4deg);
